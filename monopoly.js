@@ -10,8 +10,7 @@ let square = document.getElementsByClassName('square'),
     car = document.getElementById('car'),
     hat = document.getElementById('hat'),
     shoe = document.getElementById('shoe'),
-    roll = document.getElementById('roll'),
-    turn = [];
+    roll = document.getElementById('roll');
 
 
 roll.addEventListener('click', function() {
@@ -20,9 +19,13 @@ roll.addEventListener('click', function() {
         return this[Math.floor((Math.random()*this.length))];
     }
     audio.play();
+    audio.volume = 0.4;
     rollDice1();
     rollDice2();
+    getTurn();
+    console.log(turn);
     setTimeout(function(){ goToSquare(); }, 2900);
+    setTimeout(function(){ tec(); }, 3000);
 }, false);
 
 let diceNumber1 = [
@@ -315,16 +318,16 @@ let eCompany1 = document.getElementById('eCompany1'),
         cords: [
             // car //
             "6px",
-            "1060px",
+            "1050px",
             // shoe //
             "62px",
-            "1060px",
+            "1050px",
             // hat //
             "6px",
-            "1115px",
+            "1105px",
             // dog //
             "62px",
-            "1115px"]
+            "1105px"]
     };
 
 let whiteHall = document.getElementById('whiteHall'),
@@ -359,10 +362,10 @@ let northLimber = document.getElementById('northLiber'),
             "800px",
             // hat //
             "6px",
-            "955px",
+            "855px",
             // dog //
             "62px",
-            "955px"]
+            "855px"]
     };
 
 let st2 = document.getElementById('st2'),
@@ -379,10 +382,10 @@ let st2 = document.getElementById('st2'),
             "670px",
             // hat //
             "6px",
-            "825px",
+            "725px",
             // dog //
             "62px",
-            "825px"]
+            "725px"]
     };
 
 let bowStreet = document.getElementById('bowStreet'),
@@ -399,10 +402,10 @@ let bowStreet = document.getElementById('bowStreet'),
             "540px",
             // hat //
             "6px",
-            "695px",
+            "595px",
             // dog //
             "62px",
-            "695px"]
+            "595px"]
     };
 
 let comChest2 = document.getElementById('comChest2'),
@@ -417,10 +420,10 @@ let comChest2 = document.getElementById('comChest2'),
             "410px",
             // hat //
             "6px",
-            "565px",
+            "465px",
             // dog //
             "62px",
-            "565px"]
+            "465px"]
     };
 
 let malborStreet = document.getElementById('malborStreet'),
@@ -437,10 +440,10 @@ let malborStreet = document.getElementById('malborStreet'),
             "280px",
             // hat //
             "6px",
-            "435px",
+            "335px",
             // dog //
             "62px",
-            "435px"]
+            "335px"]
     };
 
 let vineStreet = document.getElementById('vineStreet'),
@@ -457,10 +460,10 @@ let vineStreet = document.getElementById('vineStreet'),
             "150px",
             // hat //
             "6px",
-            "305px",
+            "205px",
             // dog //
             "62px",
-            "305px"]
+            "205px"]
     };
 
 let parking = document.getElementById('parking'),
@@ -475,10 +478,10 @@ let parking = document.getElementById('parking'),
             "30px",
             // hat //
             "6px",
-            "185px",
+            "85px",
             // dog //
             "62px",
-            "185px"]
+            "85px"]
     };
 
 let strandStreet = document.getElementById('strandStreet'),
@@ -495,10 +498,10 @@ let strandStreet = document.getElementById('strandStreet'),
             "30px",
             // hat //
             "120px",
-            "185px",
+            "85px",
             // dog //
             "180px",
-            "185px"]
+            "85px"]
     };
 
 let chanse2 = document.getElementById('chanse2'),
@@ -513,10 +516,10 @@ let chanse2 = document.getElementById('chanse2'),
             "30px",
             // hat //
             "250px",
-            "185px",
+            "85px",
             // dog //
             "310px",
-            "185px"]
+            "85px"]
     };
 
 let fleetStreet = document.getElementById('fleetStreet'),
@@ -533,10 +536,10 @@ let fleetStreet = document.getElementById('fleetStreet'),
             "30px",
             // hat //
             "377px",
-            "185px",
+            "85px",
             // dog //
             "437px",
-            "185px"]
+            "85px"]
     };
 
 let trafSquare = document.getElementById('trafSquare'),
@@ -553,10 +556,10 @@ let trafSquare = document.getElementById('trafSquare'),
             "30px",
             // hat //
             "500px",
-            "185px",
+            "85px",
             // dog //
             "560px",
-            "185px"]
+            "85px"]
     };
 
 let st3 = document.getElementById('st3'),
@@ -573,10 +576,10 @@ let st3 = document.getElementById('st3'),
             "30px",
             // hat //
             "622px",
-            "185px",
+            "85px",
             // dog //
             "680px",
-            "185px"]
+            "85px"]
     };
 
 let LeicSquare = document.getElementById('LeicSquare'),
@@ -593,10 +596,10 @@ let LeicSquare = document.getElementById('LeicSquare'),
             "30px",
             // hat //
             "740px",
-            "185px",
+            "85px",
             // dog //
             "800px",
-            "185px"]
+            "85px"]
     };
 
 let CovStreet = document.getElementById('CovStreet'),
@@ -613,10 +616,10 @@ let CovStreet = document.getElementById('CovStreet'),
             "30px",
             // hat //
             "868px",
-            "185px",
+            "85px",
             // dog //
             "928px",
-            "185px"]
+            "85px"]
     };
 
 let waterWorks = document.getElementById('waterWorks'),
@@ -631,10 +634,10 @@ let waterWorks = document.getElementById('waterWorks'),
             "30px",
             // hat //
             "988px",
-            "185px",
+            "85px",
             // dog //
             "1046px",
-            "185px"]
+            "85px"]
     };
 
 let PiccStreet = document.getElementById('PiccStreet'),
@@ -651,10 +654,10 @@ let PiccStreet = document.getElementById('PiccStreet'),
             "30px",
             // hat //
             "1103px",
-            "185px",
+            "85px",
             // dog //
             "1160px",
-            "185px"]
+            "85px"]
     };
 
 let goToJail = document.getElementById('goToJail'),
@@ -669,10 +672,10 @@ let goToJail = document.getElementById('goToJail'),
             "30px",
             // hat //
             "1223px",
-            "185px",
+            "85px",
             // dog //
             "1280px",
-            "185px"]
+            "85px"]
     };
 
 let regentStreet = document.getElementById('regentStreet'),
@@ -687,10 +690,10 @@ let regentStreet = document.getElementById('regentStreet'),
             "150px",
             // hat //
             "1223px",
-            "305px",
+            "205px",
             // dog //
             "1280px",
-            "305px"]
+            "205px"]
     };
 
 let oxfordStreet = document.getElementById('oxfordStreet'),
@@ -705,10 +708,10 @@ let oxfordStreet = document.getElementById('oxfordStreet'),
             "280px",
             // hat //
             "1223px",
-            "435px",
+            "335px",
             // dog //
             "1280px",
-            "435px"]
+            "335px"]
     };
 
 let comChest3 = document.getElementById('comChest3'),
@@ -723,10 +726,10 @@ let comChest3 = document.getElementById('comChest3'),
             "410px",
             // hat //
             "1223px",
-            "565px",
+            "465px",
             // dog //
             "1280px",
-            "565px"]
+            "465px"]
     };
 
 let bondStreet = document.getElementById('bondStreet'),
@@ -743,10 +746,10 @@ let bondStreet = document.getElementById('bondStreet'),
             "540px",
             // hat //
             "1223px",
-            "695px",
+            "595px",
             // dog //
             "1280px",
-            "695px"]
+            "595px"]
     };
 
 let st4 = document.getElementById('st4'),
@@ -763,10 +766,10 @@ let st4 = document.getElementById('st4'),
             "670px",
             // hat //
             "1223px",
-            "825px",
+            "725px",
             // dog //
             "1280px",
-            "825px"]
+            "725px"]
     };
 
 let chanse3 = document.getElementById('chanse3'),
@@ -781,10 +784,10 @@ let chanse3 = document.getElementById('chanse3'),
             "800px",
             // hat //
             "1223px",
-            "955px",
+            "855px",
             // dog //
             "1280px",
-            "955px"]
+            "855px"]
     };
 
 let parkLane = document.getElementById('parkLane'),
@@ -812,16 +815,16 @@ let superTax = document.getElementById('superTax'),
         cords: [
             // car //
             "1223px",
-            "1060px",
+            "1050px",
             // shoe //
             "1280px",
-            "1060px",
+            "1050px",
             // hat //
             "1223px",
-            "1115px",
+            "1105px",
             // dog //
             "1280px",
-            "1115px"]
+            "1105px"]
     };
 
 let mayFair = document.getElementById('mayFair'),
@@ -892,11 +895,26 @@ const fieldObj = [
     let carM = 0,
     shoeM = 0,
     hatM = 0,
-    dogM = 0;
+    dogM = 0,
+    players = [car, shoe, hat, dog],
+    turn = 0;
 
-    // if(carM > fieldObj.length) {
-    //     carM = 0;
-    // }
+
+function getTurn() {
+    turn +=1;
+    if (turn === 5) {
+        turn = 1;
+    }
+}
+
+function tec() {
+    if (diceNumber1[5] === diceNumber2[5]) {
+        turn -=1;
+        console.log("tec");
+        console.log(diceNumber1[5]);
+        console.log(diceNumber2[5]);
+        } 
+}
 
 function goToSquare() {
     let dn1 = diceNumber1[5],
@@ -939,577 +957,1865 @@ function goToSquare() {
                 dn1 === "./images/dice/dice1/six.png" && dn2 === "./images/dice/dice1/five.png",
         twelve = dn1 === "./images/dice/dice1/six.png" && dn2 === "./images/dice/dice1/six.png";
         
-
-            if (two) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 2;
-                if(carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 2) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = comChest1Obj.cords[0];
-                // car.style.top = comChest1Obj.cords[1];
-                
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = comChest1Obj.cords[2];
-                // shoe.style.top = comChest1Obj.cords[3];
-                
-            } else if (three) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 3;
-                if(carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 3) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = whiteRoadObj.cords[0];
-                // car.style.top = whiteRoadObj.cords[1];
-                
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = whiteRoadObj.cords[2];
-                // shoe.style.top = whiteRoadObj.cords[3];
-
-            } else if (four) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 4;
-                if(carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 4) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = incTax1Obj.cords[0];
-                // car.style.top = incTax1Obj.cords[1];
-                
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = incTax1Obj.cords[2];
-                // shoe.style.top = incTax1Obj.cords[3];
-                
-            } else if (five) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 5;
-                if(carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 5) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = st1Obj.cords[0];
-                // car.style.top = st1Obj.cords[1];
-                
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = st1Obj.cords[2];
-                // shoe.style.top = st1Obj.cords[3];
-                
-            } else if (six) {
+        if (turn === 1) {
             
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 6;
-                if(carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 45) {
-                    carM = 5;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 6) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
+                if (two) {
+                
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 2;
+                    if(carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 2) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (three) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 3;
+                    if(carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 3) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+    
+                } else if (four) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 4;
+                    if(carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 4) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (five) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 5;
+                    if(carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 5) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (six) {
+                
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 6;
+                    if(carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 45) {
+                        carM = 5;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 6) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (seven) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 7;
+                    if(carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 45) {
+                        carM = 5;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 46) {
+                        carM = 6;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 7) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (eight) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 8;
+                    if(carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 45) {
+                        carM = 5;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 46) {
+                        carM = 6;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 47) {
+                        carM = 7;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 8) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (nine) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 9;
+                    if (carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 45) {
+                        carM = 5;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 46) {
+                        carM = 6;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 47) {
+                        carM = 7;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 48) {
+                        carM = 8;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 9) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (ten) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 10;
+                    if (carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 45) {
+                        carM = 5;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 46) {
+                        carM = 6;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 47) {
+                        carM = 7;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 48) {
+                        carM = 8;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 49) {
+                        carM = 9;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 10) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    console.log(fieldObj[carM].cords[1]);
+                    
+                } else if (eleven) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 11;
+                    if (carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 45) {
+                        carM = 5;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 46) {
+                        carM = 6;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 47) {
+                        carM = 7;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 48) {
+                        carM = 8;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 49) {
+                        carM = 9;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 50) {
+                        carM = 10;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 11) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                    
+                } else if (twelve) {
+                    
+                    console.log(fieldObj[carM]);
+                    car.style.position = "absolute";
+                    carM += 12;
+                    if (carM === 40) {
+                        carM = 0;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 41) {
+                        carM = 1;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 42) {
+                        carM = 2;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 43) {
+                        carM = 3;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 44) {
+                        carM = 4;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 45) {
+                        carM = 5;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 46) {
+                        carM = 6;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 47) {
+                        carM = 7;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 48) {
+                        carM = 8;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 49) {
+                        carM = 9;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 50) {
+                        carM = 10;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM === 51) {
+                        carM = 11;
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    } else if (carM + 12) {
+                        car.style.left = fieldObj[carM].cords[0];
+                        car.style.top = fieldObj[carM].cords[1];
+                    }
+                    
+                    console.log(fieldObj[carM]);
+                    console.log(fieldObj[carM].cords[0]);
+                }
+    
+                console.log(carM);
+            
+        } else if (turn === 2) {
+            
+                if (two) {
+                        
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 2;
+                    if(shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 2) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (three) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 3;
+                    if(shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 3) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                
+                } else if (four) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 4;
+                    if(shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 4) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (five) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 5;
+                    if(shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 5) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (six) {
+                
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 6;
+                    if(shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 45) {
+                        shoeM = 5;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 6) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (seven) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 7;
+                    if(shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 45) {
+                        shoeM = 5;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 46) {
+                        shoeM = 6;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 7) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (eight) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 8;
+                    if(shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 45) {
+                        shoeM = 5;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 46) {
+                        shoeM = 6;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 47) {
+                        shoeM = 7;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 8) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (nine) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 9;
+                    if (shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 45) {
+                        shoeM = 5;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 46) {
+                        shoeM = 6;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 47) {
+                        shoeM = 7;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 48) {
+                        shoeM = 8;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 9) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (ten) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 10;
+                    if (shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 45) {
+                        shoeM = 5;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 46) {
+                        shoeM = 6;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 47) {
+                        shoeM = 7;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 48) {
+                        shoeM = 8;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 49) {
+                        shoeM = 9;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 10) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    console.log(fieldObj[shoeM].cords[3]);
+                    
+                } else if (eleven) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 11;
+                    if (shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 45) {
+                        shoeM = 5;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 46) {
+                        shoeM = 6;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 47) {
+                        shoeM = 7;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 48) {
+                        shoeM = 8;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 49) {
+                        shoeM = 9;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 50) {
+                        shoeM = 10;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 11) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
+                    
+                } else if (twelve) {
+                    
+                    console.log(fieldObj[shoeM]);
+                    shoe.style.position = "absolute";
+                    shoeM += 12;
+                    if (shoeM === 40) {
+                        shoeM = 0;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 41) {
+                        shoeM = 1;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 42) {
+                        shoeM = 2;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 43) {
+                        shoeM = 3;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 44) {
+                        shoeM = 4;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 45) {
+                        shoeM = 5;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 46) {
+                        shoeM = 6;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 47) {
+                        shoeM = 7;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 48) {
+                        shoeM = 8;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 49) {
+                        shoeM = 9;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 50) {
+                        shoeM = 10;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM === 51) {
+                        shoeM = 11;
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    } else if (shoeM + 12) {
+                        shoe.style.left = fieldObj[shoeM].cords[2];
+                        shoe.style.top = fieldObj[shoeM].cords[3];
+                    }
+                    
+                    console.log(fieldObj[shoeM]);
+                    console.log(fieldObj[shoeM].cords[2]);
                 }
                 
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
+                console.log(shoeM);
+            
+        } else if (turn === 3) {
+            
+                if (two) {
+                        
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 2;
+                    if(hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 2) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (three) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 3;
+                    if(hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 3) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
                 
-                // car.style.position = "absolute";
-                // car.style.left = theAngelObj.cords[0];
-                // car.style.top = theAngelObj.cords[1];
+                } else if (four) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 4;
+                    if(hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 4) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (five) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 5;
+                    if(hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 5) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (six) {
                 
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = theAngelObj.cords[2];
-                // shoe.style.top = theAngelObj.cords[3];
-                
-            } else if (seven) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 7;
-                if(carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 45) {
-                    carM = 5;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 46) {
-                    carM = 6;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 7) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 6;
+                    if(hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 45) {
+                        hatM = 5;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 6) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (seven) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 7;
+                    if(hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 45) {
+                        hatM = 5;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 46) {
+                        hatM = 6;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 7) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (eight) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 8;
+                    if(hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 45) {
+                        hatM = 5;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 46) {
+                        hatM = 6;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 47) {
+                        hatM = 7;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 8) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (nine) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 9;
+                    if (hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 45) {
+                        hatM = 5;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 46) {
+                        hatM = 6;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 47) {
+                        hatM = 7;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 48) {
+                        hatM = 8;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 9) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (ten) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 10;
+                    if (hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 45) {
+                        hatM = 5;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 46) {
+                        hatM = 6;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 47) {
+                        hatM = 7;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 48) {
+                        hatM = 8;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 49) {
+                        hatM = 9;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 10) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    console.log(fieldObj[hatM].cords[5]);
+                    
+                } else if (eleven) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 11;
+                    if (hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 45) {
+                        hatM = 5;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 46) {
+                        hatM = 6;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 47) {
+                        hatM = 7;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 48) {
+                        hatM = 8;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 49) {
+                        hatM = 9;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 50) {
+                        hatM = 10;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 11) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
+                    
+                } else if (twelve) {
+                    
+                    console.log(fieldObj[hatM]);
+                    hat.style.position = "absolute";
+                    hatM += 12;
+                    if (hatM === 40) {
+                        hatM = 0;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 41) {
+                        hatM = 1;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 42) {
+                        hatM = 2;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 43) {
+                        hatM = 3;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 44) {
+                        hatM = 4;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 45) {
+                        hatM = 5;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 46) {
+                        hatM = 6;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 47) {
+                        hatM = 7;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 48) {
+                        hatM = 8;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 49) {
+                        hatM = 9;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 50) {
+                        hatM = 10;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM === 51) {
+                        hatM = 11;
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    } else if (hatM + 12) {
+                        hat.style.left = fieldObj[hatM].cords[4];
+                        hat.style.top = fieldObj[hatM].cords[5];
+                    }
+                    
+                    console.log(fieldObj[hatM]);
+                    console.log(fieldObj[hatM].cords[4]);
                 }
                 
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
+                console.log(hatM);
+            
+        } else if (turn === 4) {
+            
+                if (two) {
+                        
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 2;
+                    if(dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 2) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (three) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 3;
+                    if(dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 3) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
                 
-                // car.style.position = "absolute";
-                // car.style.left = chanse1Obj.cords[0];
-                // car.style.top = chanse1Obj.cords[1];
+                } else if (four) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 4;
+                    if(dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 4) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (five) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 5;
+                    if(dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 5) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (six) {
                 
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = chanse1Obj.cords[2];
-                // shoe.style.top = chanse1Obj.cords[3];
-                
-            } else if (eight) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 8;
-                if(carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 45) {
-                    carM = 5;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 46) {
-                    carM = 6;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 47) {
-                    carM = 7;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 8) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 6;
+                    if(dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 45) {
+                        dogM = 5;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 6) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (seven) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 7;
+                    if(dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 45) {
+                        dogM = 5;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 46) {
+                        dogM = 6;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 7) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (eight) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 8;
+                    if(dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 45) {
+                        dogM = 5;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 46) {
+                        dogM = 6;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 47) {
+                        dogM = 7;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 8) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (nine) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 9;
+                    if (dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 45) {
+                        dogM = 5;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 46) {
+                        dogM = 6;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 47) {
+                        dogM = 7;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 48) {
+                        dogM = 8;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 9) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (ten) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 10;
+                    if (dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 45) {
+                        dogM = 5;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 46) {
+                        dogM = 6;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 47) {
+                        dogM = 7;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 48) {
+                        dogM = 8;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 49) {
+                        dogM = 9;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 10) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    console.log(fieldObj[dogM].cords[7]);
+                    
+                } else if (eleven) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 11;
+                    if (dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 45) {
+                        dogM = 5;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 46) {
+                        dogM = 6;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 47) {
+                        dogM = 7;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 48) {
+                        dogM = 8;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 49) {
+                        dogM = 9;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 50) {
+                        dogM = 10;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 11) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
+                    
+                } else if (twelve) {
+                    
+                    console.log(fieldObj[dogM]);
+                    dog.style.position = "absolute";
+                    dogM += 12;
+                    if (dogM === 40) {
+                        dogM = 0;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 41) {
+                        dogM = 1;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 42) {
+                        dogM = 2;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 43) {
+                        dogM = 3;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 44) {
+                        dogM = 4;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 45) {
+                        dogM = 5;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 46) {
+                        dogM = 6;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 47) {
+                        dogM = 7;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 48) {
+                        dogM = 8;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 49) {
+                        dogM = 9;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 50) {
+                        dogM = 10;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM === 51) {
+                        dogM = 11;
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    } else if (dogM + 12) {
+                        dog.style.left = fieldObj[dogM].cords[6];
+                        dog.style.top = fieldObj[dogM].cords[7];
+                    }
+                    
+                    console.log(fieldObj[dogM]);
+                    console.log(fieldObj[dogM].cords[6]);
                 }
                 
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = eustonRoadObj.cords[0];
-                // car.style.top = eustonRoadObj.cords[1];
-                
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = eustonRoadObj.cords[2];
-                // shoe.style.top = eustonRoadObj.cords[3];
-                
-            } else if (nine) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 9;
-                if (carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 45) {
-                    carM = 5;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 46) {
-                    carM = 6;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 47) {
-                    carM = 7;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 48) {
-                    carM = 8;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 9) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = pentonRoadObj.cords[0];
-                // car.style.top = pentonRoadObj.cords[1];
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = pentonRoadObj.cords[2];
-                // shoe.style.top = pentonRoadObj.cords[3];
-                
-            } else if (ten) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 10;
-                if (carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 45) {
-                    carM = 5;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 46) {
-                    carM = 6;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 47) {
-                    carM = 7;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 48) {
-                    carM = 8;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 49) {
-                    carM = 9;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 10) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                console.log(fieldObj[carM].cords[1]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = jailObj.cords[0];
-                // car.style.top = jailObj.cords[1];
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = jailObj.cords[2];
-                // shoe.style.top = jailObj.cords[3];
-                
-            } else if (eleven) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 11;
-                if (carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 45) {
-                    carM = 5;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 46) {
-                    carM = 6;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 47) {
-                    carM = 7;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 48) {
-                    carM = 8;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 49) {
-                    carM = 9;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 50) {
-                    carM = 10;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 11) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = palMalObj.cords[0];
-                // car.style.top = palMalObj.cords[1];
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = palMalObj.cords[2];
-                // shoe.style.top = palMalObj.cords[3];
-                
-            } else if (twelve) {
-                
-                console.log(fieldObj[carM]);
-                car.style.position = "absolute";
-                carM += 12;
-                if (carM === 40) {
-                    carM = 0;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 41) {
-                    carM = 1;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 42) {
-                    carM = 2;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 43) {
-                    carM = 3;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 44) {
-                    carM = 4;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 45) {
-                    carM = 5;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 46) {
-                    carM = 6;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 47) {
-                    carM = 7;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 48) {
-                    carM = 8;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 49) {
-                    carM = 9;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 50) {
-                    carM = 10;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM === 51) {
-                    carM = 11;
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                } else if (carM + 12) {
-                    car.style.left = fieldObj[carM].cords[0];
-                    car.style.top = fieldObj[carM].cords[1];
-                }
-                
-                console.log(fieldObj[carM]);
-                console.log(fieldObj[carM].cords[0]);
-                
-                // car.style.position = "absolute";
-                // car.style.left = eCompany1Obj.cords[0];
-                // car.style.top = eCompany1Obj.cords[1];
-
-                // shoe.style.position = "absolute";
-                // shoe.style.left = eCompany1Obj.cords[2];
-                // shoe.style.top = eCompany1Obj.cords[3];
-            }
-
-            console.log(carM);
-        
-        
-        
-    // if (dice1.src === dice2.src) {
-    //     car.style.position = "absolute";
-    //     car.style.left = oldKentObj.cords[0];
-    //     car.style.top = oldKentObj.cords[1];
-    //     console.log("tec");
-    //     console.log(dice1.src);
-    //     console.log(dice2.src);
-    //     } else {
-    //         console.log("no tec");
-    //         console.log(dice1.src);
-    //         console.log(dice2.src);
-    //     }
+                console.log(dogM);
+            
+        }
 }
