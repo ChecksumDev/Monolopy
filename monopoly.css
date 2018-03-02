@@ -171,3 +171,105 @@ h2 {
     to {left: 560px; top: 1300px;}
 }
 
+.playerContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.leftContainer {
+    grid-column: 2/3;
+    display: none;
+    justify-items: center;
+}
+
+.rightContainer {
+    grid-column: 4/5;
+    display: none;
+    justify-items: center;
+}
+
+#playerPics {
+    grid-column: 3/4;
+}
+
+#dicePics {
+    grid-column: 3/4;
+}
+
+.playerBox p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#cardOptions {
+    background-color: rgb(247, 235, 214);
+    display: none;
+    width: 15vw;
+    border: 2px #777 solid;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    top: 760px;
+    left: 552px;
+}
+
+
+#cardHeader {
+    border: 1px #777 solid;
+    border-radius: 15px;
+    display: grid;
+    justify-items: center;
+}
+
+#cardFooter {
+    border: 1px #777 solid;
+    border-radius: 15px 15px 0 0;
+    display: grid;
+    justify-items: center;
+}
+
+#cardHeader h2 {
+    background: rgb(133, 76, 23);
+    border-radius: 13px 13px 0 0 ;
+    width: 100%;
+    margin: 0 0 1vw 0;
+    padding: 5% 0 5% 0;
+}
+
+#cardMiddle {
+    border: none;
+}
+
+#cardMiddle td {
+    background-color: rgb(247, 235, 214);
+    border: none;
+}
+
+#cardBottom {
+    border: none;
+}
+
+#cardBottom td {
+    background-color: rgb(247, 235, 214);
+    border: none;
+}
+
+.buttonMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buy {
+    background-color: green;
+    text-decoration: none;
+    color: black;
+    border-bottom-left-radius: 15px;
+}
+
+#pass {
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    border-bottom-right-radius: 15px;
+}

@@ -1,15 +1,38 @@
 
 
 let square = document.getElementsByClassName('square'),
+    car = document.getElementById('car'),
+    carObj = {
+        name: "Car",
+        cash: "2000",
+        streets: "0",
+        houses: "0",
+        hotels: "0"
+    },
+    hat = document.getElementById('hat'),
+    hatObj = {
+        name: "Hat",
+        cash: "2000",
+        streets: "0",
+        houses: "0",
+        hotels: "0"
+    },
+    shoe = document.getElementById('shoe'),
+    shoeObj = {
+        name: "Shoe",
+        cash: "2000",
+        streets: "0",
+        houses: "0",
+        hotels: "0"
+    },
     dog = document.getElementById('dog'),
-    dogCords = dog.getBoundingClientRect(),
     dogObj = {
         name: "Dog",
-        cash: "20000"
+        cash: "2000",
+        streets: "0",
+        houses: "0",
+        hotels: "0"
     },
-    car = document.getElementById('car'),
-    hat = document.getElementById('hat'),
-    shoe = document.getElementById('shoe'),
     roll = document.getElementById('roll');
 
 
@@ -25,7 +48,8 @@ roll.addEventListener('click', function() {
     getTurn();
     console.log(turn);
     setTimeout(function(){ goToSquare(); }, 2900);
-    setTimeout(function(){ tec(); }, 3000);
+    setTimeout(function(){ showCard(); }, 3200);
+    setTimeout(function(){ tec(); }, 3300);
 }, false);
 
 let diceNumber1 = [
@@ -84,7 +108,7 @@ function rollDice2(h) {
 let start = document.getElementById('start'),
     startObj = {
         name: "Go",
-        sallary: "2000$",
+        sallary: "2000",
         cords: [
             // car //
             "1223px",
@@ -104,7 +128,9 @@ let oldKent = document.getElementById('oldKent'),
     oldKentObj = {
         owned: "Not Owned",
         name: "Old Kent Road",
-        price: "100$",
+        price: "60",
+        card: ["2" ,"10" ,"30" ,"90" ,
+        "160" ,"250" ,"MORTGAGE value 30" ,"50" ,"50" ],
         cords: [
             // car //
             "1103px",
@@ -141,8 +167,10 @@ let comChest1 = document.getElementById('comChest1'),
 let whiteRoad = document.getElementById('whiteRoad'),
     whiteRoadObj = {
         owned: "Not Owned",
-        name: "Old Kent Road",
-        price: "100$",
+        name: "Whitechapel Road",
+        price: "80",
+        card: ["4" ,"20" ,"60" ,"180" ,
+        "320" ,"450" ,"MORTGAGE value 30" ,"50" ,"50" ],
         cords: [
             // car //
             "868px",
@@ -180,7 +208,9 @@ let st1 = document.getElementById('st1'),
     st1Obj = {
         owned: "Not Owned",
         name: "Marylebon Station",
-        price: "100$",
+        price: "200",
+        card: ["4" ,"20" ,"6$" ,"180" ,
+        "320" ,"450" ,"MORTGAGE value 100" ],
         cords: [
             // car //
             "622px",
@@ -200,7 +230,9 @@ let theAngel = document.getElementById('theAngel'),
     theAngelObj = {
         owned: "Not Owned",
         name: "The Angel Inslington",
-        price: "100$",
+        price: "100",
+        card: ["6" ,"30" ,"90" ,"270" ,
+        "400" ,"550" ,"MORTGAGE value 50" ,"50" ,"50" ],
         cords: [
             // car //
             "500px",
@@ -238,7 +270,9 @@ let eustonRoad = document.getElementById('eustonRoad'),
     eustonRoadObj = {
         owned: "Not Owned",
         name: "Euston Road",
-        price: "100$",
+        price: "110",
+        card: ["8" ,"30" ,"90" ,"270" ,
+        "400" ,"550" ,"MORTGAGE value 50" ,"50" ,"50" ],
         cords: [
             // car //
             "250px",
@@ -258,7 +292,9 @@ let pentonRoad = document.getElementById('pentonRoad'),
     pentonRoadObj = {
         owned: "Not Owned",
         name: "Pentonvile Road",
-        price: "100$",
+        price: "120",
+        card: ["10" ,"40" ,"100" ,"300" ,
+        "450" ,"600" ,"MORTGAGE value 60" ,"50" ,"50" ],
         cords: [
             // car //
             "120px",
@@ -296,7 +332,9 @@ let palMal = document.getElementById('palMal'),
     palMalObj = {
         owned: "Not Owned",
         name: "Pal Mal Street",
-        price: "100$",
+        price: "140",
+        card: ["12" ,"50" ,"150" ,"450" ,
+        "630" ,"750" ,"MORTGAGE value 70" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -333,7 +371,9 @@ let eCompany1 = document.getElementById('eCompany1'),
 let whiteHall = document.getElementById('whiteHall'),
     whiteHallObj = {
         name: "Whitehall Street",
-        price: "100$",
+        price: "150",
+        card: ["14" ,"50" ,"150" ,"450" ,
+        "630" ,"750" ,"MORTGAGE value 70" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -352,7 +392,9 @@ let whiteHall = document.getElementById('whiteHall'),
 let northLimber = document.getElementById('northLiber'),
     northLimberObj = {
         name: "Northlimberian Road",
-        price: "100$",
+        price: "160",
+        card: ["16" ,"60" ,"180" ,"500" ,
+        "700" ,"900" ,"MORTGAGE value 80" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -372,7 +414,7 @@ let st2 = document.getElementById('st2'),
     st2Obj = {
         owned: "Not Owned",
         name: "Fenchurch Station",
-        price: "100$",
+        price: "50",
         cords: [
             // car //
             "6px",
@@ -392,7 +434,9 @@ let bowStreet = document.getElementById('bowStreet'),
     bowStreetObj = {
         owned: "Not Owned",
         name: "Bow Street",
-        price: "100$",
+        price: "180",
+        card: ["18" ,"70" ,"200" ,"550" ,
+        "700" ,"900" ,"MORTGAGE value 90" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -430,7 +474,9 @@ let malborStreet = document.getElementById('malborStreet'),
     malborStreetObj = {
         owned: "Not Owned",
         name: "Malborough Street",
-        price: "100$",
+        price: "190",
+        card: ["20" ,"75" ,"210" ,"580" ,
+        "750" ,"950" ,"MORTGAGE value 100" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -450,7 +496,9 @@ let vineStreet = document.getElementById('vineStreet'),
     vineStreetObj = {
         owned: "Not Owned",
         name: "Vine Street",
-        price: "100$",
+        price: "200",
+        card: ["22" ,"80" ,"220" ,"600" ,
+        "800" ,"1000" ,"MORTGAGE value 100" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -488,7 +536,9 @@ let strandStreet = document.getElementById('strandStreet'),
     strandStreetObj = {
         owned: "Not Owned",
         name: "Strand Street",
-        price: "100$",
+        price: "220",
+        card: ["24" ,"90" ,"250" ,"700" ,
+        "880" ,"1000" ,"MORTGAGE value 110" ,"150" ,"150" ],
         cords: [
             // car //
             "120px",
@@ -526,7 +576,9 @@ let fleetStreet = document.getElementById('fleetStreet'),
     fleetStreetObj = {
         owned: "Not Owned",
         name: "Fleet Street",
-        price: "100$",
+        price: "230",
+        card: ["26" ,"95" ,"280" ,"730" ,
+        "900" ,"1050" ,"MORTGAGE value 110" ,"150" ,"150" ],
         cords: [
             // car //
             "377px",
@@ -546,7 +598,9 @@ let trafSquare = document.getElementById('trafSquare'),
     trafSquareObj = {
         owned: "Not Owned",
         name: "Trafalguare Square",
-        price: "100$",
+        price: "240",
+        card: ["28" ,"100" ,"300" ,"750" ,
+        "930" ,"1100" ,"MORTGAGE value 120" ,"150" ,"150" ],
         cords: [
             // car //
             "500px",
@@ -566,7 +620,7 @@ let st3 = document.getElementById('st3'),
     st3Obj = {
         owned: "Not Owned",
         name: "Kings Cross Station",
-        price: "100$",
+        price: "50",
         cords: [
             // car //
             "622px",
@@ -586,7 +640,9 @@ let LeicSquare = document.getElementById('LeicSquare'),
     LeicSquareObj = {
         owned: "Not Owned",
         name: "Leicester Square",
-        price: "100$",
+        price: "260",
+        card: ["30" ,"110" ,"330" ,"800" ,
+        "980" ,"1100" ,"MORTGAGE value 130" ,"150" ,"150" ],
         cords: [
             // car //
             "740px",
@@ -606,7 +662,9 @@ let CovStreet = document.getElementById('CovStreet'),
     CovStreetObj = {
         owned: "Not Owned",
         name: "Coventry Street",
-        price: "100$",
+        price: "270",
+        card: ["32" ,"115" ,"340" ,"830" ,
+        "1000" ,"1150" ,"MORTGAGE value 130" ,"150" ,"150" ],
         cords: [
             // car //
             "868px",
@@ -644,7 +702,9 @@ let PiccStreet = document.getElementById('PiccStreet'),
     PiccStreetObj = {
         owned: "Not Owned",
         name: "Piccadilly Street",
-        price: "100$",
+        price: "280",
+        card: ["34" ,"120" ,"360" ,"850" ,
+        "1030" ,"1200" ,"MORTGAGE value 140" ,"150" ,"150" ],
         cords: [
             // car //
             "1103px",
@@ -680,7 +740,11 @@ let goToJail = document.getElementById('goToJail'),
 
 let regentStreet = document.getElementById('regentStreet'),
     regentStreetObj = {
+        owned: "Not Owned",
         name: "Regent Street",
+        price: "300",
+        card: ["36" ,"130" ,"390" ,"900" ,
+        "1100" ,"1300" ,"MORTGAGE value 150" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -698,7 +762,11 @@ let regentStreet = document.getElementById('regentStreet'),
 
 let oxfordStreet = document.getElementById('oxfordStreet'),
     oxfordStreetObj = {
+        owned: "Not Owned",
         name: "Oxford Street",
+        price: "310",
+        card: ["38" ,"140" ,"410" ,"950" ,
+        "1150" ,"1350" ,"MORTGAGE value 150" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -736,7 +804,9 @@ let bondStreet = document.getElementById('bondStreet'),
     bondStreetObj = {
         owned: "Not Owned",
         name: "Bond Street",
-        price: "100$",
+        price: "320",
+        card: ["40" ,"150" ,"450" ,"1000" ,
+        "1200" ,"1400" ,"MORTGAGE value 160" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -756,7 +826,7 @@ let st4 = document.getElementById('st4'),
     st4Obj = {
         owned: "Not Owned",
         name: "Liverpool Station",
-        price: "100$",
+        price: "50",
         cords: [
             // car //
             "1223px",
@@ -792,8 +862,11 @@ let chanse3 = document.getElementById('chanse3'),
 
 let parkLane = document.getElementById('parkLane'),
     parkLaneObj = {
+        owned: "Not Owned",
         name: "Park Lane",
-        price: "100$",
+        price: "350",
+        card: ["44" ,"180" ,"500" ,"1100" ,
+        "1300" ,"1500" ,"MORTGAGE value 180" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -831,7 +904,9 @@ let mayFair = document.getElementById('mayFair'),
     mayFairObj = {
         owned: "Not Owned",
         name: "Mayfaire Street",
-        price: "100$",
+        price: "400",
+        card: ["50" ,"200" ,"600" ,"1400" ,
+        "1700" ,"2000" ,"MORTGAGE value 200" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -851,24 +926,46 @@ car.addEventListener('click', function() {
     car.style.position = "absolute";
     car.style.left = startObj.cords[0];
     car.style.top = startObj.cords[1];
+    document.getElementById('topLeft').style.display = "grid";
+    document.getElementById('carBallance').innerHTML = carObj.cash + " $";
 }, false)
 
 shoe.addEventListener('click', function() {
     shoe.style.position = "absolute";
     shoe.style.left = startObj.cords[2];
     shoe.style.top = startObj.cords[3];
+    document.getElementById('topRight').style.display = "grid";
+    document.getElementById('shoeBallance').innerHTML = shoeObj.cash + " $";
 }, false)
 
 hat.addEventListener('click', function () {
     hat.style.position = "absolute";
     hat.style.left = startObj.cords[4];
     hat.style.top = startObj.cords[5];
+    document.getElementById('bottomLeft').style.display = "grid";
+    document.getElementById('hatBallance').innerHTML = hatObj.cash + " $";
 }, false);
 
 dog.addEventListener('click', function () {
     dog.style.position = "absolute";
     dog.style.left = startObj.cords[6];
     dog.style.top = startObj.cords[7];
+    document.getElementById('bottomRight').style.display = "grid";
+    document.getElementById('dogBallance').innerHTML = dogObj.cash + " $";
+}, false);
+
+    // Button functionality when GAME-CARD is shown 
+let buy = document.getElementById('buy'),
+    pass = document.getElementById('pass'),
+    cardVisible = document.getElementById('cardOptions');
+    
+
+pass.addEventListener('click', function() {
+    cardVisible.style.display = "none";
+}, false);
+
+buy.addEventListener('click', function(){
+
 }, false);
 
 const field = [
@@ -886,7 +983,7 @@ const fieldObj = [
     startObj, oldKentObj, comChest1Obj, whiteRoadObj, incTax1Obj,
     st1Obj, theAngelObj, chanse1Obj, eustonRoadObj, pentonRoadObj,
     jailObj, palMalObj, eCompany1Obj, whiteHallObj, northLimberObj,
-    st2Obj, bowStreetObj, comChest2Obj, bowStreetObj, vineStreetObj,
+    st2Obj, bowStreetObj, comChest2Obj, malborStreetObj, vineStreetObj,
     parkingObj, strandStreetObj, chanse2Obj, fleetStreetObj, trafSquareObj,
     st3Obj, LeicSquareObj, CovStreetObj, waterWorksObj, PiccStreetObj,
     goToJailObj, regentStreetObj, oxfordStreetObj, comChest3Obj, bondStreetObj,
@@ -898,6 +995,402 @@ const fieldObj = [
     dogM = 0,
     players = [car, shoe, hat, dog],
     turn = 0;
+
+
+
+function showCard() {
+    let cardName = document.getElementById('cardName'),
+        siteonly = document.getElementById('siteOnly'),
+        house1 = document.getElementById('house1'),
+        house2 = document.getElementById('house2'),
+        house3 = document.getElementById('house3'),
+        house4 = document.getElementById('house4'),
+        hotel = document.getElementById('hotel'),
+        mortgage = document.getElementById('mortgage'),
+        housecost = document.getElementById('houseCost'),
+        hotelcost = document.getElementById('hotelCost'),
+        cardVisible = document.getElementById('cardOptions'),
+        buyText = document.getElementById('buyText'),
+        passText = document.getElementById('passText');
+
+    if (turn == 1 && carM == 1 || turn == 2 && shoeM == 1 || turn == 3 && hatM == 1 || turn == 4 && dogM == 1) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = oldKentObj.name;
+        cardName.style.backgroundColor = "rgb(133, 76, 23)";
+        siteonly.innerHTML = oldKentObj.card[0] + "$";
+        house1.innerHTML = oldKentObj.card[1] + "$";
+        house2.innerHTML = oldKentObj.card[2] + "$";
+        house3.innerHTML = oldKentObj.card[3] + "$";
+        house4.innerHTML = oldKentObj.card[4] + "$";
+        hotel.innerHTML = oldKentObj.card[5] + "$";
+        mortgage.innerHTML = oldKentObj.card[6] + "$";
+        housecost.innerHTML = oldKentObj.card[7] + "$";
+        hotelcost.innerHTML = oldKentObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + oldKentObj.price + "$";
+    } else if (turn == 1 && carM == 2 || turn == 2 && shoeM == 2 || turn == 3 && hatM == 2 || turn == 4 && dogM == 2) {
+        // cardVisible.style.display = "grid";
+            // comchest1
+
+    } else if (turn == 1 && carM == 3 || turn == 2 && shoeM == 3 || turn == 3 && hatM == 3 || turn == 4 && dogM == 3) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = whiteHallObj.name;
+        cardName.style.backgroundColor = "rgb(133, 76, 23)";
+        siteonly.innerHTML = whiteRoadObj.card[0] + "$";
+        house1.innerHTML = whiteRoadObj.card[1] + "$";
+        house2.innerHTML = whiteRoadObj.card[2] + "$";
+        house3.innerHTML = whiteRoadObj.card[3] + "$";
+        house4.innerHTML = whiteRoadObj.card[4] + "$";
+        hotel.innerHTML = whiteRoadObj.card[5] + "$";
+        mortgage.innerHTML = whiteRoadObj.card[6] + "$";
+        housecost.innerHTML = whiteRoadObj.card[7] + "$";
+        hotelcost.innerHTML = whiteRoadObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + whiteRoadObj.price + "$";
+    } else if (turn == 1 && carM == 4 || turn == 2 && shoeM == 4 || turn == 3 && hatM == 4 || turn == 4 && dogM == 4) {
+        // cardVisible.style.display = "grid";
+            // incometax1
+        
+    } else if (turn == 1 && carM == 5 || turn == 2 && shoeM == 5 || turn == 3 && hatM == 5 || turn == 4 && dogM == 5) {
+        // cardVisible.style.display = "grid";
+            // st1
+
+    } else if (turn == 1 && carM == 6 || turn == 2 && shoeM == 6 || turn == 3 && hatM == 6 || turn == 4 && dogM == 6) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = theAngelObj.name;
+        cardName.style.backgroundColor = "rgb(68, 188, 224)";
+        siteonly.innerHTML = theAngelObj.card[0] + "$";
+        house1.innerHTML = theAngelObj.card[1] + "$";
+        house2.innerHTML = theAngelObj.card[2] + "$";
+        house3.innerHTML = theAngelObj.card[3] + "$";
+        house4.innerHTML = theAngelObj.card[4] + "$";
+        hotel.innerHTML = theAngelObj.card[5] + "$";
+        mortgage.innerHTML = theAngelObj.card[6] + "$";
+        housecost.innerHTML = theAngelObj.card[7] + "$";
+        hotelcost.innerHTML = theAngelObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + theAngelObj.price + "$";
+    }  else if (turn == 1 && carM == 7 || turn == 2 && shoeM == 7 || turn == 3 && hatM == 7 || turn == 4 && dogM == 7) {
+        // cardVisible.style.display = "grid";
+            // chanse1
+        
+    } else if (turn == 1 && carM == 8 || turn == 2 && shoeM == 8 || turn == 3 && hatM == 8 || turn == 4 && dogM == 8) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = eustonRoadObj.name;
+        cardName.style.backgroundColor = "rgb(68, 188, 224)";
+        siteonly.innerHTML = eustonRoadObj.card[0] + "$";
+        house1.innerHTML = eustonRoadObj.card[1] + "$";
+        house2.innerHTML = eustonRoadObj.card[2] + "$";
+        house3.innerHTML = eustonRoadObj.card[3] + "$";
+        house4.innerHTML = eustonRoadObj.card[4] + "$";
+        hotel.innerHTML = eustonRoadObj.card[5] + "$";
+        mortgage.innerHTML = eustonRoadObj.card[6] + "$";
+        housecost.innerHTML = eustonRoadObj.card[7] + "$";
+        hotelcost.innerHTML = eustonRoadObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + eustonRoadObj.price + "$";
+    } else if (turn == 1 && carM == 9 || turn == 2 && shoeM == 9 || turn == 3 && hatM == 9 || turn == 4 && dogM == 9) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = pentonRoadObj.name;
+        cardName.style.backgroundColor = "rgb(68, 188, 224)";
+        siteonly.innerHTML = pentonRoadObj.card[0] + "$";
+        house1.innerHTML = pentonRoadObj.card[1] + "$";
+        house2.innerHTML = pentonRoadObj.card[2] + "$";
+        house3.innerHTML = pentonRoadObj.card[3] + "$";
+        house4.innerHTML = pentonRoadObj.card[4] + "$";
+        hotel.innerHTML = pentonRoadObj.card[5] + "$";
+        mortgage.innerHTML = pentonRoadObj.card[6] + "$";
+        housecost.innerHTML = pentonRoadObj.card[7] + "$";
+        hotelcost.innerHTML = pentonRoadObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + pentonRoadObj.price + "$";
+    } else if (turn == 1 && carM == 10 || turn == 2 && shoeM == 10 || turn == 3 && hatM == 10 || turn == 4 && dogM == 10) {
+        // cardVisible.style.display = "grid";
+            // jail
+
+    } else if (turn == 1 && carM == 11 || turn == 2 && shoeM == 11 || turn == 3 && hatM == 11 || turn == 4 && dogM == 11) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = palMalObj.name;
+        cardName.style.backgroundColor = "rgb(224, 68, 211)";
+        siteonly.innerHTML = palMalObj.card[0] + "$";
+        house1.innerHTML = palMalObj.card[1] + "$";
+        house2.innerHTML = palMalObj.card[2] + "$";
+        house3.innerHTML = palMalObj.card[3] + "$";
+        house4.innerHTML = palMalObj.card[4] + "$";
+        hotel.innerHTML = palMalObj.card[5] + "$";
+        mortgage.innerHTML = palMalObj.card[6] + "$";
+        housecost.innerHTML = palMalObj.card[7] + "$";
+        hotelcost.innerHTML = palMalObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + palMalObj.price + "$";
+    } else if (turn == 1 && carM == 12 || turn == 2 && shoeM == 12 || turn == 3 && hatM == 12 || turn == 4 && dogM == 12) {
+        // cardVisible.style.display = "grid";
+        // ecompany1
+
+    } else if (turn == 1 && carM == 13 || turn == 2 && shoeM == 13 || turn == 3 && hatM == 13 || turn == 4 && dogM == 13) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = whiteHallObj.name;
+        cardName.style.backgroundColor = "rgb(224, 68, 211)";
+        siteonly.innerHTML = whiteHallObj.card[0] + "$";
+        house1.innerHTML = whiteHallObj.card[1] + "$";
+        house2.innerHTML = whiteHallObj.card[2] + "$";
+        house3.innerHTML = whiteHallObj.card[3] + "$";
+        house4.innerHTML = whiteHallObj.card[4] + "$";
+        hotel.innerHTML = whiteHallObj.card[5] + "$";
+        mortgage.innerHTML = whiteHallObj.card[6] + "$";
+        housecost.innerHTML = whiteHallObj.card[7] + "$";
+        hotelcost.innerHTML = whiteHallObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + whiteHallObj.price + "$";
+    } else if (turn == 1 && carM == 14 || turn == 2 && shoeM == 14 || turn == 3 && hatM == 14 || turn == 4 && dogM == 14) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = northLimberObj.name;
+        cardName.style.backgroundColor = "rgb(224, 68, 211)";
+        siteonly.innerHTML = northLimberObj.card[0] + "$";
+        house1.innerHTML = northLimberObj.card[1] + "$";
+        house2.innerHTML = northLimberObj.card[2] + "$";
+        house3.innerHTML = northLimberObj.card[3] + "$";
+        house4.innerHTML = northLimberObj.card[4] + "$";
+        hotel.innerHTML = northLimberObj.card[5] + "$";
+        mortgage.innerHTML = northLimberObj.card[6] + "$";
+        housecost.innerHTML = northLimberObj.card[7] + "$";
+        hotelcost.innerHTML = northLimberObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + northLimberObj.price + "$";
+    } else if (turn == 1 && carM == 15 || turn == 2 && shoeM == 15 || turn == 3 && hatM == 15 || turn == 4 && dogM == 15) {
+        // cardVisible.style.display = "grid";
+            // st2
+
+    } else if (turn == 1 && carM == 16 || turn == 2 && shoeM == 16 || turn == 3 && hatM == 16 || turn == 4 && dogM == 16) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = bowStreetObj.name;
+        cardName.style.backgroundColor = "rgb(240, 143, 16)";
+        siteonly.innerHTML = bowStreetObj.card[0] + "$";
+        house1.innerHTML = bowStreetObj.card[1] + "$";
+        house2.innerHTML = bowStreetObj.card[2] + "$";
+        house3.innerHTML = bowStreetObj.card[3] + "$";
+        house4.innerHTML = bowStreetObj.card[4] + "$";
+        hotel.innerHTML = bowStreetObj.card[5] + "$";
+        mortgage.innerHTML = bowStreetObj.card[6] + "$";
+        housecost.innerHTML = bowStreetObj.card[7] + "$";
+        hotelcost.innerHTML = bowStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + bowStreetObj.price + "$";
+    } else if (turn == 1 && carM == 17 || turn == 2 && shoeM == 17 || turn == 3 && hatM == 17 || turn == 4 && dogM == 17) {
+        // cardVisible.style.display = "grid";
+            // comchest2
+
+    } else if (turn == 1 && carM == 18 || turn == 2 && shoeM == 18 || turn == 3 && hatM == 18 || turn == 4 && dogM == 18) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = malborStreetObj.name;
+        cardName.style.backgroundColor = "rgb(240, 143, 16)";
+        siteonly.innerHTML = malborStreetObj.card[0] + "$";
+        house1.innerHTML = malborStreetObj.card[1] + "$";
+        house2.innerHTML = malborStreetObj.card[2] + "$";
+        house3.innerHTML = malborStreetObj.card[3] + "$";
+        house4.innerHTML = malborStreetObj.card[4] + "$";
+        hotel.innerHTML = malborStreetObj.card[5] + "$";
+        mortgage.innerHTML = malborStreetObj.card[6] + "$";
+        housecost.innerHTML = malborStreetObj.card[7] + "$";
+        hotelcost.innerHTML = malborStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + malborStreetObj.price + "$";
+    } else if (turn == 1 && carM == 19 || turn == 2 && shoeM == 19 || turn == 3 && hatM == 19 || turn == 4 && dogM == 19) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = vineStreetObj.name;
+        cardName.style.backgroundColor = "rgb(240, 143, 16)";
+        siteonly.innerHTML = vineStreetObj.card[0] + "$";
+        house1.innerHTML = vineStreetObj.card[1] + "$";
+        house2.innerHTML = vineStreetObj.card[2] + "$";
+        house3.innerHTML = vineStreetObj.card[3] + "$";
+        house4.innerHTML = vineStreetObj.card[4] + "$";
+        hotel.innerHTML = vineStreetObj.card[5] + "$";
+        mortgage.innerHTML = vineStreetObj.card[6] + "$";
+        housecost.innerHTML = vineStreetObj.card[7] + "$";
+        hotelcost.innerHTML = vineStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + vineStreetObj.price + "$";
+    } else if (turn == 1 && carM == 20 || turn == 2 && shoeM == 20 || turn == 3 && hatM == 20 || turn == 4 && dogM == 20) {
+        // cardVisible.style.display = "grid";
+            // parking
+
+    } else if (turn == 1 && carM == 21 || turn == 2 && shoeM == 21 || turn == 3 && hatM == 21 || turn == 4 && dogM == 21) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = strandStreetObj.name;
+        cardName.style.backgroundColor = "rgb(240, 50, 16)";
+        siteonly.innerHTML = strandStreetObj.card[0] + "$";
+        house1.innerHTML = strandStreetObj.card[1] + "$";
+        house2.innerHTML = strandStreetObj.card[2] + "$";
+        house3.innerHTML = strandStreetObj.card[3] + "$";
+        house4.innerHTML = strandStreetObj.card[4] + "$";
+        hotel.innerHTML = strandStreetObj.card[5] + "$";
+        mortgage.innerHTML = strandStreetObj.card[6] + "$";
+        housecost.innerHTML = strandStreetObj.card[7] + "$";
+        hotelcost.innerHTML = strandStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + strandStreetObj.price + "$";
+    } else if (turn == 1 && carM == 22 || turn == 2 && shoeM == 22 || turn == 3 && hatM == 22 || turn == 4 && dogM == 22) {
+        // cardVisible.style.display = "grid";
+            // chanse2
+
+    } else if (turn == 1 && carM == 23 || turn == 2 && shoeM == 23 || turn == 3 && hatM == 23 || turn == 4 && dogM == 23) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = fleetStreetObj.name;
+        cardName.style.backgroundColor = "rgb(240, 50, 16)";
+        siteonly.innerHTML = fleetStreetObj.card[0] + "$";
+        house1.innerHTML = fleetStreetObj.card[1] + "$";
+        house2.innerHTML = fleetStreetObj.card[2] + "$";
+        house3.innerHTML = fleetStreetObj.card[3] + "$";
+        house4.innerHTML = fleetStreetObj.card[4] + "$";
+        hotel.innerHTML = fleetStreetObj.card[5] + "$";
+        mortgage.innerHTML = fleetStreetObj.card[6] + "$";
+        housecost.innerHTML = fleetStreetObj.card[7] + "$";
+        hotelcost.innerHTML = fleetStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + fleetStreetObj.price + "$";
+    } else if (turn == 1 && carM == 24 || turn == 2 && shoeM == 24 || turn == 3 && hatM == 24 || turn == 4 && dogM == 24) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = trafSquareObj.name;
+        cardName.style.backgroundColor = "rgb(240, 50, 16)";
+        siteonly.innerHTML = trafSquareObj.card[0] + "$";
+        house1.innerHTML = trafSquareObj.card[1] + "$";
+        house2.innerHTML = trafSquareObj.card[2] + "$";
+        house3.innerHTML = trafSquareObj.card[3] + "$";
+        house4.innerHTML = trafSquareObj.card[4] + "$";
+        hotel.innerHTML = trafSquareObj.card[5] + "$";
+        mortgage.innerHTML = trafSquareObj.card[6] + "$";
+        housecost.innerHTML = trafSquareObj.card[7] + "$";
+        hotelcost.innerHTML = trafSquareObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + trafSquareObj.price + "$";
+    } else if (turn == 1 && carM == 25 || turn == 2 && shoeM == 25 || turn == 3 && hatM == 25 || turn == 4 && dogM == 25) {
+        // cardVisible.style.display = "grid";
+            // st3
+
+    } else if (turn == 1 && carM == 26 || turn == 2 && shoeM == 26 || turn == 3 && hatM == 26 || turn == 4 && dogM == 26) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = LeicSquareObj.name;
+        cardName.style.backgroundColor = "rgb(240, 236, 16)";
+        siteonly.innerHTML = LeicSquareObj.card[0] + "$";
+        house1.innerHTML = LeicSquareObj.card[1] + "$";
+        house2.innerHTML = LeicSquareObj.card[2] + "$";
+        house3.innerHTML = LeicSquareObj.card[3] + "$";
+        house4.innerHTML = LeicSquareObj.card[4] + "$";
+        hotel.innerHTML = LeicSquareObj.card[5] + "$";
+        mortgage.innerHTML = LeicSquareObj.card[6] + "$";
+        housecost.innerHTML = LeicSquareObj.card[7] + "$";
+        hotelcost.innerHTML = LeicSquareObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + LeicSquareObj.price + "$";
+    } else if (turn == 1 && carM == 27 || turn == 2 && shoeM == 27 || turn == 3 && hatM == 27 || turn == 4 && dogM == 27) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = CovStreetObj.name;
+        cardName.style.backgroundColor = "rgb(240, 236, 16)";
+        siteonly.innerHTML = CovStreetObj.card[0] + "$";
+        house1.innerHTML = CovStreetObj.card[1] + "$";
+        house2.innerHTML = CovStreetObj.card[2] + "$";
+        house3.innerHTML = CovStreetObj.card[3] + "$";
+        house4.innerHTML = CovStreetObj.card[4] + "$";
+        hotel.innerHTML = CovStreetObj.card[5] + "$";
+        mortgage.innerHTML = CovStreetObj.card[6] + "$";
+        housecost.innerHTML = CovStreetObj.card[7] + "$";
+        hotelcost.innerHTML = CovStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + CovStreetObj.price + "$";
+    } else if (turn == 1 && carM == 28 || turn == 2 && shoeM == 28 || turn == 3 && hatM == 28 || turn == 4 && dogM == 28) {
+        // cardVisible.style.display = "grid";
+            // waterworks
+
+    } else if (turn == 1 && carM == 29 || turn == 2 && shoeM == 29 || turn == 3 && hatM == 29 || turn == 4 && dogM == 29) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = PiccStreetObj.name;
+        cardName.style.backgroundColor = "rgb(240, 236, 16)";
+        siteonly.innerHTML = PiccStreetObj.card[0] + "$";
+        house1.innerHTML = PiccStreetObj.card[1] + "$";
+        house2.innerHTML = PiccStreetObj.card[2] + "$";
+        house3.innerHTML = PiccStreetObj.card[3] + "$";
+        house4.innerHTML = PiccStreetObj.card[4] + "$";
+        hotel.innerHTML = PiccStreetObj.card[5] + "$";
+        mortgage.innerHTML = PiccStreetObj.card[6] + "$";
+        housecost.innerHTML = PiccStreetObj.card[7] + "$";
+        hotelcost.innerHTML = PiccStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + PiccStreetObj.price + "$";
+    } else if (turn == 1 && carM == 30 || turn == 2 && shoeM == 30 || turn == 3 && hatM == 30 || turn == 4 && dogM == 30) {
+        // cardVisible.style.display = "grid";
+            // gotojail
+
+    } else if (turn == 1 && carM == 31 || turn == 2 && shoeM == 31 || turn == 3 && hatM == 31 || turn == 4 && dogM == 31) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = regentStreetObj.name;
+        cardName.style.backgroundColor = "rgb(11, 165, 70)";
+        siteonly.innerHTML = regentStreetObj.card[0] + "$";
+        house1.innerHTML = regentStreetObj.card[1] + "$";
+        house2.innerHTML = regentStreetObj.card[2] + "$";
+        house3.innerHTML = regentStreetObj.card[3] + "$";
+        house4.innerHTML = regentStreetObj.card[4] + "$";
+        hotel.innerHTML = regentStreetObj.card[5] + "$";
+        mortgage.innerHTML = regentStreetObj.card[6] + "$";
+        housecost.innerHTML = regentStreetObj.card[7] + "$";
+        hotelcost.innerHTML = regentStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + regentStreetObj.price + "$";
+    } else if (turn == 1 && carM == 32 || turn == 2 && shoeM == 32 || turn == 3 && hatM == 32 || turn == 4 && dogM == 32) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = oxfordStreetObj.name;
+        cardName.style.backgroundColor = "rgb(11, 165, 70)";
+        siteonly.innerHTML = oxfordStreetObj.card[0] + "$";
+        house1.innerHTML = oxfordStreetObj.card[1] + "$";
+        house2.innerHTML = oxfordStreetObj.card[2] + "$";
+        house3.innerHTML = oxfordStreetObj.card[3] + "$";
+        house4.innerHTML = oxfordStreetObj.card[4] + "$";
+        hotel.innerHTML = oxfordStreetObj.card[5] + "$";
+        mortgage.innerHTML = oxfordStreetObj.card[6] + "$";
+        housecost.innerHTML = oxfordStreetObj.card[7] + "$";
+        hotelcost.innerHTML = oxfordStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + oxfordStreetObj.price + "$";
+    } else if (turn == 1 && carM == 33 || turn == 2 && shoeM == 33 || turn == 3 && hatM == 33 || turn == 4 && dogM == 33) {
+        // cardVisible.style.display = "grid";
+            // comchest3
+
+    } else if (turn == 1 && carM == 34 || turn == 2 && shoeM == 34 || turn == 3 && hatM == 34 || turn == 4 && dogM == 34) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = bondStreetObj.name;
+        cardName.style.backgroundColor = "rgb(11, 165, 70)";
+        siteonly.innerHTML = bondStreetObj.card[0] + "$";
+        house1.innerHTML = bondStreetObj.card[1] + "$";
+        house2.innerHTML = bondStreetObj.card[2] + "$";
+        house3.innerHTML = bondStreetObj.card[3] + "$";
+        house4.innerHTML = bondStreetObj.card[4] + "$";
+        hotel.innerHTML = bondStreetObj.card[5] + "$";
+        mortgage.innerHTML = bondStreetObj.card[6] + "$";
+        housecost.innerHTML = bondStreetObj.card[7] + "$";
+        hotelcost.innerHTML = bondStreetObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + bondStreetObj.price + "$";
+    } else if (turn == 1 && carM == 35 || turn == 2 && shoeM == 35 || turn == 3 && hatM == 35 || turn == 4 && dogM == 35) {
+        // cardVisible.style.display = "grid";
+            // st4
+
+    } else if (turn == 1 && carM == 36 || turn == 2 && shoeM == 36 || turn == 3 && hatM == 36 || turn == 4 && dogM == 36) {
+        // cardVisible.style.display = "grid";
+            // chanse3
+
+    } else if (turn == 1 && carM == 37 || turn == 2 && shoeM == 37 || turn == 3 && hatM == 37 || turn == 4 && dogM == 37) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = parkLaneObj.name;
+        cardName.style.backgroundColor = "rgb(116, 86, 172)";
+        siteonly.innerHTML = parkLaneObj.card[0] + "$";
+        house1.innerHTML = parkLaneObj.card[1] + "$";
+        house2.innerHTML = parkLaneObj.card[2] + "$";
+        house3.innerHTML = parkLaneObj.card[3] + "$";
+        house4.innerHTML = parkLaneObj.card[4] + "$";
+        hotel.innerHTML = parkLaneObj.card[5] + "$";
+        mortgage.innerHTML = parkLaneObj.card[6] + "$";
+        housecost.innerHTML = parkLaneObj.card[7] + "$";
+        hotelcost.innerHTML = parkLaneObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + parkLaneObj.price + "$";
+    } else if (turn == 1 && carM == 38 || turn == 2 && shoeM == 38 || turn == 3 && hatM == 38 || turn == 4 && dogM == 38) {
+        // cardVisible.style.display = "grid";
+            // supertax
+
+    } else if (turn == 1 && carM == 39 || turn == 2 && shoeM == 39 || turn == 3 && hatM == 39 || turn == 4 && dogM == 39) {
+        cardVisible.style.display = "grid";
+        cardName.innerHTML = mayFairObj.name;
+        cardName.style.backgroundColor = "rgb(116, 86, 172)";
+        siteonly.innerHTML = mayFairObj.card[0] + "$";
+        house1.innerHTML = mayFairObj.card[1] + "$";
+        house2.innerHTML = mayFairObj.card[2] + "$";
+        house3.innerHTML = mayFairObj.card[3] + "$";
+        house4.innerHTML = mayFairObj.card[4] + "$";
+        hotel.innerHTML = mayFairObj.card[5] + "$";
+        mortgage.innerHTML = mayFairObj.card[6] + "$";
+        housecost.innerHTML = mayFairObj.card[7] + "$";
+        hotelcost.innerHTML = mayFairObj.card[8] + "$";
+        buyText.innerHTML = "Buy for " + mayFairObj.price + "$";
+    }
+}
 
 
 function getTurn() {
@@ -960,7 +1453,7 @@ function goToSquare() {
         if (turn === 1) {
             
                 if (two) {
-                
+                    
                     console.log(fieldObj[carM]);
                     car.style.position = "absolute";
                     carM += 2;
