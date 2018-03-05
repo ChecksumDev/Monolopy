@@ -45,11 +45,11 @@ roll.addEventListener('click', function() {
     audio.volume = 0.4;
     rollDice1();
     rollDice2();
-    getTurn();
     console.log(turn);
     setTimeout(function(){ goToSquare(); }, 2900);
     setTimeout(function(){ showCard(); }, 3200);
-    setTimeout(function(){ tec(); }, 3300);
+    setTimeout(function(){ showPay(); }, 3200);
+    // setTimeout(function(){ tec(); }, 3300);
 }, false);
 
 let diceNumber1 = [
@@ -112,19 +112,19 @@ let start = document.getElementById('start'),
         cords: [
             // car //
             "1223px",
-            "1300px",
+            "1310px",
             // shoe //
             "1280px",
-            "1300px",
+            "1310px",
             // hat //
             "1223px",
-            "1355px",
+            "1365px",
             // dog //
             "1280px",
-            "1355px"]
+            "1365px"]
     };
 
-let oldKent = document.getElementById('oldKent'),
+let oldKent = document.getElementById('oldKentH'),
     oldKentObj = {
         owned: "Not Owned",
         name: "Old Kent Road",
@@ -134,16 +134,16 @@ let oldKent = document.getElementById('oldKent'),
         cords: [
             // car //
             "1103px",
-            "1300px",
+            "1310px",
             // shoe //
             "1160px",
-            "1300px",
+            "1310px",
             // hat //
             "1103px",
-            "1355px",
+            "1365px",
             // dog //
             "1160px",
-            "1355px"]
+            "1365px"]
     };
 
 let comChest1 = document.getElementById('comChest1'),
@@ -152,19 +152,19 @@ let comChest1 = document.getElementById('comChest1'),
         cords: [
             // car //
             "988px",
-            "1300px",
+            "1310px",
             // shoe //
             "1046px",
-            "1300px",
+            "1310px",
             // hat //
             "988px",
-            "1355px",
+            "1365px",
             // dog //
             "1046px",
-            "1355px"]
+            "1365px"]
     };
 
-let whiteRoad = document.getElementById('whiteRoad'),
+let whiteRoad = document.getElementById('whiteRoadH'),
     whiteRoadObj = {
         owned: "Not Owned",
         name: "Whitechapel Road",
@@ -174,16 +174,16 @@ let whiteRoad = document.getElementById('whiteRoad'),
         cords: [
             // car //
             "868px",
-            "1300px",
+            "1310px",
             // shoe //
             "928px",
-            "1300px",
+            "1310px",
             // hat //
             "868px",
-            "1355px",
+            "1365px",
             // dog //
             "928px",
-            "1355px"]
+            "1365px"]
     };
 
 let incTax1 = document.getElementById('incTax1'),
@@ -192,41 +192,41 @@ let incTax1 = document.getElementById('incTax1'),
         cords: [
             // car //
             "740px",
-            "1300px",
+            "1310px",
             // shoe //
             "800px",
-            "1300px",
+            "1310px",
             // hat //
             "740px",
-            "1355px",
+            "1365px",
             // dog //
             "800px",
-            "1355px"]
+            "1365px"]
     };
 
-let st1 = document.getElementById('st1'),
+let st1 = document.getElementById('st1H'),
     st1Obj = {
         owned: "Not Owned",
         name: "Marylebon Station",
         price: "200",
-        card: ["4" ,"20" ,"6$" ,"180" ,
-        "320" ,"450" ,"MORTGAGE value 100" ],
+        card: ["100" ,"200" ,"300$" ,"400" ,
+        "MORTGAGE value 100" ],
         cords: [
             // car //
             "622px",
-            "1300px",
+            "1310px",
             // shoe //
             "680px",
-            "1300px",
+            "1310px",
             // hat //
             "622px",
-            "1355px",
+            "1365px",
             // dog //
             "680px",
-            "1355px"]
+            "1365px"]
     };
 
-let theAngel = document.getElementById('theAngel'),
+let theAngel = document.getElementById('theAngelH'),
     theAngelObj = {
         owned: "Not Owned",
         name: "The Angel Inslington",
@@ -236,16 +236,16 @@ let theAngel = document.getElementById('theAngel'),
         cords: [
             // car //
             "500px",
-            "1300px",
+            "1310px",
             // shoe //
             "560px",
-            "1300px",
+            "1310px",
             // hat //
             "500px",
-            "1355px",
+            "1365px",
             // dog //
             "560px",
-            "1355px"]
+            "1365px"]
     };
 
 let chanse1 = document.getElementById('chanse1'),
@@ -254,19 +254,19 @@ let chanse1 = document.getElementById('chanse1'),
         cords: [
             // car //
             "377px",
-            "1300px",
+            "1310px",
             // shoe //
             "437px",
-            "1300px",
+            "1310px",
             // hat //
             "377px",
-            "1355px",
+            "1365px",
             // dog //
             "437px",
-            "1355px"]
+            "1365px"]
     };
 
-let eustonRoad = document.getElementById('eustonRoad'),
+let eustonRoad = document.getElementById('eustonRoadH'),
     eustonRoadObj = {
         owned: "Not Owned",
         name: "Euston Road",
@@ -276,19 +276,19 @@ let eustonRoad = document.getElementById('eustonRoad'),
         cords: [
             // car //
             "250px",
-            "1300px",
+            "1310px",
             // shoe //
             "310px",
-            "1300px",
+            "1310px",
             // hat //
             "250px",
-            "1355px",
+            "1365px",
             // dog //
             "310px",
-            "1355px"]
+            "1365px"]
     };
 
-let pentonRoad = document.getElementById('pentonRoad'),
+let pentonRoad = document.getElementById('pentonRoadH'),
     pentonRoadObj = {
         owned: "Not Owned",
         name: "Pentonvile Road",
@@ -298,16 +298,16 @@ let pentonRoad = document.getElementById('pentonRoad'),
         cords: [
             // car //
             "120px",
-            "1300px",
+            "1310px",
             // shoe //
             "180px",
-            "1300px",
+            "1310px",
             // hat //
             "120px",
-            "1355px",
+            "1365px",
             // dog //
             "180px",
-            "1355px"]
+            "1365px"]
     };
 
 let jail = document.getElementById('jail'),
@@ -328,7 +328,7 @@ let jail = document.getElementById('jail'),
             "1355px"]
     };
 
-let palMal = document.getElementById('palMal'),
+let palMal = document.getElementById('palMalH'),
     palMalObj = {
         owned: "Not Owned",
         name: "Pal Mal Street",
@@ -368,7 +368,7 @@ let eCompany1 = document.getElementById('eCompany1'),
             "1105px"]
     };
 
-let whiteHall = document.getElementById('whiteHall'),
+let whiteHall = document.getElementById('whiteHallH'),
     whiteHallObj = {
         name: "Whitehall Street",
         price: "150",
@@ -389,7 +389,7 @@ let whiteHall = document.getElementById('whiteHall'),
             "985px"]
     };
 
-let northLimber = document.getElementById('northLiber'),
+let northLimber = document.getElementById('northLimberH'),
     northLimberObj = {
         name: "Northlimberian Road",
         price: "160",
@@ -410,11 +410,13 @@ let northLimber = document.getElementById('northLiber'),
             "855px"]
     };
 
-let st2 = document.getElementById('st2'),
+let st2 = document.getElementById('st2H'),
     st2Obj = {
         owned: "Not Owned",
         name: "Fenchurch Station",
-        price: "50",
+        price: "200",
+        card: ["100" ,"200" ,"300$" ,"400" ,
+        "MORTGAGE value 100" ],
         cords: [
             // car //
             "6px",
@@ -430,7 +432,7 @@ let st2 = document.getElementById('st2'),
             "725px"]
     };
 
-let bowStreet = document.getElementById('bowStreet'),
+let bowStreet = document.getElementById('bowStreetH'),
     bowStreetObj = {
         owned: "Not Owned",
         name: "Bow Street",
@@ -470,7 +472,7 @@ let comChest2 = document.getElementById('comChest2'),
             "465px"]
     };
 
-let malborStreet = document.getElementById('malborStreet'),
+let malborStreet = document.getElementById('malborStreetH'),
     malborStreetObj = {
         owned: "Not Owned",
         name: "Malborough Street",
@@ -480,19 +482,19 @@ let malborStreet = document.getElementById('malborStreet'),
         cords: [
             // car //
             "6px",
-            "280px",
+            "290px",
             // shoe //
             "62px",
-            "280px",
+            "290px",
             // hat //
             "6px",
-            "335px",
+            "345px",
             // dog //
             "62px",
-            "335px"]
+            "345px"]
     };
 
-let vineStreet = document.getElementById('vineStreet'),
+let vineStreet = document.getElementById('vineStreetH'),
     vineStreetObj = {
         owned: "Not Owned",
         name: "Vine Street",
@@ -502,16 +504,16 @@ let vineStreet = document.getElementById('vineStreet'),
         cords: [
             // car //
             "6px",
-            "150px",
+            "160px",
             // shoe //
             "62px",
-            "150px",
+            "160px",
             // hat //
             "6px",
-            "205px",
+            "215px",
             // dog //
             "62px",
-            "205px"]
+            "215px"]
     };
 
 let parking = document.getElementById('parking'),
@@ -532,7 +534,7 @@ let parking = document.getElementById('parking'),
             "85px"]
     };
 
-let strandStreet = document.getElementById('strandStreet'),
+let strandStreet = document.getElementById('strandStreetH'),
     strandStreetObj = {
         owned: "Not Owned",
         name: "Strand Street",
@@ -572,7 +574,7 @@ let chanse2 = document.getElementById('chanse2'),
             "85px"]
     };
 
-let fleetStreet = document.getElementById('fleetStreet'),
+let fleetStreet = document.getElementById('fleetStreetH'),
     fleetStreetObj = {
         owned: "Not Owned",
         name: "Fleet Street",
@@ -594,7 +596,7 @@ let fleetStreet = document.getElementById('fleetStreet'),
             "85px"]
     };
 
-let trafSquare = document.getElementById('trafSquare'),
+let trafSquare = document.getElementById('trafSquareH'),
     trafSquareObj = {
         owned: "Not Owned",
         name: "Trafalguare Square",
@@ -616,11 +618,13 @@ let trafSquare = document.getElementById('trafSquare'),
             "85px"]
     };
 
-let st3 = document.getElementById('st3'),
+let st3 = document.getElementById('st3H'),
     st3Obj = {
         owned: "Not Owned",
         name: "Kings Cross Station",
-        price: "50",
+        price: "200",
+        card: ["100" ,"200" ,"300$" ,"400" ,
+        "MORTGAGE value 100" ],
         cords: [
             // car //
             "622px",
@@ -636,7 +640,7 @@ let st3 = document.getElementById('st3'),
             "85px"]
     };
 
-let LeicSquare = document.getElementById('LeicSquare'),
+let LeicSquare = document.getElementById('LeicSquareH'),
     LeicSquareObj = {
         owned: "Not Owned",
         name: "Leicester Square",
@@ -658,7 +662,7 @@ let LeicSquare = document.getElementById('LeicSquare'),
             "85px"]
     };
 
-let CovStreet = document.getElementById('CovStreet'),
+let CovStreet = document.getElementById('CovStreetH'),
     CovStreetObj = {
         owned: "Not Owned",
         name: "Coventry Street",
@@ -698,7 +702,7 @@ let waterWorks = document.getElementById('waterWorks'),
             "85px"]
     };
 
-let PiccStreet = document.getElementById('PiccStreet'),
+let PiccStreet = document.getElementById('PiccStreetH'),
     PiccStreetObj = {
         owned: "Not Owned",
         name: "Piccadilly Street",
@@ -738,7 +742,7 @@ let goToJail = document.getElementById('goToJail'),
             "85px"]
     };
 
-let regentStreet = document.getElementById('regentStreet'),
+let regentStreet = document.getElementById('regentStreetH'),
     regentStreetObj = {
         owned: "Not Owned",
         name: "Regent Street",
@@ -748,19 +752,19 @@ let regentStreet = document.getElementById('regentStreet'),
         cords: [
             // car //
             "1223px",
-            "150px",
+            "160px",
             // shoe //
             "1280px",
-            "150px",
+            "160px",
             // hat //
             "1223px",
-            "205px",
+            "215px",
             // dog //
             "1280px",
-            "205px"]
+            "215px"]
     };
 
-let oxfordStreet = document.getElementById('oxfordStreet'),
+let oxfordStreet = document.getElementById('oxfordStreetH'),
     oxfordStreetObj = {
         owned: "Not Owned",
         name: "Oxford Street",
@@ -770,16 +774,16 @@ let oxfordStreet = document.getElementById('oxfordStreet'),
         cords: [
             // car //
             "1223px",
-            "280px",
+            "290px",
             // shoe //
             "1280px",
-            "280px",
+            "290px",
             // hat //
             "1223px",
-            "335px",
+            "345px",
             // dog //
             "1280px",
-            "335px"]
+            "345px"]
     };
 
 let comChest3 = document.getElementById('comChest3'),
@@ -800,7 +804,7 @@ let comChest3 = document.getElementById('comChest3'),
             "465px"]
     };
 
-let bondStreet = document.getElementById('bondStreet'),
+let bondStreet = document.getElementById('bondStreetH'),
     bondStreetObj = {
         owned: "Not Owned",
         name: "Bond Street",
@@ -822,11 +826,13 @@ let bondStreet = document.getElementById('bondStreet'),
             "595px"]
     };
 
-let st4 = document.getElementById('st4'),
+let st4 = document.getElementById('st4H'),
     st4Obj = {
         owned: "Not Owned",
         name: "Liverpool Station",
-        price: "50",
+        price: "200",
+        card: ["100" ,"200" ,"300$" ,"400" ,
+        "MORTGAGE value 100" ],
         cords: [
             // car //
             "1223px",
@@ -860,7 +866,7 @@ let chanse3 = document.getElementById('chanse3'),
             "855px"]
     };
 
-let parkLane = document.getElementById('parkLane'),
+let parkLane = document.getElementById('parkLaneH'),
     parkLaneObj = {
         owned: "Not Owned",
         name: "Park Lane",
@@ -900,7 +906,7 @@ let superTax = document.getElementById('superTax'),
             "1105px"]
     };
 
-let mayFair = document.getElementById('mayFair'),
+let mayFair = document.getElementById('mayFairH'),
     mayFairObj = {
         owned: "Not Owned",
         name: "Mayfaire Street",
@@ -957,27 +963,224 @@ dog.addEventListener('click', function () {
     // Button functionality when GAME-CARD is shown 
 let buy = document.getElementById('buy'),
     pass = document.getElementById('pass'),
-    cardVisible = document.getElementById('cardOptions');
+    pay = document.getElementById('pay'),
+    cardVisible = document.getElementById('cardOptions'),
+    turnText = document.getElementById('turnText');
+
+    // Car Score Board
+let carBallance = document.getElementById('carBallance'),
+    carStreets = document.getElementById('carStreets'),
+    carHouses = document.getElementById('carHouses'),
+    carHotels = document.getElementById('carHotels');
+
+    // Shoe Score Board
+let shoeBallance = document.getElementById('shoeBallance'),
+    shoeStreets = document.getElementById('shoeStreets'),
+    shoeHouses = document.getElementById('shoeHouses'),
+    shoeHotels = document.getElementById('shoeHotels');
+
+    // Hat Score Board
+let hatBallance = document.getElementById('hatBallance'),
+    hatStreets = document.getElementById('hatStreets'),
+    hatHouses = document.getElementById('hatHouses'),
+    hatHotels = document.getElementById('hatHotels');
     
+    // Dog Score Board
+let dogBallance = document.getElementById('dogBallance'),
+    dogStreets = document.getElementById('dogStreets'),
+    dogHouses = document.getElementById('dogHouses'),
+    dogHotels = document.getElementById('dogHotels');
 
+    // Pass Button Functionality
 pass.addEventListener('click', function() {
-    cardVisible.style.display = "none";
+    if (turn == 0) {
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Car Turn !";
+        } else {
+            turnText.innerHTML = "It's Shoe Turn !";
+        }
+        
+    } else if (turn == 1) {
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+       
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Shoe Turn !";
+        } else {
+            turnText.innerHTML = "It's Hat Turn !";
+        }
+            
+    } else if (turn == 2) {
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+        
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Hat Turn !";
+        } else {
+            turnText.innerHTML = "It's Dog Turn !";
+        }
+         
+    } else if (turn == 3) {
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+        
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Dog Turn !";
+        } else {
+            turnText.innerHTML = "It's Car Turn !";
+        }
+    }
 }, false);
 
+
+    // Buy Button Functionality
 buy.addEventListener('click', function(){
+    if (turn == 0 && field[carM].innerHTML == "Not owned") {
+        carStreets++;
+        field[carM].innerHTML = carObj.name;
+        carBallance.innerHTML = (carObj.cash - fieldObj[carM].price) + " $";
+        carObj.cash = carObj.cash - fieldObj[carM].price;
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
 
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Car Turn !";
+        } else {
+            turnText.innerHTML = "It's Shoe Turn !";
+        }
+
+    } else if (turn == 1 && field[shoeM].innerHTML == "Not owned") {
+        shoeStreets++;
+        field[shoeM].innerHTML = shoeObj.name;
+        shoeBallance.innerHTML = (shoeObj.cash - fieldObj[shoeM].price) + " $";
+        shoeObj.cash = shoeObj.cash - fieldObj[shoeM].price;
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+       
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Shoe Turn !";
+        } else {
+            turnText.innerHTML = "It's Hat Turn !";
+        }
+
+    } else if (turn == 2 && field[hatM].innerHTML == "Not owned") {
+        hatStreets++;
+        field[hatM].innerHTML = hatObj.name;
+        hatBallance.innerHTML = (hatObj.cash - fieldObj[hatM].price) + " $";
+        hatObj.cash = hatObj.cash - fieldObj[hatM].price;
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+        
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Hat Turn !";
+        } else {
+            turnText.innerHTML = "It's Dog Turn !";
+        }
+
+    } else if (turn == 3 && field[dogM].innerHTML == "Not owned") {
+        dogStreets++;
+        field[dogM].innerHTML = dogObj.name;
+        dogBallance.innerHTML = (dogObj.cash - fieldObj[dogM].price) + " $";
+        dogObj.cash = dogObj.cash - fieldObj[dogM].price;
+        cardVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+        
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Dog Turn !";
+        } else {
+            turnText.innerHTML = "It's Car Turn !";
+        }
+    }
 }, false);
+
+pay.addEventListener('click', function(){
+let payVisible = document.getElementById('payOptions');
+    if (turn == 0) {
+        carBallance.innerHTML = (carObj.cash - fieldObj[carM].card[0]) + " $";
+        carObj.cash = carObj.cash - fieldObj[carM].card[0];
+        payVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Car Turn !";
+        } else {
+            turnText.innerHTML = "It's Shoe Turn !";
+        }
+
+    } else if (turn == 1) {
+        shoeBallance.innerHTML = (shoeObj.cash - fieldObj[shoeM].card[0]) + " $";
+        shoeObj.cash = shoeObj.cash - fieldObj[shoeM].card[0];
+        payVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+       
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Shoe Turn !";
+        } else {
+            turnText.innerHTML = "It's Hat Turn !";
+        }
+
+    } else if (turn == 2) {
+        hatBallance.innerHTML = (hatObj.cash - fieldObj[hatM].card[0]) + " $";
+        hatObj.cash = hatObj.cash - fieldObj[hatM].card[0];
+        payVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+        
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Hat Turn !";
+        } else {
+            turnText.innerHTML = "It's Dog Turn !";
+        }
+
+    } else if (turn == 3) {
+        dogBallance.innerHTML = (dogObj.cash - fieldObj[dogM].card[0]) + " $";
+        dogObj.cash = dogObj.cash - fieldObj[dogM].card[0];
+        payVisible.style.display = "none";
+        setTimeout(function(){ getTurn(); }, 200);
+        setTimeout(function(){ tec(); }, 100);
+        
+        if ( tec() ) {
+            turn -= 1;
+            turnText.innerHTML = "It's Dog Turn !";
+        } else {
+            turnText.innerHTML = "It's Car Turn !";
+        }
+    }
+}, false)
 
 const field = [
-    square[39], square[38], square[37], square[36], square[35], 
-    square[34], square[33], square[32], square[31], square[30], 
-    square[29], square[27], square[25], square[23], square[21], 
-    square[19], square[17], square[15], square[13], square[11],
-    square[0], square[1], square[2], square[3], square[4], 
-    square[5], square[6], square[7], square[8], square[9], 
-    square[10], square[12], square[14], square[16], square[18], 
-    square[20], square[22], square[24], square[26], square[28]
-];
+    start, oldKent, comChest1, whiteRoad, incTax1,
+    st1, theAngel, chanse1, eustonRoad, pentonRoad,
+    jail, palMal, eCompany1, whiteHall, northLimber,
+    st2, bowStreet, comChest2, malborStreet, vineStreet,
+    parkingObj, strandStreet, chanse2, fleetStreet, trafSquare,
+    st3, LeicSquare, CovStreet, waterWorks, PiccStreet,
+    goToJail, regentStreet, oxfordStreet, comChest3, bondStreet,
+    st4, chanse3, parkLane, superTax, mayFair];
 
 const fieldObj = [
     startObj, oldKentObj, comChest1Obj, whiteRoadObj, incTax1Obj,
@@ -997,7 +1200,7 @@ const fieldObj = [
     turn = 0;
 
 
-
+    // Showing buy card options
 function showCard() {
     let cardName = document.getElementById('cardName'),
         siteonly = document.getElementById('siteOnly'),
@@ -1013,7 +1216,7 @@ function showCard() {
         buyText = document.getElementById('buyText'),
         passText = document.getElementById('passText');
 
-    if (turn == 1 && carM == 1 || turn == 2 && shoeM == 1 || turn == 3 && hatM == 1 || turn == 4 && dogM == 1) {
+    if (turn == 0 && carM == 1 || turn == 1 && shoeM == 1 || turn == 2 && hatM == 1 || turn == 3 && dogM == 1) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = oldKentObj.name;
         cardName.style.backgroundColor = "rgb(133, 76, 23)";
@@ -1027,11 +1230,11 @@ function showCard() {
         housecost.innerHTML = oldKentObj.card[7] + "$";
         hotelcost.innerHTML = oldKentObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + oldKentObj.price + "$";
-    } else if (turn == 1 && carM == 2 || turn == 2 && shoeM == 2 || turn == 3 && hatM == 2 || turn == 4 && dogM == 2) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 2 || turn == 1 && shoeM == 2 || turn == 2 && hatM == 2 || turn == 3 && dogM == 2) {
+        cardVisible.style.display = "grid";
             // comchest1
 
-    } else if (turn == 1 && carM == 3 || turn == 2 && shoeM == 3 || turn == 3 && hatM == 3 || turn == 4 && dogM == 3) {
+    } else if (turn == 0 && carM == 3 || turn == 1 && shoeM == 3 || turn == 2 && hatM == 3 || turn == 3 && dogM == 3) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = whiteHallObj.name;
         cardName.style.backgroundColor = "rgb(133, 76, 23)";
@@ -1045,15 +1248,27 @@ function showCard() {
         housecost.innerHTML = whiteRoadObj.card[7] + "$";
         hotelcost.innerHTML = whiteRoadObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + whiteRoadObj.price + "$";
-    } else if (turn == 1 && carM == 4 || turn == 2 && shoeM == 4 || turn == 3 && hatM == 4 || turn == 4 && dogM == 4) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 4 || turn == 1 && shoeM == 4 || turn == 2 && hatM == 4 || turn == 3 && dogM == 4) {
+        cardVisible.style.display = "grid";
             // incometax1
         
-    } else if (turn == 1 && carM == 5 || turn == 2 && shoeM == 5 || turn == 3 && hatM == 5 || turn == 4 && dogM == 5) {
-        // cardVisible.style.display = "grid";
-            // st1
+    } else if (turn == 0 && carM == 5 || turn == 1 && shoeM == 5 || turn == 2 && hatM == 5 || turn == 3 && dogM == 5) {
+        cardVisible.style.display = "grid";
+        // st1
+        cardName.innerHTML = st1Obj.name;
+        cardName.style.backgroundColor = "rgb(148, 148, 148)";
+        siteonly.innerHTML = st1Obj.card[0] + "$";
+        house1.innerHTML = "can't build";
+        house2.innerHTML = "can't build";
+        house3.innerHTML = "can't build";
+        house4.innerHTML = "can't build";
+        hotel.innerHTML = "can't build";
+        mortgage.innerHTML = st1Obj.card[4] + "$";
+        housecost.innerHTML = ",,";
+        hotelcost.innerHTML = ",,";
+        buyText.innerHTML = "Buy for " + st1Obj.price + "$";
 
-    } else if (turn == 1 && carM == 6 || turn == 2 && shoeM == 6 || turn == 3 && hatM == 6 || turn == 4 && dogM == 6) {
+    } else if (turn == 0 && carM == 6 || turn == 1 && shoeM == 6 || turn == 2 && hatM == 6 || turn == 3 && dogM == 6) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = theAngelObj.name;
         cardName.style.backgroundColor = "rgb(68, 188, 224)";
@@ -1067,11 +1282,11 @@ function showCard() {
         housecost.innerHTML = theAngelObj.card[7] + "$";
         hotelcost.innerHTML = theAngelObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + theAngelObj.price + "$";
-    }  else if (turn == 1 && carM == 7 || turn == 2 && shoeM == 7 || turn == 3 && hatM == 7 || turn == 4 && dogM == 7) {
-        // cardVisible.style.display = "grid";
+    }  else if (turn == 0 && carM == 7 || turn == 1 && shoeM == 7 || turn == 2 && hatM == 7 || turn == 3 && dogM == 7) {
+        cardVisible.style.display = "grid";
             // chanse1
         
-    } else if (turn == 1 && carM == 8 || turn == 2 && shoeM == 8 || turn == 3 && hatM == 8 || turn == 4 && dogM == 8) {
+    } else if (turn == 0 && carM == 8 || turn == 1 && shoeM == 8 || turn == 2 && hatM == 8 || turn == 3 && dogM == 8) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = eustonRoadObj.name;
         cardName.style.backgroundColor = "rgb(68, 188, 224)";
@@ -1085,7 +1300,7 @@ function showCard() {
         housecost.innerHTML = eustonRoadObj.card[7] + "$";
         hotelcost.innerHTML = eustonRoadObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + eustonRoadObj.price + "$";
-    } else if (turn == 1 && carM == 9 || turn == 2 && shoeM == 9 || turn == 3 && hatM == 9 || turn == 4 && dogM == 9) {
+    } else if (turn == 0 && carM == 9 || turn == 1 && shoeM == 9 || turn == 2 && hatM == 9 || turn == 3 && dogM == 9) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = pentonRoadObj.name;
         cardName.style.backgroundColor = "rgb(68, 188, 224)";
@@ -1099,11 +1314,11 @@ function showCard() {
         housecost.innerHTML = pentonRoadObj.card[7] + "$";
         hotelcost.innerHTML = pentonRoadObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + pentonRoadObj.price + "$";
-    } else if (turn == 1 && carM == 10 || turn == 2 && shoeM == 10 || turn == 3 && hatM == 10 || turn == 4 && dogM == 10) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 10 || turn == 1 && shoeM == 10 || turn == 2 && hatM == 10 || turn == 3 && dogM == 10) {
+        cardVisible.style.display = "grid";
             // jail
 
-    } else if (turn == 1 && carM == 11 || turn == 2 && shoeM == 11 || turn == 3 && hatM == 11 || turn == 4 && dogM == 11) {
+    } else if (turn == 0 && carM == 11 || turn == 1 && shoeM == 11 || turn == 2 && hatM == 11 || turn == 3 && dogM == 11) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = palMalObj.name;
         cardName.style.backgroundColor = "rgb(224, 68, 211)";
@@ -1117,11 +1332,11 @@ function showCard() {
         housecost.innerHTML = palMalObj.card[7] + "$";
         hotelcost.innerHTML = palMalObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + palMalObj.price + "$";
-    } else if (turn == 1 && carM == 12 || turn == 2 && shoeM == 12 || turn == 3 && hatM == 12 || turn == 4 && dogM == 12) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 12 || turn == 1 && shoeM == 12 || turn == 2 && hatM == 12 || turn == 3 && dogM == 12) {
+        cardVisible.style.display = "grid";
         // ecompany1
 
-    } else if (turn == 1 && carM == 13 || turn == 2 && shoeM == 13 || turn == 3 && hatM == 13 || turn == 4 && dogM == 13) {
+    } else if (turn == 0 && carM == 13 || turn == 1 && shoeM == 13 || turn == 2 && hatM == 13 || turn == 3 && dogM == 13) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = whiteHallObj.name;
         cardName.style.backgroundColor = "rgb(224, 68, 211)";
@@ -1135,7 +1350,7 @@ function showCard() {
         housecost.innerHTML = whiteHallObj.card[7] + "$";
         hotelcost.innerHTML = whiteHallObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + whiteHallObj.price + "$";
-    } else if (turn == 1 && carM == 14 || turn == 2 && shoeM == 14 || turn == 3 && hatM == 14 || turn == 4 && dogM == 14) {
+    } else if (turn == 0 && carM == 14 || turn == 1 && shoeM == 14 || turn == 2 && hatM == 14 || turn == 3 && dogM == 14) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = northLimberObj.name;
         cardName.style.backgroundColor = "rgb(224, 68, 211)";
@@ -1149,11 +1364,23 @@ function showCard() {
         housecost.innerHTML = northLimberObj.card[7] + "$";
         hotelcost.innerHTML = northLimberObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + northLimberObj.price + "$";
-    } else if (turn == 1 && carM == 15 || turn == 2 && shoeM == 15 || turn == 3 && hatM == 15 || turn == 4 && dogM == 15) {
-        // cardVisible.style.display = "grid";
-            // st2
+    } else if (turn == 0 && carM == 15 || turn == 1 && shoeM == 15 || turn == 2 && hatM == 15 || turn == 3 && dogM == 15) {
+        cardVisible.style.display = "grid";
+        // st2
+        cardName.innerHTML = st2Obj.name;
+        cardName.style.backgroundColor = "rgb(148, 148, 148)";
+        siteonly.innerHTML = st2Obj.card[0] + "$";
+        house1.innerHTML = "can't build";
+        house2.innerHTML = "can't build";
+        house3.innerHTML = "can't build";
+        house4.innerHTML = "can't build";
+        hotel.innerHTML = "can't build";
+        mortgage.innerHTML = st2Obj.card[4] + "$";
+        housecost.innerHTML = ",,";
+        hotelcost.innerHTML = ",,";
+        buyText.innerHTML = "Buy for " + st2Obj.price + "$";
 
-    } else if (turn == 1 && carM == 16 || turn == 2 && shoeM == 16 || turn == 3 && hatM == 16 || turn == 4 && dogM == 16) {
+    } else if (turn == 0 && carM == 16 || turn == 1 && shoeM == 16 || turn == 2 && hatM == 16 || turn == 3 && dogM == 16) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = bowStreetObj.name;
         cardName.style.backgroundColor = "rgb(240, 143, 16)";
@@ -1167,11 +1394,11 @@ function showCard() {
         housecost.innerHTML = bowStreetObj.card[7] + "$";
         hotelcost.innerHTML = bowStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + bowStreetObj.price + "$";
-    } else if (turn == 1 && carM == 17 || turn == 2 && shoeM == 17 || turn == 3 && hatM == 17 || turn == 4 && dogM == 17) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 17 || turn == 1 && shoeM == 17 || turn == 2 && hatM == 17 || turn == 3 && dogM == 17) {
+        cardVisible.style.display = "grid";
             // comchest2
 
-    } else if (turn == 1 && carM == 18 || turn == 2 && shoeM == 18 || turn == 3 && hatM == 18 || turn == 4 && dogM == 18) {
+    } else if (turn == 0 && carM == 18 || turn == 1 && shoeM == 18 || turn == 2 && hatM == 18 || turn == 3 && dogM == 18) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = malborStreetObj.name;
         cardName.style.backgroundColor = "rgb(240, 143, 16)";
@@ -1185,7 +1412,7 @@ function showCard() {
         housecost.innerHTML = malborStreetObj.card[7] + "$";
         hotelcost.innerHTML = malborStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + malborStreetObj.price + "$";
-    } else if (turn == 1 && carM == 19 || turn == 2 && shoeM == 19 || turn == 3 && hatM == 19 || turn == 4 && dogM == 19) {
+    } else if (turn == 0 && carM == 19 || turn == 1 && shoeM == 19 || turn == 2 && hatM == 19 || turn == 3 && dogM == 19) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = vineStreetObj.name;
         cardName.style.backgroundColor = "rgb(240, 143, 16)";
@@ -1199,11 +1426,11 @@ function showCard() {
         housecost.innerHTML = vineStreetObj.card[7] + "$";
         hotelcost.innerHTML = vineStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + vineStreetObj.price + "$";
-    } else if (turn == 1 && carM == 20 || turn == 2 && shoeM == 20 || turn == 3 && hatM == 20 || turn == 4 && dogM == 20) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 20 || turn == 1 && shoeM == 20 || turn == 2 && hatM == 20 || turn == 3 && dogM == 20) {
+        cardVisible.style.display = "grid";
             // parking
 
-    } else if (turn == 1 && carM == 21 || turn == 2 && shoeM == 21 || turn == 3 && hatM == 21 || turn == 4 && dogM == 21) {
+    } else if (turn == 0 && carM == 21 || turn == 1 && shoeM == 21 || turn == 2 && hatM == 21 || turn == 3 && dogM == 21) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = strandStreetObj.name;
         cardName.style.backgroundColor = "rgb(240, 50, 16)";
@@ -1217,11 +1444,11 @@ function showCard() {
         housecost.innerHTML = strandStreetObj.card[7] + "$";
         hotelcost.innerHTML = strandStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + strandStreetObj.price + "$";
-    } else if (turn == 1 && carM == 22 || turn == 2 && shoeM == 22 || turn == 3 && hatM == 22 || turn == 4 && dogM == 22) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 22 || turn == 1 && shoeM == 22 || turn == 2 && hatM == 22 || turn == 3 && dogM == 22) {
+        cardVisible.style.display = "grid";
             // chanse2
 
-    } else if (turn == 1 && carM == 23 || turn == 2 && shoeM == 23 || turn == 3 && hatM == 23 || turn == 4 && dogM == 23) {
+    } else if (turn == 0 && carM == 23 || turn == 1 && shoeM == 23 || turn == 2 && hatM == 23 || turn == 3 && dogM == 23) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = fleetStreetObj.name;
         cardName.style.backgroundColor = "rgb(240, 50, 16)";
@@ -1235,7 +1462,7 @@ function showCard() {
         housecost.innerHTML = fleetStreetObj.card[7] + "$";
         hotelcost.innerHTML = fleetStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + fleetStreetObj.price + "$";
-    } else if (turn == 1 && carM == 24 || turn == 2 && shoeM == 24 || turn == 3 && hatM == 24 || turn == 4 && dogM == 24) {
+    } else if (turn == 0 && carM == 24 || turn == 1 && shoeM == 24 || turn == 2 && hatM == 24 || turn == 3 && dogM == 24) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = trafSquareObj.name;
         cardName.style.backgroundColor = "rgb(240, 50, 16)";
@@ -1249,11 +1476,23 @@ function showCard() {
         housecost.innerHTML = trafSquareObj.card[7] + "$";
         hotelcost.innerHTML = trafSquareObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + trafSquareObj.price + "$";
-    } else if (turn == 1 && carM == 25 || turn == 2 && shoeM == 25 || turn == 3 && hatM == 25 || turn == 4 && dogM == 25) {
-        // cardVisible.style.display = "grid";
-            // st3
+    } else if (turn == 0 && carM == 25 || turn == 1 && shoeM == 25 || turn == 2 && hatM == 25 || turn == 3 && dogM == 25) {
+        cardVisible.style.display = "grid";
+        // st3
+        cardName.innerHTML = st3Obj.name;
+        cardName.style.backgroundColor = "rgb(148, 148, 148)";
+        siteonly.innerHTML = st3Obj.card[0] + "$";
+        house1.innerHTML = "can't build";
+        house2.innerHTML = "can't build";
+        house3.innerHTML = "can't build";
+        house4.innerHTML = "can't build";
+        hotel.innerHTML = "can't build";
+        mortgage.innerHTML = st3Obj.card[4] + "$";
+        housecost.innerHTML = ",,";
+        hotelcost.innerHTML = ",,";
+        buyText.innerHTML = "Buy for " + st3Obj.price + "$";
 
-    } else if (turn == 1 && carM == 26 || turn == 2 && shoeM == 26 || turn == 3 && hatM == 26 || turn == 4 && dogM == 26) {
+    } else if (turn == 0 && carM == 26 || turn == 1 && shoeM == 26 || turn == 2 && hatM == 26 || turn == 3 && dogM == 26) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = LeicSquareObj.name;
         cardName.style.backgroundColor = "rgb(240, 236, 16)";
@@ -1267,7 +1506,7 @@ function showCard() {
         housecost.innerHTML = LeicSquareObj.card[7] + "$";
         hotelcost.innerHTML = LeicSquareObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + LeicSquareObj.price + "$";
-    } else if (turn == 1 && carM == 27 || turn == 2 && shoeM == 27 || turn == 3 && hatM == 27 || turn == 4 && dogM == 27) {
+    } else if (turn == 0 && carM == 27 || turn == 1 && shoeM == 27 || turn == 2 && hatM == 27 || turn == 3 && dogM == 27) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = CovStreetObj.name;
         cardName.style.backgroundColor = "rgb(240, 236, 16)";
@@ -1281,11 +1520,11 @@ function showCard() {
         housecost.innerHTML = CovStreetObj.card[7] + "$";
         hotelcost.innerHTML = CovStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + CovStreetObj.price + "$";
-    } else if (turn == 1 && carM == 28 || turn == 2 && shoeM == 28 || turn == 3 && hatM == 28 || turn == 4 && dogM == 28) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 28 || turn == 1 && shoeM == 28 || turn == 2 && hatM == 28 || turn == 3 && dogM == 28) {
+        cardVisible.style.display = "grid";
             // waterworks
 
-    } else if (turn == 1 && carM == 29 || turn == 2 && shoeM == 29 || turn == 3 && hatM == 29 || turn == 4 && dogM == 29) {
+    } else if (turn == 0 && carM == 29 || turn == 1 && shoeM == 29 || turn == 2 && hatM == 29 || turn == 3 && dogM == 29) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = PiccStreetObj.name;
         cardName.style.backgroundColor = "rgb(240, 236, 16)";
@@ -1299,11 +1538,11 @@ function showCard() {
         housecost.innerHTML = PiccStreetObj.card[7] + "$";
         hotelcost.innerHTML = PiccStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + PiccStreetObj.price + "$";
-    } else if (turn == 1 && carM == 30 || turn == 2 && shoeM == 30 || turn == 3 && hatM == 30 || turn == 4 && dogM == 30) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 30 || turn == 1 && shoeM == 30 || turn == 2 && hatM == 30 || turn == 3 && dogM == 30) {
+        cardVisible.style.display = "grid";
             // gotojail
 
-    } else if (turn == 1 && carM == 31 || turn == 2 && shoeM == 31 || turn == 3 && hatM == 31 || turn == 4 && dogM == 31) {
+    } else if (turn == 0 && carM == 31 || turn == 1 && shoeM == 31 || turn == 2 && hatM == 31 || turn == 3 && dogM == 31) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = regentStreetObj.name;
         cardName.style.backgroundColor = "rgb(11, 165, 70)";
@@ -1317,7 +1556,7 @@ function showCard() {
         housecost.innerHTML = regentStreetObj.card[7] + "$";
         hotelcost.innerHTML = regentStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + regentStreetObj.price + "$";
-    } else if (turn == 1 && carM == 32 || turn == 2 && shoeM == 32 || turn == 3 && hatM == 32 || turn == 4 && dogM == 32) {
+    } else if (turn == 0 && carM == 32 || turn == 1 && shoeM == 32 || turn == 2 && hatM == 32 || turn == 3 && dogM == 32) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = oxfordStreetObj.name;
         cardName.style.backgroundColor = "rgb(11, 165, 70)";
@@ -1331,11 +1570,11 @@ function showCard() {
         housecost.innerHTML = oxfordStreetObj.card[7] + "$";
         hotelcost.innerHTML = oxfordStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + oxfordStreetObj.price + "$";
-    } else if (turn == 1 && carM == 33 || turn == 2 && shoeM == 33 || turn == 3 && hatM == 33 || turn == 4 && dogM == 33) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 33 || turn == 1 && shoeM == 33 || turn == 2 && hatM == 33 || turn == 3 && dogM == 33) {
+        cardVisible.style.display = "grid";
             // comchest3
 
-    } else if (turn == 1 && carM == 34 || turn == 2 && shoeM == 34 || turn == 3 && hatM == 34 || turn == 4 && dogM == 34) {
+    } else if (turn == 0 && carM == 34 || turn == 1 && shoeM == 34 || turn == 2 && hatM == 34 || turn == 3 && dogM == 34) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = bondStreetObj.name;
         cardName.style.backgroundColor = "rgb(11, 165, 70)";
@@ -1349,15 +1588,27 @@ function showCard() {
         housecost.innerHTML = bondStreetObj.card[7] + "$";
         hotelcost.innerHTML = bondStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + bondStreetObj.price + "$";
-    } else if (turn == 1 && carM == 35 || turn == 2 && shoeM == 35 || turn == 3 && hatM == 35 || turn == 4 && dogM == 35) {
-        // cardVisible.style.display = "grid";
-            // st4
+    } else if (turn == 0 && carM == 35 || turn == 1 && shoeM == 35 || turn == 2 && hatM == 35 || turn == 3 && dogM == 35) {
+        cardVisible.style.display = "grid";
+        // st4
+        cardName.innerHTML = st4Obj.name;
+        cardName.style.backgroundColor = "rgb(148, 148, 148)";
+        siteonly.innerHTML = st4Obj.card[0] + "$";
+        house1.innerHTML = "can't build";
+        house2.innerHTML = "can't build";
+        house3.innerHTML = "can't build";
+        house4.innerHTML = "can't build";
+        hotel.innerHTML = "can't build";
+        mortgage.innerHTML = st4Obj.card[4] + "$";
+        housecost.innerHTML = ",,";
+        hotelcost.innerHTML = ",,";
+        buyText.innerHTML = "Buy for " + st4Obj.price + "$";
 
-    } else if (turn == 1 && carM == 36 || turn == 2 && shoeM == 36 || turn == 3 && hatM == 36 || turn == 4 && dogM == 36) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 36 || turn == 1 && shoeM == 36 || turn == 2 && hatM == 36 || turn == 3 && dogM == 36) {
+        cardVisible.style.display = "grid";
             // chanse3
 
-    } else if (turn == 1 && carM == 37 || turn == 2 && shoeM == 37 || turn == 3 && hatM == 37 || turn == 4 && dogM == 37) {
+    } else if (turn == 0 && carM == 37 || turn == 1 && shoeM == 37 || turn == 2 && hatM == 37 || turn == 3 && dogM == 37) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = parkLaneObj.name;
         cardName.style.backgroundColor = "rgb(116, 86, 172)";
@@ -1371,11 +1622,11 @@ function showCard() {
         housecost.innerHTML = parkLaneObj.card[7] + "$";
         hotelcost.innerHTML = parkLaneObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + parkLaneObj.price + "$";
-    } else if (turn == 1 && carM == 38 || turn == 2 && shoeM == 38 || turn == 3 && hatM == 38 || turn == 4 && dogM == 38) {
-        // cardVisible.style.display = "grid";
+    } else if (turn == 0 && carM == 38 || turn == 1 && shoeM == 38 || turn == 2 && hatM == 38 || turn == 3 && dogM == 38) {
+        cardVisible.style.display = "grid";
             // supertax
 
-    } else if (turn == 1 && carM == 39 || turn == 2 && shoeM == 39 || turn == 3 && hatM == 39 || turn == 4 && dogM == 39) {
+    } else if (turn == 0 && carM == 39 || turn == 1 && shoeM == 39 || turn == 2 && hatM == 39 || turn == 3 && dogM == 39) {
         cardVisible.style.display = "grid";
         cardName.innerHTML = mayFairObj.name;
         cardName.style.backgroundColor = "rgb(116, 86, 172)";
@@ -1392,21 +1643,510 @@ function showCard() {
     }
 }
 
+    // Show pay Card
+function showPay() {
+    let payVisible = document.getElementById('payOptions'),
+        payName = document.getElementById('payName'),
+        paySiteOnly = document.getElementById('paySiteOnly'),
+        payHouse = document.getElementById('payHouse'),
+        payHotel = document.getElementById('payHotel'),
+        payText = document.getElementById('payText');
+
+    if (turn == 0 && carM == 1 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 1 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 1 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 1 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = oldKentObj.name;
+        payName.style.backgroundColor = "rgb(133, 76, 23)";
+        paySiteOnly.innerHTML = oldKentObj.card[0] + "$";
+        payHouse.innerHTML = oldKentObj.card[1] + "$";
+        payHotel.innerHTML = oldKentObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (oldKentObj.card[0]) + "$";
+    } else if (turn == 0 && carM == 2 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 2 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 2 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 2 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+            // comchest1
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        
+    } else if (turn == 0 && carM == 3 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 3 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 3 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 3 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = whiteRoadObj.name;
+        payName.style.backgroundColor = "rgb(133, 76, 23)";
+        paySiteOnly.innerHTML = whiteRoadObj.card[0] + "$";
+        payHouse.innerHTML = whiteRoadObj.card[1] + "$";
+        payHotel.innerHTML = whiteRoadObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (whiteRoadObj.card[0]) + "$";
+    } else if (turn == 0 && carM == 4 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 4 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 4 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 4 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // incometax1
+        
+    } else if (turn == 0 && carM == 5 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 5 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 5 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 5 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        // ST 1
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = st1Obj.name;
+        payName.style.backgroundColor = "rgb(148, 148, 148)";
+        paySiteOnly.innerHTML = st1Obj.card[0] + "$";
+        payHouse.innerHTML = st1Obj.card[1] + "$";
+        payHotel.innerHTML = st1Obj.card[5] + "$";
+        payText.innerHTML = "Pay " + st1Obj.card[0] + "$";
+
+    } else if (turn == 0 && carM == 6 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 6 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 6 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 6 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = theAngelObj.name;
+        payName.style.backgroundColor = "rgb(68, 188, 224)";
+        paySiteOnly.innerHTML = theAngelObj.card[0] + "$";
+        payHouse.innerHTML = theAngelObj.card[1] + "$";
+        payHotel.innerHTML = theAngelObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (theAngelObj.card[0] + "$");
+
+    }  else if (turn == 0 && carM == 7 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 7 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 7 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 7 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // chanse1
+        
+    } else if (turn == 0 && carM == 8 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 8 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 8 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 8 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = eustonRoadObj.name;
+        payName.style.backgroundColor = "rgb(68, 188, 224)";
+        paySiteOnly.innerHTML = eustonRoadObj.card[0] + "$";
+        payHouse.innerHTML = eustonRoadObj.card[1] + "$";
+        payHotel.innerHTML = eustonRoadObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (eustonRoadObj.card[0] + "$");
+
+    } else if (turn == 0 && carM == 9 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 9 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 9 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 9 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = pentonRoadObj.name;
+        payName.style.backgroundColor = "rgb(68, 188, 224)";
+        paySiteOnly.innerHTML = pentonRoadObj.card[0] + "$";
+        payHouse.innerHTML = pentonRoadObj.card[1] + "$";
+        payHotel.innerHTML = pentonRoadObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (pentonRoadObj.card[1]) + "$";
+
+    } else if (turn == 0 && carM == 10 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 10 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 10 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 10 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // jail
+
+    } else if (turn == 0 && carM == 11 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 11 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 11 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 11 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = palMalObj.name;
+        payName.style.backgroundColor = "rgb(224, 68, 211)";
+        paySiteOnly.innerHTML = palMalObj.card[0] + "$";
+        payHouse.innerHTML = palMalObj.card[1] + "$";
+        payHotel.innerHTML = palMalObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (palMalObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 12 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 12 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 12 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 12 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        // ecompany1
+
+    } else if (turn == 0 && carM == 13 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 13 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 13 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 13 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = whiteHallObj.name;
+        payName.style.backgroundColor = "rgb(224, 68, 211)";
+        paySiteOnly.innerHTML = whiteHallObj.card[0] + "$";
+        payHouse.innerHTML = whiteHallObj.card[1] + "$";
+        payHotel.innerHTML = whiteHallObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (whiteHallObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 14 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 14 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 14 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 14 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = northLimberObj.name;
+        payName.style.backgroundColor = "rgb(224, 68, 211)";
+        paySiteOnly.innerHTML = northLimberObj.card[0] + "$";
+        payHouse.innerHTML = northLimberObj.card[1] + "$";
+        payHotel.innerHTML = northLimberObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (northLimberObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 15 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 15 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 15 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 15 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+        // st2
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = st2Obj.name;
+        payName.style.backgroundColor = "rgb(148, 148, 148)";
+        paySiteOnly.innerHTML = st2Obj.card[0] + "$";
+        payHouse.innerHTML = st2Obj.card[1] + "$";
+        payHotel.innerHTML = st2Obj.card[5] + "$";
+        payText.innerHTML = "Pay " + (st2Obj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 16 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 16 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 16 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 16 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = bowStreetObj.name;
+        payName.style.backgroundColor = "rgb(240, 143, 16)";
+        paySiteOnly.innerHTML = bowStreetObj.card[0] + "$";
+        payHouse.innerHTML = bowStreetObj.card[1] + "$";
+        payHotel.innerHTML = bowStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (bowStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 17 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 17 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 17 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 17 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // comchest2
+
+    } else if (turn == 0 && carM == 18 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 18 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 18 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 18 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = malborStreetObj.name;
+        payName.style.backgroundColor = "rgb(240, 143, 16)";
+        paySiteOnly.innerHTML = malborStreetObj.card[0] + "$";
+        payHouse.innerHTML = malborStreetObj.card[1] + "$";
+        payHotel.innerHTML = malborStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (malborStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 19 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 19 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 19 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 19 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = vineStreetObj.name;
+        payName.style.backgroundColor = "rgb(240, 143, 16)";
+        paySiteOnly.innerHTML = vineStreetObj.card[0] + "$";
+        payHouse.innerHTML = vineStreetObj.card[1] + "$";
+        payHotel.innerHTML = vineStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (vineStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 20 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 20 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 20 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 20 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // parking
+
+    } else if (turn == 0 && carM == 21 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 21 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 21 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 21 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = strandStreetObj.name;
+        payName.style.backgroundColor = "rgb(240, 50, 16)";
+        paySiteOnly.innerHTML = strandStreetObj.card[0] + "$";
+        payHouse.innerHTML = strandStreetObj.card[1] + "$";
+        payHotel.innerHTML = strandStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (strandStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 22 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 22 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 22 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 22 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+            
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // chanse2
+
+    } else if (turn == 0 && carM == 23 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 23 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 23 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 23 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = fleetStreetObj.name;
+        payName.style.backgroundColor = "rgb(240, 50, 16)";
+        paySiteOnly.innerHTML = fleetStreetObj.card[0] + "$";
+        payHouse.innerHTML = fleetStreetObj.card[1] + "$";
+        payHotel.innerHTML = fleetStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (fleetStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 24 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 24 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 24 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 24 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = trafSquareObj.name;
+        payName.style.backgroundColor = "rgb(240, 50, 16)";
+        paySiteOnly.innerHTML = trafSquareObj.card[0] + "$";
+        payHouse.innerHTML = trafSquareObj.card[1] + "$";
+        payHotel.innerHTML = trafSquareObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (trafSquareObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 25 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 25 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 25 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 25 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+        // st3
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = st3Obj.name;
+        payName.style.backgroundColor = "rgb(148, 148, 148)";
+        paySiteOnly.innerHTML = st3Obj.card[0] + "$";
+        payHouse.innerHTML = st3Obj.card[1] + "$";
+        payHotel.innerHTML = st3Obj.card[5] + "$";
+        payText.innerHTML = "Pay " + (st3Obj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 26 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 26 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 26 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 26 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = LeicSquareObj.name;
+        payName.style.backgroundColor = "rgb(240, 236, 16)";
+        paySiteOnly.innerHTML = LeicSquareObj.card[0] + "$";
+        payHouse.innerHTML = LeicSquareObj.card[1] + "$";
+        payHotel.innerHTML = LeicSquareObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (LeicSquareObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 27 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 27 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 27 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 27 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+            
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = CovStreetObj.name;
+        payName.style.backgroundColor = "rgb(240, 236, 16)";
+        paySiteOnly.innerHTML = CovStreetObj.card[0] + "$";
+        payHouse.innerHTML = CovStreetObj.card[1] + "$";
+        payHotel.innerHTML = CovStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (CovStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 28 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 28 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 28 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 28 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+        cardVisible.style.display = "grid";
+            // waterworks
+
+    } else if (turn == 0 && carM == 29 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 29 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 29 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 29 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = PiccStreetObj.name;
+        payName.style.backgroundColor = "rgb(240, 236, 16)";
+        paySiteOnly.innerHTML = PiccStreetObj.card[0] + "$";
+        payHouse.innerHTML = PiccStreetObj.card[1] + "$";
+        payHotel.innerHTML = PiccStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (PiccStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 30 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 30 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 30 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 30 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // gotojail
+
+    } else if (turn == 0 && carM == 31 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 31 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 31 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 31 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = regentStreetObj.name;
+        payName.style.backgroundColor = "rgb(11, 165, 70)";
+        paySiteOnly.innerHTML = regentStreetObj.card[0] + "$";
+        payHouse.innerHTML = regentStreetObj.card[1] + "$";
+        payHotel.innerHTML = regentStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (regentStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 32 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 32 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 32 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 32 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = oxfordStreetObj.name;
+        payName.style.backgroundColor = "rgb(11, 165, 70)";
+        paySiteOnly.innerHTML = oxfordStreetObj.card[0] + "$";
+        payHouse.innerHTML = oxfordStreetObj.card[1] + "$";
+        payHotel.innerHTML = oxfordStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (oxfordStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 33 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 33 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 33 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 33 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // comchest3
+
+    } else if (turn == 0 && carM == 34 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 34 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 34 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 34 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = bondStreetObj.name;
+        payName.style.backgroundColor = "rgb(11, 165, 70)";
+        paySiteOnly.innerHTML = bondStreetObj.card[0] + "$";
+        payHouse.innerHTML = bondStreetObj.card[1] + "$";
+        payHotel.innerHTML = bondStreetObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (bondStreetObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 35 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 35 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 35 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 35 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+        // st4
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = st4Obj.name;
+        payName.style.backgroundColor = "rgb(148, 148, 148)";
+        paySiteOnly.innerHTML = st4Obj.card[0] + "$";
+        payHouse.innerHTML = st4Obj.card[1] + "$";
+        payHotel.innerHTML = st4Obj.card[5] + "$";
+        payText.innerHTML = "Pay " + (st4Obj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 36 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 36 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 36 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 36 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // chanse3
+
+    } else if (turn == 0 && carM == 37 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 37 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 37 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 37 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = parkLaneObj.name;
+        payName.style.backgroundColor = "rgb(116, 86, 172)";
+        paySiteOnly.innerHTML = parkLaneObj.card[0] + "$";
+        payHouse.innerHTML = parkLaneObj.card[1] + "$";
+        payHotel.innerHTML = parkLaneObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (parkLaneObj.card[0]) + "$";
+
+    } else if (turn == 0 && carM == 38 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 38 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 38 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 38 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        cardVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+            // supertax
+
+    } else if (turn == 0 && carM == 39 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
+        turn == 1 && shoeM == 39 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
+        turn == 2 && hatM == 39 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
+        turn == 3 && dogM == 39 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+
+        payVisible.style.display = "grid";
+        cardVisible.style.display = "none";
+        payName.innerHTML = mayFairObj.name;
+        payName.style.backgroundColor = "rgb(116, 86, 172)";
+        paySiteOnly.innerHTML = mayFairObj.card[0] + "$";
+        payHouse.innerHTML = mayFairObj.card[1] + "$";
+        payHotel.innerHTML = mayFairObj.card[5] + "$";
+        payText.innerHTML = "Pay " + (mayFairObj.card[0]) + "$";
+    }
+}
 
 function getTurn() {
     turn +=1;
-    if (turn === 5) {
-        turn = 1;
+    if (turn === 4) {
+        turn = 0;
     }
 }
 
 function tec() {
     if (diceNumber1[5] === diceNumber2[5]) {
-        turn -=1;
+        // turn -=1;
+        return true;
         console.log("tec");
         console.log(diceNumber1[5]);
         console.log(diceNumber2[5]);
-        } 
+        }
 }
 
 function goToSquare() {
@@ -1450,7 +2190,7 @@ function goToSquare() {
                 dn1 === "./images/dice/dice1/six.png" && dn2 === "./images/dice/dice1/five.png",
         twelve = dn1 === "./images/dice/dice1/six.png" && dn2 === "./images/dice/dice1/six.png";
         
-        if (turn === 1) {
+        if (turn === 0) {
             
                 if (two) {
                     
@@ -1459,10 +2199,14 @@ function goToSquare() {
                     carM += 2;
                     if(carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 2) {
@@ -1481,14 +2225,20 @@ function goToSquare() {
                     carM += 3;
                     if(carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 3) {
@@ -1507,18 +2257,26 @@ function goToSquare() {
                     carM += 4;
                     if(carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 4) {
@@ -1537,22 +2295,32 @@ function goToSquare() {
                     carM += 5;
                     if(carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 5) {
@@ -1571,26 +2339,38 @@ function goToSquare() {
                     carM += 6;
                     if(carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 45) {
                         carM = 5;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 6) {
@@ -1609,30 +2389,44 @@ function goToSquare() {
                     carM += 7;
                     if(carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 45) {
                         carM = 5;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 46) {
                         carM = 6;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 7) {
@@ -1651,34 +2445,50 @@ function goToSquare() {
                     carM += 8;
                     if(carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 45) {
                         carM = 5;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 46) {
                         carM = 6;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 47) {
                         carM = 7;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 8) {
@@ -1697,38 +2507,56 @@ function goToSquare() {
                     carM += 9;
                     if (carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 45) {
                         carM = 5;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 46) {
                         carM = 6;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 47) {
                         carM = 7;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 48) {
                         carM = 8;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 9) {
@@ -1747,42 +2575,62 @@ function goToSquare() {
                     carM += 10;
                     if (carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 45) {
                         carM = 5;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 46) {
                         carM = 6;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 47) {
                         carM = 7;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 48) {
                         carM = 8;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 49) {
                         carM = 9;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 10) {
@@ -1801,46 +2649,68 @@ function goToSquare() {
                     carM += 11;
                     if (carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 45) {
                         carM = 5;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 46) {
                         carM = 6;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 47) {
                         carM = 7;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 48) {
                         carM = 8;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 49) {
                         carM = 9;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 50) {
                         carM = 10;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 11) {
@@ -1858,50 +2728,74 @@ function goToSquare() {
                     carM += 12;
                     if (carM === 40) {
                         carM = 0;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 41) {
                         carM = 1;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 42) {
                         carM = 2;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 43) {
                         carM = 3;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 44) {
                         carM = 4;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 45) {
                         carM = 5;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 46) {
                         carM = 6;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 47) {
                         carM = 7;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 48) {
                         carM = 8;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 49) {
                         carM = 9;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 50) {
                         carM = 10;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM === 51) {
                         carM = 11;
+                        carBallance.innerHTML = 2000 + carObj.cash;
+                        carObj.cash = 2000 + carObj.cash;
                         car.style.left = fieldObj[carM].cords[0];
                         car.style.top = fieldObj[carM].cords[1];
                     } else if (carM + 12) {
@@ -1915,7 +2809,7 @@ function goToSquare() {
     
                 console.log(carM);
             
-        } else if (turn === 2) {
+        } else if (turn === 1) {
             
                 if (two) {
                         
@@ -1924,10 +2818,14 @@ function goToSquare() {
                     shoeM += 2;
                     if(shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 2) {
@@ -1946,14 +2844,20 @@ function goToSquare() {
                     shoeM += 3;
                     if(shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 3) {
@@ -1972,18 +2876,26 @@ function goToSquare() {
                     shoeM += 4;
                     if(shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 4) {
@@ -2002,22 +2914,32 @@ function goToSquare() {
                     shoeM += 5;
                     if(shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 5) {
@@ -2036,26 +2958,38 @@ function goToSquare() {
                     shoeM += 6;
                     if(shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 45) {
                         shoeM = 5;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 6) {
@@ -2074,30 +3008,44 @@ function goToSquare() {
                     shoeM += 7;
                     if(shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 45) {
                         shoeM = 5;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 46) {
                         shoeM = 6;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 7) {
@@ -2116,34 +3064,50 @@ function goToSquare() {
                     shoeM += 8;
                     if(shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 45) {
                         shoeM = 5;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 46) {
                         shoeM = 6;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 47) {
                         shoeM = 7;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 8) {
@@ -2162,38 +3126,56 @@ function goToSquare() {
                     shoeM += 9;
                     if (shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 45) {
                         shoeM = 5;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 46) {
                         shoeM = 6;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 47) {
                         shoeM = 7;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 48) {
                         shoeM = 8;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 9) {
@@ -2212,42 +3194,62 @@ function goToSquare() {
                     shoeM += 10;
                     if (shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 45) {
                         shoeM = 5;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 46) {
                         shoeM = 6;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 47) {
                         shoeM = 7;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 48) {
                         shoeM = 8;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 49) {
                         shoeM = 9;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 10) {
@@ -2266,46 +3268,68 @@ function goToSquare() {
                     shoeM += 11;
                     if (shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 45) {
                         shoeM = 5;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 46) {
                         shoeM = 6;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 47) {
                         shoeM = 7;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 48) {
                         shoeM = 8;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 49) {
                         shoeM = 9;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 50) {
                         shoeM = 10;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 11) {
@@ -2323,50 +3347,74 @@ function goToSquare() {
                     shoeM += 12;
                     if (shoeM === 40) {
                         shoeM = 0;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 41) {
                         shoeM = 1;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 42) {
                         shoeM = 2;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 43) {
                         shoeM = 3;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 44) {
                         shoeM = 4;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 45) {
                         shoeM = 5;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 46) {
                         shoeM = 6;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 47) {
                         shoeM = 7;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 48) {
                         shoeM = 8;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 49) {
                         shoeM = 9;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 50) {
                         shoeM = 10;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM === 51) {
                         shoeM = 11;
+                        shoeBallance.innerHTML = 2000 + shoeObj.cash;
+                        shoeObj.cash = 2000 + shoeObj.cash;
                         shoe.style.left = fieldObj[shoeM].cords[2];
                         shoe.style.top = fieldObj[shoeM].cords[3];
                     } else if (shoeM + 12) {
@@ -2380,7 +3428,7 @@ function goToSquare() {
                 
                 console.log(shoeM);
             
-        } else if (turn === 3) {
+        } else if (turn === 2) {
             
                 if (two) {
                         
@@ -2389,10 +3437,14 @@ function goToSquare() {
                     hatM += 2;
                     if(hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 2) {
@@ -2411,14 +3463,20 @@ function goToSquare() {
                     hatM += 3;
                     if(hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 3) {
@@ -2437,18 +3495,26 @@ function goToSquare() {
                     hatM += 4;
                     if(hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 4) {
@@ -2467,22 +3533,32 @@ function goToSquare() {
                     hatM += 5;
                     if(hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 5) {
@@ -2501,26 +3577,38 @@ function goToSquare() {
                     hatM += 6;
                     if(hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 45) {
                         hatM = 5;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 6) {
@@ -2539,30 +3627,44 @@ function goToSquare() {
                     hatM += 7;
                     if(hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 45) {
                         hatM = 5;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 46) {
                         hatM = 6;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 7) {
@@ -2581,34 +3683,50 @@ function goToSquare() {
                     hatM += 8;
                     if(hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 45) {
                         hatM = 5;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 46) {
                         hatM = 6;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 47) {
                         hatM = 7;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 8) {
@@ -2627,38 +3745,56 @@ function goToSquare() {
                     hatM += 9;
                     if (hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 45) {
                         hatM = 5;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 46) {
                         hatM = 6;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 47) {
                         hatM = 7;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 48) {
                         hatM = 8;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 9) {
@@ -2677,42 +3813,62 @@ function goToSquare() {
                     hatM += 10;
                     if (hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 45) {
                         hatM = 5;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 46) {
                         hatM = 6;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 47) {
                         hatM = 7;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 48) {
                         hatM = 8;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 49) {
                         hatM = 9;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 10) {
@@ -2731,46 +3887,68 @@ function goToSquare() {
                     hatM += 11;
                     if (hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 45) {
                         hatM = 5;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 46) {
                         hatM = 6;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 47) {
                         hatM = 7;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 48) {
                         hatM = 8;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 49) {
                         hatM = 9;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 50) {
                         hatM = 10;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 11) {
@@ -2788,50 +3966,74 @@ function goToSquare() {
                     hatM += 12;
                     if (hatM === 40) {
                         hatM = 0;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 41) {
                         hatM = 1;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 42) {
                         hatM = 2;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 43) {
                         hatM = 3;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 44) {
                         hatM = 4;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 45) {
                         hatM = 5;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 46) {
                         hatM = 6;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 47) {
                         hatM = 7;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 48) {
                         hatM = 8;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 49) {
                         hatM = 9;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 50) {
                         hatM = 10;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM === 51) {
                         hatM = 11;
+                        hatBallance.innerHTML = 2000 + hatObj.cash;
+                        hatObj.cash = 2000 + hatObj.cash;
                         hat.style.left = fieldObj[hatM].cords[4];
                         hat.style.top = fieldObj[hatM].cords[5];
                     } else if (hatM + 12) {
@@ -2845,7 +4047,7 @@ function goToSquare() {
                 
                 console.log(hatM);
             
-        } else if (turn === 4) {
+        } else if (turn === 3) {
             
                 if (two) {
                         
@@ -2854,10 +4056,14 @@ function goToSquare() {
                     dogM += 2;
                     if(dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 2) {
@@ -2876,14 +4082,20 @@ function goToSquare() {
                     dogM += 3;
                     if(dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 3) {
@@ -2902,18 +4114,26 @@ function goToSquare() {
                     dogM += 4;
                     if(dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 4) {
@@ -2932,22 +4152,32 @@ function goToSquare() {
                     dogM += 5;
                     if(dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 5) {
@@ -2966,26 +4196,38 @@ function goToSquare() {
                     dogM += 6;
                     if(dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 45) {
                         dogM = 5;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 6) {
@@ -3004,30 +4246,44 @@ function goToSquare() {
                     dogM += 7;
                     if(dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 45) {
                         dogM = 5;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 46) {
                         dogM = 6;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 7) {
@@ -3046,34 +4302,50 @@ function goToSquare() {
                     dogM += 8;
                     if(dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 45) {
                         dogM = 5;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 46) {
                         dogM = 6;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 47) {
                         dogM = 7;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 8) {
@@ -3092,38 +4364,56 @@ function goToSquare() {
                     dogM += 9;
                     if (dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 45) {
                         dogM = 5;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 46) {
                         dogM = 6;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 47) {
                         dogM = 7;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 48) {
                         dogM = 8;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 9) {
@@ -3142,42 +4432,62 @@ function goToSquare() {
                     dogM += 10;
                     if (dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 45) {
                         dogM = 5;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 46) {
                         dogM = 6;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 47) {
                         dogM = 7;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 48) {
                         dogM = 8;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 49) {
                         dogM = 9;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 10) {
@@ -3196,46 +4506,68 @@ function goToSquare() {
                     dogM += 11;
                     if (dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 45) {
                         dogM = 5;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 46) {
                         dogM = 6;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 47) {
                         dogM = 7;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 48) {
                         dogM = 8;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 49) {
                         dogM = 9;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 50) {
                         dogM = 10;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 11) {
@@ -3253,50 +4585,74 @@ function goToSquare() {
                     dogM += 12;
                     if (dogM === 40) {
                         dogM = 0;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 41) {
                         dogM = 1;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 42) {
                         dogM = 2;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 43) {
                         dogM = 3;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 44) {
                         dogM = 4;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 45) {
                         dogM = 5;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 46) {
                         dogM = 6;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 47) {
                         dogM = 7;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 48) {
                         dogM = 8;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 49) {
                         dogM = 9;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 50) {
                         dogM = 10;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM === 51) {
                         dogM = 11;
+                        dogBallance.innerHTML = 2000 + dogObj.cash;
+                        dogObj.cash = 2000 + dogObj.cash;
                         dog.style.left = fieldObj[dogM].cords[6];
                         dog.style.top = fieldObj[dogM].cords[7];
                     } else if (dogM + 12) {

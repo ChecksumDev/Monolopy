@@ -9,45 +9,47 @@
 
         <table id="mainBoard" cellspacing="0" cellpadding="0">
             <tr>
-                <td id="parking" class="square"><img class="edges" src="./images/topbar/square21.png"/></td>
-                <td id="strandStreet" class="square">
-                    <h3 class="red">Not owned</h3>
+                <td id="parking" class="square" corners><img class="edges" src="./images/topbar/square21.png"/></td>
+                <td id="strandStreet" class="square top-square">
+                    <h3 id="strandStreetH" class="red">Not owned</h3>
                     <p class="name">Strand<br/>Street</p>
                     <p class="price">220$</p>
                 </td>
-                <td id="chanse2" class="square"><img class=mid src="./images/topbar/square23.png"/></td>
-                <td id="fleetStreet" class="square">
-                    <h3 class="red">Not owned</h3>
+                <td id="chanse2" class="square top-square"><img class=mid src="./images/topbar/square23.png"/></td>
+                <td id="fleetStreet" class="square top-square">
+                    <h3 id="fleetStreetH" class="red">Not owned</h3>
                     <p class="name">Fleet<br/>Street</p>
                     <p class="price">230$</p>
                 </td>
-                <td id="trafSquare" class="square">
-                    <h3 class="red">Not owned</h3>
+                <td id="trafSquare" class="square top-square">
+                    <h3 id="trafSquareH" class="red">Not owned</h3>
                     <p class="name">Trafalguare<br/>Square</p>
                     <p class="price">240$</p>
                 </td>
-                <td id="st3" class="square"><img class=mid src="./images/topbar/square26.png"/></td>
-                <td id="LeicSquare" class="square">
-                    <h3 class="yellow">Not owned</h3>
+                <td id="st3" class="square top-square">
+                    <h3 id=st3H class="sth">Not owned</h3>
+                    <img class=mid src="./images/topbar/square26.png"/></td>
+                <td id="LeicSquare" class="square top-square">
+                    <h3 id="LeicSquareH" class="yellow">Not owned</h3>
                     <p class="name">Leicester<br/>Square</p>
                     <p class="price">260$</p>
                 </td>
-                <td id="CovStreet" class="square">
-                    <h3 class="yellow">Not owned</h3>
+                <td id="CovStreet" class="square top-square">
+                    <h3 id="CovStreetH" class="yellow">Not owned</h3>
                     <p class="name">Coventry<br/>Street</p>
                     <p class="price">270$</p>
                 </td>
                 <td id="waterWorks" class="square"><img class=mid src="./images/topbar/square29.png"/></td>
-                <td id="PiccStreet" class="square">
-                    <h3 class="yellow">Not owned</h3>
+                <td id="PiccStreet" class="square top-square">
+                    <h3 id="PiccStreetH" class="yellow">Not owned</h3>
                     <p class="name">Piccadilly<br/>Street</p>
                     <p class="price">280$</p>
                 </td>
-                <td id="goToJail" class="square"><img class="edges" src="./images/topbar/square31.png"/></td>
+                <td id="goToJail" class="square corners"><img class="edges" src="./images/topbar/square31.png"/></td>
             </tr>
             <tr>
                 <td id="vineStreet" class="square">
-                    <h3 class="orange">Not owned</h3>
+                    <h3 id="vineStreetH" class="orange">Not owned</h3>
                     <p class="name">Vine<br/>Street</p>
                     <p class="price">200$</p>
                 </td>
@@ -55,7 +57,7 @@
                     <img src="./images/comunity.png" id="comunity"/>
                     <img src="./images/Monopoly_logo.png" id="logo" />
                     <img src="./images/chanse.png" id="chanse"/>
-                    <h2>Players</h2>
+                    <h2 id="turnText">Players</h2>
                 <div class="playerContainer">
                     <div id="topLeft" class="leftContainer">
                         <table id="playerCar" class="playerBox">
@@ -141,19 +143,19 @@
                             </div>
                 </td>
                 <td id="regentStreet" class="square">
-                    <h3 class="green">Not owned</h3>
+                    <h3 id="regentStreetH" class="green">Not owned</h3>
                     <p class="name">Regent<br/>Street</p>
                     <p class="price">300$</p>
                 </td>
             </tr>
             <tr>
                 <td id="malborStreet" class="square">
-                    <h3 class="orange">Not owned</h3>
+                    <h3 id="malborStreetH" class="orange">Not owned</h3>
                     <p class="name">Malborough<br/>Street</p>
                     <p class="price">190$</p>
                 </td>
                 <td id="oxfordStreet" class="square">
-                    <h3 class="green">Not owned</h3>
+                    <h3 id="oxfordStreetH" class="green">Not owned</h3>
                     <p class="name">Oxford<br/>Street</p>
                     <p class="price">310$</p>
                 </td>
@@ -164,23 +166,27 @@
             </tr>
             <tr>
                 <td id="bowStreet" class="square">
-                    <h3 class="orange">Not owned</h3>
+                    <h3 id="bowStreetH" class="orange">Not owned</h3>
                     <p class="name">Bow<br/>Street</p>
                     <p class="price">180$</p>
                 </td>
                 <td id="bondStreet" class="square">
-                    <h3 class="green">Not owned</h3>
+                    <h3 id="bondStreetH" class="green">Not owned</h3>
                     <p class="name">Bond<br/>Street</p>
                     <p class="price">320$</p>
                 </td>
             </tr>
             <tr>
-                <td id="st2" class="square"><img src="./images/leftbar/square16.png"/></td>
-                <td id="st4" class="square"><img src="./images/rightbar/square36.png"/></td> 
+                <td id="st2" class="square">
+                        <h3 id=st2H class="sth">Not owned</h3>
+                    <img src="./images/leftbar/square16.png"/></td>
+                <td id="st4" class="square">
+                        <h3 id=st4H class="sth">Not owned</h3>
+                    <img src="./images/rightbar/square36.png"/></td> 
             </tr>
             <tr>
                 <td id="northLimber"class="square">
-                    <h3 class="pink">Not owned</h3>
+                    <h3 id="northLimberH" class="pink">Not owned</h3>
                     <p class="name">Northlimberian<br/>Road</p>
                     <p class="price">160$</p>
                 </td>
@@ -188,12 +194,12 @@
             </tr>
             <tr>
                 <td id="whiteHall" class="square">
-                    <h3 class="pink">Not owned</h3>
+                    <h3 id="whiteHallH" class="pink">Not owned</h3>
                     <p class="name">Whitehall<br/>Street</p>
                     <p class="price">150$</p>
                 </td>
                 <td id="parkLane" class="square">
-                    <h3 class="violet">Not owned</h3>
+                    <h3 id="parkLaneH" class="violet">Not owned</h3>
                     <p class="name">Park<br/>Lane</p>
                     <p class="price">350$</p>
                 </td>
@@ -205,48 +211,50 @@
             </tr>
             <tr>
                 <td id="palMal" class="square">
-                    <h3 class="pink">Not owned</h3>
+                    <h3 id="palMalH" class="pink">Not owned</h3>
                     <p class="name">Pal Mal<br/>Street</p>
                     <p class="price">140$</p>
                 </td>
                 <td id="mayFair" class="square">
-                    <h3 class="violet">Not owned</h3>
+                    <h3 id="mayFairH" class="violet">Not owned</h3>
                     <p class="name">Mayfair<br/>Street</p>
                     <p class="price">400$</p>
                 </td>
             </tr>
             <tr>
-                <td id="jail" class="square"><img class="edges" src="./images/downbar/square11.png"/></td>
+                <td id="jail" class="square corners"><img class="edges" src="./images/downbar/square11.png"/></td>
                 <td id="pentonRoad" class="square">
-                    <h3 class="blue">Not owned</h3>
+                    <h3 id="pentonRoadH" class="blue">Not owned</h3>
                     <p class="name">Pentonvile<br/>Road</p>
                     <p class="price">120$</p>
                 </td>
                 <td id="eustonRoad" class="square">
-                    <h3 class="blue">Not owned</h3>
+                    <h3 id="eustonRoadH" class="blue">Not owned</h3>
                     <p class="name">Euston<br/>Road</p>
                     <p class="price">110$</p>
                 </td>
                 <td id="chanse1" class="square"><img class="mid" src="./images/downbar/square8.png"/></td>
                 <td id="theAngel" class="square">
-                    <h3 class="blue">Not owned</h3>
+                    <h3 id="theAngelH" class="blue">Not owned</h3>
                     <p class="name">The Angel<br/>Inslington</p>
                     <p class="price">100$</p>
                 </td>
-                <td id="st1" class="square"><img class="mid" src="./images/downbar/square6.png"/></td>
+                <td id="st1" class="square">
+                    <h3 id=st1H class="sth">Not owned</h3>
+                    <img class="mid" src="./images/downbar/square6.png"/></td>
                 <td id ="incTax1" class="square"><img class="mid" src="./images/downbar/square5.png"/></td>
                 <td id="whiteRoad" class="square">
-                    <h3 class="brown">Not owned</h3>
+                    <h3 id="whiteRoadH" class="brown">Not owned</h3>
                     <p class="name">Whitechapel<br/>Road</p>
                     <p class="price">80$</p>
                 </td>
                 <td id="comChest1" class="square"><img class="mid" src="./images/downbar/square3.png"/></td>
                 <td id="oldKent" class="square">
-                    <h3 class="brown">Not owned</h3>
+                    <h3 id="oldKentH" class="brown">Not owned</h3>
                     <p class="name">Old Kent<br/>Road</p>
                     <p class="price">60$</p>
                 </td>
-                <td id="start" class="square"><img class="edges" src="./images/downbar/square1.png"/></td>
+                <td id="start" class="square corners"><img class="edges" src="./images/downbar/square1.png"/></td>
             </tr>
         </table>
         <div id="cardOptions">
@@ -293,7 +301,7 @@
                 <p>If a player owns all the sites of any Color-Group, the rent is <u>doubled</u>, on unimproved sites in that group
                 </p>
             <div id="cardFooter">
-                    <p id="mortgage"><b>MORTGAGE value 30$</b></p>
+                    <p id="mortgage"><b>MORTGAGE value</b></p>
                 <table id="cardBottom">
                     <tr>
                         <td colspan="2">Houses cost</td>
@@ -315,6 +323,33 @@
                 <a id="pass" href="#Pass"><p id="passText">Pass</p></a>
             </div>
         </div>
+        <div id="payOptions">
+            <div id="payHeader">
+                <h2 id="payName">Old Kent Road</h2>
+                <table id="payMiddle">
+                    <tr>
+                        <td colspan="3"><b>RENT</b></td>
+                        <td id="paySiteOnly"><b>0</b></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>houses</td>
+                        <td>build</td>
+                        <td id="payHouse">0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Hotel</td>
+                        <td>build</td>
+                        <td id="payHotel">0</td>
+                    </tr>
+                </table>
+                    
+                </div>
+                <div class="payButtonMenu">
+                    <a id="pay" href="#Pay"><p id="payText">Pay</p></a>
+                </div>
+            </div>
         <script src="monopoly.js"></script>
     </body>
 </html>
