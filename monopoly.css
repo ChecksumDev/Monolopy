@@ -138,6 +138,16 @@ td {
     border-bottom: 2px solid black;
 }
 
+.white {
+    text-align: center;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+
 .sth {
     text-align: center;
     display: block;
@@ -195,15 +205,39 @@ h2 {
 }
 
 .leftContainer {
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
     display: none;
     justify-items: center;
 }
 
 .rightContainer {
-    grid-column: 4/5;
+    /* grid-column: 4/5; */
     display: none;
     justify-items: center;
+} 
+
+#topLeft {
+    position: absolute;
+    top: 780px;
+    left: 260px;
+}
+
+#bottomLeft {
+    position: absolute;
+    top: 980px;
+    left: 260px;
+}
+
+#topRight {
+    position: absolute;
+    top: 780px;
+    left: 840px;
+}
+
+#bottomRight {
+    position: absolute;
+    top: 980px;
+    left: 840px;
 }
 
 #playerPics {
@@ -325,3 +359,39 @@ h2 {
     border-radius: 0 0 15px 15px;
 }
 
+#chOptions {
+    background-color: rgb(226, 228, 110);
+    display: none;
+    width: 15vw;
+    height: 300px;
+    border: 2px #777 solid;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    top: 880px;
+    left: 552px;
+}
+
+#chHeader {
+    display: grid;
+    justify-items: center;
+}
+
+.chBottomMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#chButton {
+    display: grid;
+    background-color: rgb(250, 191, 64);
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+}
+
+#chMiddle td, #chMiddle{
+    background-color: rgb(226, 228, 110);
+    border: none;
+}

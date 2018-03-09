@@ -1,4 +1,4 @@
-
+    // PLAYER ICONS INFORMATION
 
 let square = document.getElementsByClassName('square'),
     car = document.getElementById('car'),
@@ -35,7 +35,7 @@ let square = document.getElementsByClassName('square'),
     },
     roll = document.getElementById('roll');
 
-
+    // DICES FUNCTIONALITY
 roll.addEventListener('click', function() {
     let audio = new Audio("./sounds/diceSound.mp3");
     Array.prototype.random = function () {
@@ -49,7 +49,7 @@ roll.addEventListener('click', function() {
     setTimeout(function(){ goToSquare(); }, 2900);
     setTimeout(function(){ showCard(); }, 3200);
     setTimeout(function(){ showPay(); }, 3200);
-    // setTimeout(function(){ tec(); }, 3300);
+    setTimeout(function(){ showCh(); }, 3200);
 }, false);
 
 let diceNumber1 = [
@@ -105,6 +105,8 @@ function rollDice2(h) {
     };
 }
 
+    // NORMAL CARDS INFORMATION
+
 let start = document.getElementById('start'),
     startObj = {
         name: "Go",
@@ -130,7 +132,7 @@ let oldKent = document.getElementById('oldKentH'),
         name: "Old Kent Road",
         price: "60",
         card: ["2" ,"10" ,"30" ,"90" ,
-        "160" ,"250" ,"MORTGAGE value 30" ,"50" ,"50" ],
+        "160" ,"250" ,"30" ,"50" ,"50" ],
         cords: [
             // car //
             "1103px",
@@ -170,7 +172,7 @@ let whiteRoad = document.getElementById('whiteRoadH'),
         name: "Whitechapel Road",
         price: "80",
         card: ["4" ,"20" ,"60" ,"180" ,
-        "320" ,"450" ,"MORTGAGE value 30" ,"50" ,"50" ],
+        "320" ,"450" ,"30" ,"50" ,"50" ],
         cords: [
             // car //
             "868px",
@@ -189,6 +191,7 @@ let whiteRoad = document.getElementById('whiteRoadH'),
 let incTax1 = document.getElementById('incTax1'),
     incTax1Obj = {
         name: "Income Tax",
+        card: ["200", "0"],
         cords: [
             // car //
             "740px",
@@ -209,8 +212,7 @@ let st1 = document.getElementById('st1H'),
         owned: "Not Owned",
         name: "Marylebon Station",
         price: "200",
-        card: ["100" ,"200" ,"300$" ,"400" ,
-        "MORTGAGE value 100" ],
+        card: ["100" ,"200" ,"300" ,"400" ,"100" ],
         cords: [
             // car //
             "622px",
@@ -232,7 +234,7 @@ let theAngel = document.getElementById('theAngelH'),
         name: "The Angel Inslington",
         price: "100",
         card: ["6" ,"30" ,"90" ,"270" ,
-        "400" ,"550" ,"MORTGAGE value 50" ,"50" ,"50" ],
+        "400" ,"550" ,"50" ,"50" ,"50" ],
         cords: [
             // car //
             "500px",
@@ -272,7 +274,7 @@ let eustonRoad = document.getElementById('eustonRoadH'),
         name: "Euston Road",
         price: "110",
         card: ["8" ,"30" ,"90" ,"270" ,
-        "400" ,"550" ,"MORTGAGE value 50" ,"50" ,"50" ],
+        "400" ,"550" ,"50" ,"50" ,"50" ],
         cords: [
             // car //
             "250px",
@@ -294,7 +296,7 @@ let pentonRoad = document.getElementById('pentonRoadH'),
         name: "Pentonvile Road",
         price: "120",
         card: ["10" ,"40" ,"100" ,"300" ,
-        "450" ,"600" ,"MORTGAGE value 60" ,"50" ,"50" ],
+        "450" ,"600" ,"60" ,"50" ,"50" ],
         cords: [
             // car //
             "120px",
@@ -334,7 +336,7 @@ let palMal = document.getElementById('palMalH'),
         name: "Pal Mal Street",
         price: "140",
         card: ["12" ,"50" ,"150" ,"450" ,
-        "630" ,"750" ,"MORTGAGE value 70" ,"100" ,"100" ],
+        "630" ,"750" ,"70" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -350,9 +352,11 @@ let palMal = document.getElementById('palMalH'),
             "1235px"]
     };
 
-let eCompany1 = document.getElementById('eCompany1'),
+let eCompany1 = document.getElementById('eCompany1H'),
     eCompany1Obj = {
         name: "Electric Company",
+        price: "150",
+        card: ["200", "400", "80" ],
         cords: [
             // car //
             "6px",
@@ -373,7 +377,7 @@ let whiteHall = document.getElementById('whiteHallH'),
         name: "Whitehall Street",
         price: "150",
         card: ["14" ,"50" ,"150" ,"450" ,
-        "630" ,"750" ,"MORTGAGE value 70" ,"100" ,"100" ],
+        "630" ,"750" ,"70" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -394,7 +398,7 @@ let northLimber = document.getElementById('northLimberH'),
         name: "Northlimberian Road",
         price: "160",
         card: ["16" ,"60" ,"180" ,"500" ,
-        "700" ,"900" ,"MORTGAGE value 80" ,"100" ,"100" ],
+        "700" ,"900" ,"80" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -415,8 +419,7 @@ let st2 = document.getElementById('st2H'),
         owned: "Not Owned",
         name: "Fenchurch Station",
         price: "200",
-        card: ["100" ,"200" ,"300$" ,"400" ,
-        "MORTGAGE value 100" ],
+        card: ["100" ,"200" ,"300" ,"400" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -438,7 +441,7 @@ let bowStreet = document.getElementById('bowStreetH'),
         name: "Bow Street",
         price: "180",
         card: ["18" ,"70" ,"200" ,"550" ,
-        "700" ,"900" ,"MORTGAGE value 90" ,"100" ,"100" ],
+        "700" ,"900" ,"90" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -478,7 +481,7 @@ let malborStreet = document.getElementById('malborStreetH'),
         name: "Malborough Street",
         price: "190",
         card: ["20" ,"75" ,"210" ,"580" ,
-        "750" ,"950" ,"MORTGAGE value 100" ,"100" ,"100" ],
+        "750" ,"950" ,"100" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -500,7 +503,7 @@ let vineStreet = document.getElementById('vineStreetH'),
         name: "Vine Street",
         price: "200",
         card: ["22" ,"80" ,"220" ,"600" ,
-        "800" ,"1000" ,"MORTGAGE value 100" ,"100" ,"100" ],
+        "800" ,"1000" ,"100" ,"100" ,"100" ],
         cords: [
             // car //
             "6px",
@@ -540,7 +543,7 @@ let strandStreet = document.getElementById('strandStreetH'),
         name: "Strand Street",
         price: "220",
         card: ["24" ,"90" ,"250" ,"700" ,
-        "880" ,"1000" ,"MORTGAGE value 110" ,"150" ,"150" ],
+        "880" ,"1000" ,"110" ,"150" ,"150" ],
         cords: [
             // car //
             "120px",
@@ -580,7 +583,7 @@ let fleetStreet = document.getElementById('fleetStreetH'),
         name: "Fleet Street",
         price: "230",
         card: ["26" ,"95" ,"280" ,"730" ,
-        "900" ,"1050" ,"MORTGAGE value 110" ,"150" ,"150" ],
+        "900" ,"1050" ,"110" ,"150" ,"150" ],
         cords: [
             // car //
             "377px",
@@ -602,7 +605,7 @@ let trafSquare = document.getElementById('trafSquareH'),
         name: "Trafalguare Square",
         price: "240",
         card: ["28" ,"100" ,"300" ,"750" ,
-        "930" ,"1100" ,"MORTGAGE value 120" ,"150" ,"150" ],
+        "930" ,"1100" ,"120" ,"150" ,"150" ],
         cords: [
             // car //
             "500px",
@@ -623,8 +626,7 @@ let st3 = document.getElementById('st3H'),
         owned: "Not Owned",
         name: "Kings Cross Station",
         price: "200",
-        card: ["100" ,"200" ,"300$" ,"400" ,
-        "MORTGAGE value 100" ],
+        card: ["100" ,"200" ,"300" ,"400" ,"100"],
         cords: [
             // car //
             "622px",
@@ -646,7 +648,7 @@ let LeicSquare = document.getElementById('LeicSquareH'),
         name: "Leicester Square",
         price: "260",
         card: ["30" ,"110" ,"330" ,"800" ,
-        "980" ,"1100" ,"MORTGAGE value 130" ,"150" ,"150" ],
+        "980" ,"1100" ,"130" ,"150" ,"150" ],
         cords: [
             // car //
             "740px",
@@ -668,7 +670,7 @@ let CovStreet = document.getElementById('CovStreetH'),
         name: "Coventry Street",
         price: "270",
         card: ["32" ,"115" ,"340" ,"830" ,
-        "1000" ,"1150" ,"MORTGAGE value 130" ,"150" ,"150" ],
+        "1000" ,"1150" ,"130" ,"150" ,"150" ],
         cords: [
             // car //
             "868px",
@@ -684,9 +686,11 @@ let CovStreet = document.getElementById('CovStreetH'),
             "85px"]
     };
 
-let waterWorks = document.getElementById('waterWorks'),
+let waterWorks = document.getElementById('waterWorksH'),
     waterWorksObj = {
         name: "Water Works",
+        price: "150",
+        card: ["200", "400", "80" ],
         cords: [
             // car //
             "988px",
@@ -708,7 +712,7 @@ let PiccStreet = document.getElementById('PiccStreetH'),
         name: "Piccadilly Street",
         price: "280",
         card: ["34" ,"120" ,"360" ,"850" ,
-        "1030" ,"1200" ,"MORTGAGE value 140" ,"150" ,"150" ],
+        "1030" ,"1200" ,"140" ,"150" ,"150" ],
         cords: [
             // car //
             "1103px",
@@ -748,7 +752,7 @@ let regentStreet = document.getElementById('regentStreetH'),
         name: "Regent Street",
         price: "300",
         card: ["36" ,"130" ,"390" ,"900" ,
-        "1100" ,"1300" ,"MORTGAGE value 150" ,"200" ,"200" ],
+        "1100" ,"1300" ,"150" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -770,7 +774,7 @@ let oxfordStreet = document.getElementById('oxfordStreetH'),
         name: "Oxford Street",
         price: "310",
         card: ["38" ,"140" ,"410" ,"950" ,
-        "1150" ,"1350" ,"MORTGAGE value 150" ,"200" ,"200" ],
+        "1150" ,"1350" ,"150" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -810,7 +814,7 @@ let bondStreet = document.getElementById('bondStreetH'),
         name: "Bond Street",
         price: "320",
         card: ["40" ,"150" ,"450" ,"1000" ,
-        "1200" ,"1400" ,"MORTGAGE value 160" ,"200" ,"200" ],
+        "1200" ,"1400" ,"160" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -831,8 +835,7 @@ let st4 = document.getElementById('st4H'),
         owned: "Not Owned",
         name: "Liverpool Station",
         price: "200",
-        card: ["100" ,"200" ,"300$" ,"400" ,
-        "MORTGAGE value 100" ],
+        card: ["100" ,"200" ,"300" ,"400" ,"100" ],
         cords: [
             // car //
             "1223px",
@@ -872,7 +875,7 @@ let parkLane = document.getElementById('parkLaneH'),
         name: "Park Lane",
         price: "350",
         card: ["44" ,"180" ,"500" ,"1100" ,
-        "1300" ,"1500" ,"MORTGAGE value 180" ,"200" ,"200" ],
+        "1300" ,"1500" ,"180" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -891,6 +894,7 @@ let parkLane = document.getElementById('parkLaneH'),
 let superTax = document.getElementById('superTax'),
     superTaxObj = {
         name: "Super Tax",
+        card: ["400", "0"],
         cords: [
             // car //
             "1223px",
@@ -912,7 +916,7 @@ let mayFair = document.getElementById('mayFairH'),
         name: "Mayfaire Street",
         price: "400",
         card: ["50" ,"200" ,"600" ,"1400" ,
-        "1700" ,"2000" ,"MORTGAGE value 200" ,"200" ,"200" ],
+        "1700" ,"2000" ,"200" ,"200" ,"200" ],
         cords: [
             // car //
             "1223px",
@@ -927,6 +931,662 @@ let mayFair = document.getElementById('mayFairH'),
             "1280px",
             "1245px"]
     };
+
+    // CHANSE CARDS INFORMATION
+const chanseCards = [
+    {
+        text: "Advance to Go and Collect 2000$"
+    },
+    {
+        text: "Advance 1 Spaces"
+    },
+    {
+        text: "Advance 3 Spaces"
+    },
+    {
+        text: "Advance 4 Spaces."
+    },
+    {
+        text: "Advance 5 Spaces."
+    },
+    {
+        text: "Bank pays you dividend of 1000$"
+    },
+    {
+        text: "Get Out of Jail Free"
+    },
+    {
+        text: "Go Back 2 Spaces"
+    },
+    {
+        text: "Go Back 4 Spaces"
+    },
+    {
+        text: "Go Back 5 Spaces"
+    },
+    {
+        text: "Go to Jail. Go directly to Jail. Do not pass Go. Do not collect 2000$"
+    },
+    {
+        text: "Make general repairs on all your property. For each house pay 25$. For each hotel 100$"
+    },
+    {
+        text: "Pay poor tax of 300$"
+    },
+    {
+        text: "You have been elected Chairman of the Board–Pay each player 500$"
+    },
+    {
+        text: "Your building and loan matures. Collect 1500$"
+    },
+    {
+        text: "You have won in a Cassino. Collect 4000$"
+    }
+];
+
+    // Chanse Cards Functionality
+
+function chCards(){
+    chText = document.getElementById('chText');
+    chanseCards.sort(function(a, b){return 0.5 - Math.random()});
+        chText.innerHTML = chanseCards[0].text;
+}
+
+function showCh() {
+    chOptions = document.getElementById('chOptions');
+    chCards();
+    if(turn == 0 && (carM == 7 || carM == 22 || carM == 36)) {
+        chOptions.style.display = "grid";
+
+    } else if (turn == 1 && (shoeM == 7 || shoeM == 22 || shoeM == 36)) {
+        chOptions.style.display = "grid";
+
+    } else if (turn == 2 && (hatM == 7 || hatM == 22 || hatM == 36)) {
+        chOptions.style.display = "grid";
+
+    } else if (turn == 3 && (dogM == 7 || dogM == 22 || dogM == 36)) {
+        chOptions.style.display = "grid";
+
+    }
+}
+
+    // Chanse Button Functionality
+
+const chButton = document.getElementById('chButton');
+
+chButton.addEventListener('click', function(){
+    if (turn == 0) {
+        chOptions.style.display = "none";
+        chCardsEvents();
+        // showCard();
+        // setTimeout(function(){ getTurn(); }, 200);
+        // setTimeout(function(){ tec(); }, 100);
+
+        // if ( tec() ) {
+        //     turn -= 1;
+        //     turnText.innerHTML = "It's Car Turn !";
+        // } else {
+        //     turnText.innerHTML = "It's Shoe Turn !";
+        // }  
+    } else if (turn == 1) {
+        chOptions.style.display = "none";
+        chCardsEvents();
+        // setTimeout(function(){ getTurn(); }, 200);
+        // setTimeout(function(){ tec(); }, 100);
+       
+        // if ( tec() ) {
+        //     turn -= 1;
+        //     turnText.innerHTML = "It's Shoe Turn !";
+        // } else {
+        //     turnText.innerHTML = "It's Hat Turn !";
+        // }
+    } else if (turn == 2) {
+        chOptions.style.display = "none";
+        chCardsEvents();
+        // setTimeout(function(){ getTurn(); }, 200);
+        // setTimeout(function(){ tec(); }, 100);
+        
+        // if ( tec() ) {
+        //     turn -= 1;
+        //     turnText.innerHTML = "It's Hat Turn !";
+        // } else {
+        //     turnText.innerHTML = "It's Dog Turn !";
+        // }
+    } else if (turn == 3) {
+        chOptions.style.display = "none";
+        chCardsEvents();
+        // setTimeout(function(){ getTurn(); }, 200);
+        // setTimeout(function(){ tec(); }, 100);
+        
+        // if ( tec() ) {
+        //     turn -= 1;
+        //     turnText.innerHTML = "It's Dog Turn !";
+        // } else {
+        //     turnText.innerHTML = "It's Car Turn !";
+        // }
+    }
+}, false)
+
+function chCardsEvents(){
+    chText = document.getElementById('chText');
+    if (turn == 0) {
+        if (chText.innerHTML == "Advance to Go and Collect 2000$") {
+            carM = 0;
+            carBallance.innerHTML = (2000 + +carObj.cash) + " $";
+            carObj.cash = 2000 + +carObj.cash;
+            car.style.left = fieldObj[carM].cords[0];
+            car.style.top = fieldObj[carM].cords[1];
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+
+        } else if (chText.innerHTML == "Advance 1 Spaces") {
+            carM += 1;
+            car.style.left = fieldObj[carM].cords[0];
+            car.style.top = fieldObj[carM].cords[1];
+            showCard();
+            showPay();
+            
+        } else if (chText.innerHTML == "Advance 3 Spaces") {
+            carM += 3;
+            car.style.left = fieldObj[carM].cords[0];
+            car.style.top = fieldObj[carM].cords[1];
+            showCard();
+            showPay();
+    
+        } else if (chText.innerHTML == "Advance 4 Spaces.") {
+            carM += 4;
+            if(carM === 40) {
+                carM = 0;
+                carBallance.innerHTML = (2000 + +carObj.cash) + " $";
+                carObj.cash = 2000 + +carObj.cash;
+                car.style.left = fieldObj[carM].cords[0];
+                car.style.top = fieldObj[carM].cords[1];
+                turn +=1;
+                turnText.innerHTML = "It's Shoe Turn !"
+
+            } else if (carM + 4) {
+                car.style.left = fieldObj[carM].cords[0];
+                car.style.top = fieldObj[carM].cords[1];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Advance 5 Spaces.") {
+            carM += 5;
+            if(carM === 40) {
+                carM = 0;
+                carBallance.innerHTML = (2000 + +carObj.cash) + " $";
+                carObj.cash = 2000 + +carObj.cash;
+                car.style.left = fieldObj[carM].cords[0];
+                car.style.top = fieldObj[carM].cords[1];
+                turn +=1;
+                turnText.innerHTML = "It's Shoe Turn !"
+
+            } else if (carM + 5) {
+                car.style.left = fieldObj[carM].cords[0];
+                car.style.top = fieldObj[carM].cords[1];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Bank pays you dividend of 1000$") {
+            carBallance.innerHTML = (1000 + +carObj.cash) + " $";
+            carObj.cash = 1000 + +carObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+
+        } else if (chText.innerHTML == "Get Out of Jail Free") {
+            // jail
+        } else if (chText.innerHTML == "Go Back 2 Spaces") {
+            carM -= 2;
+            car.style.left = fieldObj[carM].cords[0];
+            car.style.top = fieldObj[carM].cords[1];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 4 Spaces") {
+            carM -= 4;
+            car.style.left = fieldObj[carM].cords[0];
+            car.style.top = fieldObj[carM].cords[1];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 5 Spaces") {
+            carM -= 5;
+            car.style.left = fieldObj[carM].cords[0];
+            car.style.top = fieldObj[carM].cords[1];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go to Jail. Go directly to Jail. Do not pass Go. Do not collect 2000$") {
+            carM == 10;
+            car.style.left = fieldObj[carM].cords[0];
+            car.style.top = fieldObj[carM].cords[1];
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+
+        } else if (chText.innerHTML == "Make general repairs on all your property. For each house pay 25$. For each hotel 100$") {
+            // repairs. Need to add them
+        } else if (chText.innerHTML == "Pay poor tax of 300$") {
+            carBallance.innerHTML = (carObj.cash - 300) + " $";
+            carObj.cash = carObj.cash - 300;
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+
+        } else if (chText.innerHTML == "You have been elected Chairman of the Board–Pay each player 500$") {
+            
+            shoeBallance.innerHTML = (shoeObj.cash - 500) + " $";
+            shoeObj.cash = +shoeObj.cash - 500;
+            
+            hatBallance.innerHTML = (hatObj.cash - 500) + " $";
+            hatObj.cash = +hatObj.cash - 500;
+            
+            dogBallance.innerHTML = (dogObj.cash - 500) + " $";
+            dogObj.cash = +dogObj.cash - 500;
+            
+            carBallance.innerHTML = (1500 + +carObj.cash) + " $";
+            carObj.cash = 1500 + +carObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+    
+        } else if (chText.innerHTML == "Your building and loan matures. Collect 1500$") {
+            carBallance.innerHTML = (1500 + +carObj.cash) + " $";
+            carObj.cash = 1500 + +carObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+    
+        } else if (chText.innerHTML == "You have won in a Cassino. Collect 4000$") {
+            carBallance.innerHTML = (4000 + +carObj.cash) + " $";
+            carObj.cash = 4000 + +carObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+        }
+    } else if (turn == 1) {
+        if (chText.innerHTML == "Advance to Go and Collect 2000$") {
+            shoeM = 0;
+            shoeBallance.innerHTML = (2000 + +shoeObj.cash) + " $";
+            shoeObj.cash = 2000 + +shoeObj.cash;
+            shoe.style.left = fieldObj[shoeM].cords[2];
+            shoe.style.top = fieldObj[shoeM].cords[3];
+            turn +=1;
+            turnText.innerHTML = "It's Hat Turn !"
+
+        } else if (chText.innerHTML == "Advance 1 Spaces") {
+            shoeM += 1;
+            shoe.style.left = fieldObj[shoeM].cords[2];
+            shoe.style.top = fieldObj[shoeM].cords[3];
+            showCard();
+            showPay();
+            
+        } else if (chText.innerHTML == "Advance 3 Spaces") {
+            shoeM += 3;
+            shoe.style.left = fieldObj[shoeM].cords[2];
+            shoe.style.top = fieldObj[shoeM].cords[3];
+            showCard();
+            showPay();
+    
+        } else if (chText.innerHTML == "Advance 4 Spaces.") {
+            shoeM += 4;
+            if(shoeM === 40) {
+                shoeM = 0;
+                shoeBallance.innerHTML = (2000 + +shoeObj.cash) + " $";
+                shoeObj.cash = 2000 + +shoeObj.cash;
+                shoe.style.left = fieldObj[shoeM].cords[2];
+                shoe.style.top = fieldObj[shoeM].cords[3];
+                turn +=1;
+                turnText.innerHTML = "It's Hat Turn !"
+
+            } else if (shoeM + 4) {
+                shoe.style.left = fieldObj[shoeM].cords[2];
+                shoe.style.top = fieldObj[shoeM].cords[3];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Advance 5 Spaces.") {
+            shoeM += 5;
+            if(shoeM === 40) {
+                shoeM = 0;
+                shoeBallance.innerHTML = (2000 + +shoeObj.cash) + " $";
+                shoeObj.cash = 2000 + +shoeObj.cash;
+                shoe.style.left = fieldObj[shoeM].cords[2];
+                shoe.style.top = fieldObj[shoeM].cords[3];
+                turn +=1;
+                turnText.innerHTML = "It's Hat Turn !"
+
+            } else if (shoeM + 5) {
+                shoe.style.left = fieldObj[shoeM].cords[2];
+                shoe.style.top = fieldObj[shoeM].cords[3];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Bank pays you dividend of 1000$") {
+            shoeBallance.innerHTML = (1000 + +shoeObj.cash) + " $";
+            shoeObj.cash = 1000 + +shoeObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Hat Turn !"
+
+        } else if (chText.innerHTML == "Get Out of Jail Free") {
+            // jail
+        } else if (chText.innerHTML == "Go Back 2 Spaces") {
+            shoeM -= 2;
+            shoe.style.left = fieldObj[shoeM].cords[2];
+            shoe.style.top = fieldObj[shoeM].cords[3];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 4 Spaces") {
+            shoeM -= 4;
+            shoe.style.left = fieldObj[shoeM].cords[2];
+            shoe.style.top = fieldObj[shoeM].cords[3];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 5 Spaces") {
+            shoeM -= 5;
+            shoe.style.left = fieldObj[shoeM].cords[2];
+            shoe.style.top = fieldObj[shoeM].cords[3];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go to Jail. Go directly to Jail. Do not pass Go. Do not collect 2000$") {
+            shoeM == 10;
+            shoe.style.left = fieldObj[shoeM].cords[2];
+            shoe.style.top = fieldObj[shoeM].cords[3];
+            turn +=1;
+            turnText.innerHTML = "It's Hat Turn !"
+
+        } else if (chText.innerHTML == "Make general repairs on all your property. For each house pay 25$. For each hotel 100$") {
+            // repairs. Need to add them
+        } else if (chText.innerHTML == "Pay poor tax of 300$") {
+            shoeBallance.innerHTML = (shoeObj.cash - 300) + " $";
+            shoeObj.cash = shoeObj.cash - 300;
+            turn +=1;
+            turnText.innerHTML = "It's Shoe Turn !"
+
+        } else if (chText.innerHTML == "You have been elected Chairman of the Board–Pay each player 500$") {
+            
+            carBallance.innerHTML = (carObj.cash - 500) + " $";
+            carObj.cash = +carObj.cash - 500;
+            
+            hatBallance.innerHTML = (hatObj.cash - 500) + " $";
+            hatObj.cash = +hatObj.cash - 500;
+            
+            dogBallance.innerHTML = (dogObj.cash - 500) + " $";
+            dogObj.cash = +dogObj.cash - 500;
+            
+            shoeBallance.innerHTML = (1500 + +shoeObj.cash) + " $";
+            shoeObj.cash = 1500 + +shoeObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Hat Turn !"
+    
+        } else if (chText.innerHTML == "Your building and loan matures. Collect 1500$") {
+            shoeBallance.innerHTML = (1500 + +shoeObj.cash) + " $";
+            shoeObj.cash = 1500 + +shoeObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Hat Turn !"
+    
+        } else if (chText.innerHTML == "You have won in a Cassino. Collect 4000$") {
+            shoeBallance.innerHTML = (4000 + +shoeObj.cash) + " $";
+            shoeObj.cash = 4000 + +shoeObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Hat Turn !"
+        }
+    } else if (turn == 2) {
+        if (chText.innerHTML == "Advance to Go and Collect 2000$") {
+            hatM = 0;
+            hatBallance.innerHTML = (2000 + +hatObj.cash) + " $";
+            hatObj.cash = 2000 + +hatObj.cash;
+            hat.style.left = fieldObj[hatM].cords[4];
+            hat.style.top = fieldObj[hatM].cords[5];
+            turn +=1;
+            turnText.innerHTML = "It's Dog Turn !"
+    
+        } else if (chText.innerHTML == "Advance 1 Spaces") {
+            hatM += 1;
+            hat.style.left = fieldObj[hatM].cords[4];
+            hat.style.top = fieldObj[hatM].cords[5];
+            showCard();
+            showPay();
+            
+        } else if (chText.innerHTML == "Advance 3 Spaces") {
+            hatM += 3;
+            hat.style.left = fieldObj[hatM].cords[4];
+            hat.style.top = fieldObj[hatM].cords[5];
+            showCard();
+            showPay();
+    
+        } else if (chText.innerHTML == "Advance 4 Spaces.") {
+            hatM += 4;
+            if(hatM === 40) {
+                hatM = 0;
+                hatBallance.innerHTML = (2000 + +hatObj.cash) + " $";
+                hatObj.cash = 2000 + +hatObj.cash;
+                hat.style.left = fieldObj[hatM].cords[4];
+                hat.style.top = fieldObj[hatM].cords[5];
+                turn +=1;
+                turnText.innerHTML = "It's Dog Turn !"
+    
+            } else if (hatM + 4) {
+                hat.style.left = fieldObj[hatM].cords[4];
+                hat.style.top = fieldObj[hatM].cords[5];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Advance 5 Spaces.") {
+            hatM += 5;
+            if(hatM === 40) {
+                hatM = 0;
+                hatBallance.innerHTML = (2000 + +hatObj.cash) + " $";
+                hatObj.cash = 2000 + +hatObj.cash;
+                hat.style.left = fieldObj[hatM].cords[4];
+                hat.style.top = fieldObj[hatM].cords[5];
+                turn +=1;
+                turnText.innerHTML = "It's Dog Turn !"
+    
+            } else if (hatM + 5) {
+                hat.style.left = fieldObj[hatM].cords[4];
+                hat.style.top = fieldObj[hatM].cords[5];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Bank pays you dividend of 1000$") {
+            hatBallance.innerHTML = (1000 + +hatObj.cash) + " $";
+            hatObj.cash = 1000 + +hatObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Dog Turn !"
+    
+        } else if (chText.innerHTML == "Get Out of Jail Free") {
+            // jail
+        } else if (chText.innerHTML == "Go Back 2 Spaces") {
+            hatM -= 2;
+            hat.style.left = fieldObj[hatM].cords[4];
+            hat.style.top = fieldObj[hatM].cords[5];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 4 Spaces") {
+            hatM -= 4;
+            hat.style.left = fieldObj[hatM].cords[4];
+            hat.style.top = fieldObj[hatM].cords[5];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 5 Spaces") {
+            hatM -= 5;
+            hat.style.left = fieldObj[hatM].cords[4];
+            hat.style.top = fieldObj[hatM].cords[5];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go to Jail. Go directly to Jail. Do not pass Go. Do not collect 2000$") {
+            hatM == 10;
+            hat.style.left = fieldObj[hatM].cords[4];
+            hat.style.top = fieldObj[hatM].cords[5];
+            turn +=1;
+            turnText.innerHTML = "It's Dog Turn !"
+    
+        } else if (chText.innerHTML == "Make general repairs on all your property. For each house pay 25$. For each hotel 100$") {
+            // repairs. Need to add them
+        } else if (chText.innerHTML == "Pay poor tax of 300$") {
+            hatBallance.innerHTML = (hatObj.cash - 300) + " $";
+            hatObj.cash = hatObj.cash - 300;
+            turn +=1;
+            turnText.innerHTML = "It's Dog Turn !"
+    
+        } else if (chText.innerHTML == "You have been elected Chairman of the Board–Pay each player 500$") {
+            
+            carBallance.innerHTML = (carObj.cash - 500) + " $";
+            carObj.cash = +carObj.cash - 500;
+            
+            shoeBallance.innerHTML = (shoeObj.cash - 500) + " $";
+            shoeObj.cash = +shoeObj.cash - 500;
+            
+            dogBallance.innerHTML = (dogObj.cash - 500) + " $";
+            dogObj.cash = +dogObj.cash - 500;
+            
+            hatBallance.innerHTML = (1500 + +hatObj.cash) + " $";
+            hatObj.cash = 1500 + +hatObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Dog Turn !"
+    
+        } else if (chText.innerHTML == "Your building and loan matures. Collect 1500$") {
+            hatBallance.innerHTML = (1500 + +hatObj.cash) + " $";
+            hatObj.cash = 1500 + +hatObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Dog Turn !"
+    
+        } else if (chText.innerHTML == "You have won in a Cassino. Collect 4000$") {
+            hatBallance.innerHTML = (4000 + +hatObj.cash) + " $";
+            hatObj.cash = 4000 + +hatObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Dog Turn !"
+        }
+    } else if (turn == 3) {
+        if (chText.innerHTML == "Advance to Go and Collect 2000$") {
+            dogM = 0;
+            dogBallance.innerHTML = (2000 + +dogObj.cash) + " $";
+            dogObj.cash = 2000 + +dogObj.cash;
+            dog.style.left = fieldObj[dogM].cords[6];
+            dog.style.top = fieldObj[dogM].cords[7];
+            turn +=1;
+            turnText.innerHTML = "It's Car Turn !"
+    
+        } else if (chText.innerHTML == "Advance 1 Spaces") {
+            dogM += 1;
+            dog.style.left = fieldObj[dogM].cords[6];
+            dog.style.top = fieldObj[dogM].cords[7];
+            showCard();
+            showPay();
+            
+        } else if (chText.innerHTML == "Advance 3 Spaces") {
+            dogM += 3;
+            dog.style.left = fieldObj[dogM].cords[6];
+            dog.style.top = fieldObj[dogM].cords[7];
+            showCard();
+            showPay();
+    
+        } else if (chText.innerHTML == "Advance 4 Spaces.") {
+            dogM += 4;
+            if(dogM === 40) {
+                dogM = 0;
+                dogBallance.innerHTML = (2000 + +dogObj.cash) + " $";
+                dogObj.cash = 2000 + +dogObj.cash;
+                dog.style.left = fieldObj[dogM].cords[6];
+                dog.style.top = fieldObj[dogM].cords[7];
+                turn +=1;
+                turnText.innerHTML = "It's Car Turn !"
+    
+            } else if (dogM + 4) {
+                dog.style.left = fieldObj[dogM].cords[6];
+                dog.style.top = fieldObj[dogM].cords[7];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Advance 5 Spaces.") {
+            dogM += 5;
+            if(dogM === 40) {
+                dogM = 0;
+                dogBallance.innerHTML = (2000 + +dogObj.cash) + " $";
+                dogObj.cash = 2000 + +dogObj.cash;
+                dog.style.left = fieldObj[dogM].cords[6];
+                dog.style.top = fieldObj[dogM].cords[7];
+                turn +=1;
+                turnText.innerHTML = "It's Car Turn !"
+    
+            } else if (dogM + 5) {
+                dog.style.left = fieldObj[dogM].cords[6];
+                dog.style.top = fieldObj[dogM].cords[7];
+                showCard();
+                showPay();
+            }
+    
+        } else if (chText.innerHTML == "Bank pays you dividend of 1000$") {
+            dogBallance.innerHTML = (1000 + +dogObj.cash) + " $";
+            dogObj.cash = 1000 + +dogObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Car Turn !"
+    
+        } else if (chText.innerHTML == "Get Out of Jail Free") {
+            // jail
+        } else if (chText.innerHTML == "Go Back 2 Spaces") {
+            dogM -= 2;
+            dog.style.left = fieldObj[dogM].cords[6];
+            dog.style.top = fieldObj[dogM].cords[7];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 4 Spaces") {
+            dogM -= 4;
+            dog.style.left = fieldObj[dogM].cords[6];
+            dog.style.top = fieldObj[dogM].cords[7];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go Back 5 Spaces") {
+            dogM -= 5;
+            dog.style.left = fieldObj[dogM].cords[6];
+            dog.style.top = fieldObj[dogM].cords[7];
+            showCard();
+            showPay();
+        } else if (chText.innerHTML == "Go to Jail. Go directly to Jail. Do not pass Go. Do not collect 2000$") {
+            dogM == 10;
+            dog.style.left = fieldObj[dogM].cords[6];
+            dog.style.top = fieldObj[dogM].cords[7];
+            turn +=1;
+            turnText.innerHTML = "It's Car Turn !"
+    
+        } else if (chText.innerHTML == "Make general repairs on all your property. For each house pay 25$. For each hotel 100$") {
+            // repairs. Need to add them
+        } else if (chText.innerHTML == "Pay poor tax of 300$") {
+            dogBallance.innerHTML = (dogObj.cash - 300) + " $";
+            dogObj.cash = dogObj.cash - 300;
+            turn +=1;
+            turnText.innerHTML = "It's Car Turn !"
+    
+        } else if (chText.innerHTML == "You have been elected Chairman of the Board–Pay each player 500$") {
+            
+            carBallance.innerHTML = (carObj.cash - 500) + " $";
+            carObj.cash = +carObj.cash - 500;
+            
+            shoeBallance.innerHTML = (shoeObj.cash - 500) + " $";
+            shoeObj.cash = +shoeObj.cash - 500;
+            
+            hatBallance.innerHTML = (hatObj.cash - 500) + " $";
+            hatObj.cash = +hatObj.cash - 500;
+            
+            dogBallance.innerHTML = (1500 + +dogObj.cash) + " $";
+            dogObj.cash = 1500 + +dogObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Car Turn !"
+    
+        } else if (chText.innerHTML == "Your building and loan matures. Collect 1500$") {
+            dogBallance.innerHTML = (1500 + +dogObj.cash) + " $";
+            dogObj.cash = 1500 + +dogObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Car Turn !"
+    
+        } else if (chText.innerHTML == "You have won in a Cassino. Collect 4000$") {
+            dogBallance.innerHTML = (4000 + +dogObj.cash) + " $";
+            dogObj.cash = 4000 + +dogObj.cash;
+            turn +=1;
+            turnText.innerHTML = "It's Car Turn !"
+        }
+    }
+}
 
 car.addEventListener('click', function() {
     car.style.position = "absolute";
@@ -960,12 +1620,24 @@ dog.addEventListener('click', function () {
     document.getElementById('dogBallance').innerHTML = dogObj.cash + " $";
 }, false);
 
-    // Button functionality when GAME-CARD is shown 
+    // Button functionality when BUY-GAME-CARD is shown 
 let buy = document.getElementById('buy'),
     pass = document.getElementById('pass'),
     pay = document.getElementById('pay'),
+    turnText = document.getElementById('turnText'),
+    cardName = document.getElementById('cardName'),
+    siteonly = document.getElementById('siteOnly'),
+    house1 = document.getElementById('house1'),
+    house2 = document.getElementById('house2'),
+    house3 = document.getElementById('house3'),
+    house4 = document.getElementById('house4'),
+    hotel = document.getElementById('hotel'),
+    mortgage = document.getElementById('mortgage'),
+    housecost = document.getElementById('houseCost'),
+    hotelcost = document.getElementById('hotelCost'),
     cardVisible = document.getElementById('cardOptions'),
-    turnText = document.getElementById('turnText');
+    buyText = document.getElementById('buyText'),
+    passText = document.getElementById('passText');
 
     // Car Score Board
 let carBallance = document.getElementById('carBallance'),
@@ -1112,14 +1784,170 @@ buy.addEventListener('click', function(){
     }
 }, false);
 
+
+    // PAY BUTTON FUNCTIONALITY
 pay.addEventListener('click', function(){
 let payVisible = document.getElementById('payOptions');
     if (turn == 0) {
-        carBallance.innerHTML = (carObj.cash - fieldObj[carM].card[0]) + " $";
-        carObj.cash = carObj.cash - fieldObj[carM].card[0];
-        payVisible.style.display = "none";
-        setTimeout(function(){ getTurn(); }, 200);
-        setTimeout(function(){ tec(); }, 100);
+
+        if(
+            (carM == 5 || carM == 15 || carM == 25 || carM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            carBallance.innerHTML = (carObj.cash - fieldObj[carM].card[3]) + " $";
+            carObj.cash = carObj.cash - fieldObj[carM].card[3];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+            
+            if (field[carM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[carM].card[3]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[carM].card[3];
+
+            } else if (field[carM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[carM].card[3]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[carM].card[3];
+
+            } else if (field[carM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[carM].card[3]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[carM].card[3];
+            }
+
+        } else if (
+            (carM == 5 || carM == 15 || carM == 25 || carM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            carBallance.innerHTML = (carObj.cash - fieldObj[carM].card[2]) + " $";
+            carObj.cash = carObj.cash - fieldObj[carM].card[2];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[carM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[carM].card[2]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[carM].card[2];
+
+            } else if (field[carM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[carM].card[2]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[carM].card[2];
+
+            } else if (field[carM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[carM].card[2]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[carM].card[2];
+            }    
+
+        } else if (
+            (carM == 12 || carM == 28) &&
+            (field[12].innerHTML == "Car" && field[28].innerHTML == "Car" ||
+            field[12].innerHTML == "Shoe" && field[28].innerHTML == "Shoe" ||
+            field[12].innerHTML == "Hat" && field[28].innerHTML == "Hat" ||
+            field[12].innerHTML == "Dog" && field[28].innerHTML == "Dog") ||
+        
+            (carM == 5 || carM == 15 || carM == 25 || carM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            carBallance.innerHTML = (carObj.cash - fieldObj[carM].card[1]) + " $";
+            carObj.cash = carObj.cash - fieldObj[carM].card[1];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[carM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[carM].card[1]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[carM].card[1];
+
+            } else if (field[carM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[carM].card[1]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[carM].card[1];
+
+            } else if (field[carM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[carM].card[1]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[carM].card[1];
+            }
+
+        } else {
+            carBallance.innerHTML = (carObj.cash - fieldObj[carM].card[0]) + " $";
+            carObj.cash = carObj.cash - fieldObj[carM].card[0];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[carM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[carM].card[0]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[carM].card[0];
+
+            } else if (field[carM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[carM].card[0]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[carM].card[0];
+
+            } else if (field[carM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[carM].card[0]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[carM].card[0];
+            }
+        }
 
         if ( tec() ) {
             turn -= 1;
@@ -1129,11 +1957,166 @@ let payVisible = document.getElementById('payOptions');
         }
 
     } else if (turn == 1) {
-        shoeBallance.innerHTML = (shoeObj.cash - fieldObj[shoeM].card[0]) + " $";
-        shoeObj.cash = shoeObj.cash - fieldObj[shoeM].card[0];
-        payVisible.style.display = "none";
-        setTimeout(function(){ getTurn(); }, 200);
-        setTimeout(function(){ tec(); }, 100);
+
+        if(
+            (shoeM == 5 || shoeM == 15 || shoeM == 25 || shoeM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            shoeBallance.innerHTML = (shoeObj.cash - fieldObj[shoeM].card[3]) + " $";
+            shoeObj.cash = shoeObj.cash - fieldObj[shoeM].card[3];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100); 
+
+            if (field[shoeM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[shoeM].card[3]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[shoeM].card[3];
+
+            } else if (field[shoeM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[shoeM].card[3]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[shoeM].card[3];
+
+            } else if (field[shoeM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[shoeM].card[3]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[shoeM].card[3];
+            }
+
+        } else if (
+            (shoeM == 5 || shoeM == 15 || shoeM == 25 || shoeM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            shoeBallance.innerHTML = (shoeObj.cash - fieldObj[shoeM].card[2]) + " $";
+            shoeObj.cash = shoeObj.cash - fieldObj[shoeM].card[2];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100); 
+
+            if (field[shoeM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[shoeM].card[2]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[shoeM].card[2];
+
+            } else if (field[shoeM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[shoeM].card[2]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[shoeM].card[2];
+
+            } else if (field[shoeM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[shoeM].card[2]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[shoeM].card[2];
+            }
+
+        } else if (
+            (shoeM == 12 || shoeM == 28) &&
+            (field[12].innerHTML == "Car" && field[28].innerHTML == "Car" ||
+            field[12].innerHTML == "Shoe" && field[28].innerHTML == "Shoe" ||
+            field[12].innerHTML == "Hat" && field[28].innerHTML == "Hat" ||
+            field[12].innerHTML == "Dog" && field[28].innerHTML == "Dog") ||
+        
+            (shoeM == 5 || shoeM == 15 || shoeM == 25 || shoeM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            shoeBallance.innerHTML = (shoeObj.cash - fieldObj[shoeM].card[1]) + " $";
+            shoeObj.cash = shoeObj.cash - fieldObj[shoeM].card[1];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100); 
+
+            if (field[shoeM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[shoeM].card[1]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[shoeM].card[1];
+
+            } else if (field[shoeM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[shoeM].card[1]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[shoeM].card[1];
+
+            } else if (field[shoeM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[shoeM].card[1]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[shoeM].card[1];
+            }
+
+        } else {
+            shoeBallance.innerHTML = (shoeObj.cash - fieldObj[shoeM].card[0]) + " $";
+            shoeObj.cash = shoeObj.cash - fieldObj[shoeM].card[0];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[shoeM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[shoeM].card[0]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[shoeM].card[0];
+
+            } else if (field[shoeM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[shoeM].card[0]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[shoeM].card[0];
+
+            } else if (field[shoeM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[shoeM].card[0]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[shoeM].card[0];
+            }
+
+        }
        
         if ( tec() ) {
             turn -= 1;
@@ -1143,11 +2126,165 @@ let payVisible = document.getElementById('payOptions');
         }
 
     } else if (turn == 2) {
-        hatBallance.innerHTML = (hatObj.cash - fieldObj[hatM].card[0]) + " $";
-        hatObj.cash = hatObj.cash - fieldObj[hatM].card[0];
-        payVisible.style.display = "none";
-        setTimeout(function(){ getTurn(); }, 200);
-        setTimeout(function(){ tec(); }, 100);
+
+        if(
+            (hatM == 5 || hatM == 15 || hatM == 25 || hatM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            hatBallance.innerHTML = (hatObj.cash - fieldObj[hatM].card[3]) + " $";
+            hatObj.cash = hatObj.cash - fieldObj[hatM].card[3];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[hatM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[hatM].card[3]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[hatM].card[3];
+
+            } else if (field[hatM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[hatM].card[3]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[hatM].card[3];
+
+            } else if (field[hatM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[hatM].card[3]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[hatM].card[3];
+            }
+
+        } else if (
+            (hatM == 5 || hatM == 15 || hatM == 25 || hatM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            hatBallance.innerHTML = (hatObj.cash - fieldObj[hatM].card[2]) + " $";
+            hatObj.cash = hatObj.cash - fieldObj[hatM].card[2];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+            
+            if (field[hatM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[hatM].card[2]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[hatM].card[2];
+
+            } else if (field[hatM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[hatM].card[2]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[hatM].card[2];
+
+            } else if (field[hatM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[hatM].card[2]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[hatM].card[2];
+            }
+
+        } else if (
+            (hatM == 12 || hatM == 28) &&
+            (field[12].innerHTML == "Car" && field[28].innerHTML == "Car" ||
+            field[12].innerHTML == "Shoe" && field[28].innerHTML == "Shoe" ||
+            field[12].innerHTML == "Hat" && field[28].innerHTML == "Hat" ||
+            field[12].innerHTML == "Dog" && field[28].innerHTML == "Dog") ||
+        
+            (hatM == 5 || hatM == 15 || hatM == 25 || hatM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            hatBallance.innerHTML = (hatObj.cash - fieldObj[hatM].card[1]) + " $";
+            hatObj.cash = hatObj.cash - fieldObj[hatM].card[1];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[hatM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[hatM].card[1]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[hatM].card[1];
+
+            } else if (field[hatM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[hatM].card[1]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[hatM].card[1];
+
+            } else if (field[hatM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[hatM].card[1]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[hatM].card[1];
+            }
+
+        } else {
+            hatBallance.innerHTML = (hatObj.cash - fieldObj[hatM].card[0]) + " $";
+            hatObj.cash = hatObj.cash - fieldObj[hatM].card[0];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[hatM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[hatM].card[0]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[hatM].card[0];
+
+            } else if (field[hatM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[hatM].card[0]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[hatM].card[0];
+
+            } else if (field[hatM].innerHTML == "Dog") {
+
+                dogBallance.innerHTML = (dogObj.cash + +fieldObj[hatM].card[0]) + " $";
+                dogObj.cash = dogObj.cash + +fieldObj[hatM].card[0];
+            }
+        }
         
         if ( tec() ) {
             turn -= 1;
@@ -1157,11 +2294,165 @@ let payVisible = document.getElementById('payOptions');
         }
 
     } else if (turn == 3) {
-        dogBallance.innerHTML = (dogObj.cash - fieldObj[dogM].card[0]) + " $";
-        dogObj.cash = dogObj.cash - fieldObj[dogM].card[0];
-        payVisible.style.display = "none";
-        setTimeout(function(){ getTurn(); }, 200);
-        setTimeout(function(){ tec(); }, 100);
+
+        if (
+            (dogM == 5 || dogM == 15 || dogM == 25 || dogM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            dogBallance.innerHTML = (dogObj.cash - fieldObj[dogM].card[3]) + " $";
+            dogObj.cash = dogObj.cash - fieldObj[dogM].card[3];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+            
+            if (field[dogM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[dogM].card[3]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[dogM].card[3];
+
+            } else if (field[dogM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[dogM].card[3]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[dogM].card[3];
+
+            } else if (field[dogM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[dogM].card[3]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[dogM].card[3];
+            }
+
+        } else if (
+            (dogM == 5 || dogM == 15 || dogM == 25 || dogM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            dogBallance.innerHTML = (dogObj.cash - fieldObj[dogM].card[2]) + " $";
+            dogObj.cash = dogObj.cash - fieldObj[dogM].card[2];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+            
+            if (field[dogM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[dogM].card[2]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[dogM].card[2];
+
+            } else if (field[dogM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[dogM].card[2]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[dogM].card[2];
+
+            } else if (field[dogM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[dogM].card[2]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[dogM].card[2];
+            }
+
+        } else if (
+            (dogM == 12 || dogM == 28) &&
+            (field[12].innerHTML == "Car" && field[28].innerHTML == "Car" ||
+            field[12].innerHTML == "Shoe" && field[28].innerHTML == "Shoe" ||
+            field[12].innerHTML == "Hat" && field[28].innerHTML == "Hat" ||
+            field[12].innerHTML == "Dog" && field[28].innerHTML == "Dog") ||
+        
+            (dogM == 5 || dogM == 15 || dogM == 25 || dogM == 35) &&
+            (field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog")) {
+
+            dogBallance.innerHTML = (dogObj.cash - fieldObj[dogM].card[1]) + " $";
+            dogObj.cash = dogObj.cash - fieldObj[dogM].card[1];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[dogM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[dogM].card[1]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[dogM].card[1];
+
+            } else if (field[dogM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[dogM].card[1]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[dogM].card[1];
+
+            } else if (field[dogM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[dogM].card[1]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[dogM].card[1];
+            }
+
+        } else {
+            dogBallance.innerHTML = (dogObj.cash - fieldObj[dogM].card[0]) + " $";
+            dogObj.cash = dogObj.cash - fieldObj[dogM].card[0];
+            payVisible.style.display = "none";
+            setTimeout(function(){ getTurn(); }, 200);
+            setTimeout(function(){ tec(); }, 100);
+
+            if (field[dogM].innerHTML == "Car") {
+
+                carBallance.innerHTML = (carObj.cash + +fieldObj[dogM].card[0]) + " $";
+                carObj.cash = carObj.cash + +fieldObj[dogM].card[0];
+
+            } else if (field[dogM].innerHTML == "Shoe") {
+
+                shoeBallance.innerHTML = (shoeObj.cash + +fieldObj[dogM].card[0]) + " $";
+                shoeObj.cash = shoeObj.cash + +fieldObj[dogM].card[0];
+
+            } else if (field[dogM].innerHTML == "Hat") {
+
+                hatBallance.innerHTML = (hatObj.cash + +fieldObj[dogM].card[0]) + " $";
+                hatObj.cash = hatObj.cash + +fieldObj[dogM].card[0];
+            }
+        }
         
         if ( tec() ) {
             turn -= 1;
@@ -1202,19 +2493,6 @@ const fieldObj = [
 
     // Showing buy card options
 function showCard() {
-    let cardName = document.getElementById('cardName'),
-        siteonly = document.getElementById('siteOnly'),
-        house1 = document.getElementById('house1'),
-        house2 = document.getElementById('house2'),
-        house3 = document.getElementById('house3'),
-        house4 = document.getElementById('house4'),
-        hotel = document.getElementById('hotel'),
-        mortgage = document.getElementById('mortgage'),
-        housecost = document.getElementById('houseCost'),
-        hotelcost = document.getElementById('hotelCost'),
-        cardVisible = document.getElementById('cardOptions'),
-        buyText = document.getElementById('buyText'),
-        passText = document.getElementById('passText');
 
     if (turn == 0 && carM == 1 || turn == 1 && shoeM == 1 || turn == 2 && hatM == 1 || turn == 3 && dogM == 1) {
         cardVisible.style.display = "grid";
@@ -1226,7 +2504,7 @@ function showCard() {
         house3.innerHTML = oldKentObj.card[3] + "$";
         house4.innerHTML = oldKentObj.card[4] + "$";
         hotel.innerHTML = oldKentObj.card[5] + "$";
-        mortgage.innerHTML = oldKentObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + oldKentObj.card[6] + "$";
         housecost.innerHTML = oldKentObj.card[7] + "$";
         hotelcost.innerHTML = oldKentObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + oldKentObj.price + "$";
@@ -1244,12 +2522,18 @@ function showCard() {
         house3.innerHTML = whiteRoadObj.card[3] + "$";
         house4.innerHTML = whiteRoadObj.card[4] + "$";
         hotel.innerHTML = whiteRoadObj.card[5] + "$";
-        mortgage.innerHTML = whiteRoadObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + whiteRoadObj.card[6] + "$";
         housecost.innerHTML = whiteRoadObj.card[7] + "$";
         hotelcost.innerHTML = whiteRoadObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + whiteRoadObj.price + "$";
     } else if (turn == 0 && carM == 4 || turn == 1 && shoeM == 4 || turn == 2 && hatM == 4 || turn == 3 && dogM == 4) {
-        cardVisible.style.display = "grid";
+        payVisible.style.display = "grid";
+        payName.innerHTML = "Income Tax";
+        payName.style.backgroundColor = "rgb(66, 179, 244)";
+        paySiteOnly.innerHTML = "revision";
+        payHouse.innerHTML = "revision";
+        payHotel.innerHTML = "revision";
+        payText.innerHTML = "Pay " + "200" + "$";
             // incometax1
         
     } else if (turn == 0 && carM == 5 || turn == 1 && shoeM == 5 || turn == 2 && hatM == 5 || turn == 3 && dogM == 5) {
@@ -1263,7 +2547,7 @@ function showCard() {
         house3.innerHTML = "can't build";
         house4.innerHTML = "can't build";
         hotel.innerHTML = "can't build";
-        mortgage.innerHTML = st1Obj.card[4] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + st1Obj.card[4] + "$";
         housecost.innerHTML = ",,";
         hotelcost.innerHTML = ",,";
         buyText.innerHTML = "Buy for " + st1Obj.price + "$";
@@ -1278,12 +2562,12 @@ function showCard() {
         house3.innerHTML = theAngelObj.card[3] + "$";
         house4.innerHTML = theAngelObj.card[4] + "$";
         hotel.innerHTML = theAngelObj.card[5] + "$";
-        mortgage.innerHTML = theAngelObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + theAngelObj.card[6] + "$";
         housecost.innerHTML = theAngelObj.card[7] + "$";
         hotelcost.innerHTML = theAngelObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + theAngelObj.price + "$";
     }  else if (turn == 0 && carM == 7 || turn == 1 && shoeM == 7 || turn == 2 && hatM == 7 || turn == 3 && dogM == 7) {
-        cardVisible.style.display = "grid";
+        
             // chanse1
         
     } else if (turn == 0 && carM == 8 || turn == 1 && shoeM == 8 || turn == 2 && hatM == 8 || turn == 3 && dogM == 8) {
@@ -1296,7 +2580,7 @@ function showCard() {
         house3.innerHTML = eustonRoadObj.card[3] + "$";
         house4.innerHTML = eustonRoadObj.card[4] + "$";
         hotel.innerHTML = eustonRoadObj.card[5] + "$";
-        mortgage.innerHTML = eustonRoadObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + eustonRoadObj.card[6] + "$";
         housecost.innerHTML = eustonRoadObj.card[7] + "$";
         hotelcost.innerHTML = eustonRoadObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + eustonRoadObj.price + "$";
@@ -1310,7 +2594,7 @@ function showCard() {
         house3.innerHTML = pentonRoadObj.card[3] + "$";
         house4.innerHTML = pentonRoadObj.card[4] + "$";
         hotel.innerHTML = pentonRoadObj.card[5] + "$";
-        mortgage.innerHTML = pentonRoadObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + pentonRoadObj.card[6] + "$";
         housecost.innerHTML = pentonRoadObj.card[7] + "$";
         hotelcost.innerHTML = pentonRoadObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + pentonRoadObj.price + "$";
@@ -1328,12 +2612,24 @@ function showCard() {
         house3.innerHTML = palMalObj.card[3] + "$";
         house4.innerHTML = palMalObj.card[4] + "$";
         hotel.innerHTML = palMalObj.card[5] + "$";
-        mortgage.innerHTML = palMalObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + palMalObj.card[6] + "$";
         housecost.innerHTML = palMalObj.card[7] + "$";
         hotelcost.innerHTML = palMalObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + palMalObj.price + "$";
     } else if (turn == 0 && carM == 12 || turn == 1 && shoeM == 12 || turn == 2 && hatM == 12 || turn == 3 && dogM == 12) {
         cardVisible.style.display = "grid";
+        cardName.style.backgroundColor = "rgb(255, 255, 255)";
+        cardName.innerHTML = "Electric Company";
+        buyText.innerHTML = "Buy for " + eCompany1Obj.price + "$";
+        siteonly.innerHTML = "200$ or 400$";
+        house1.innerHTML = "cant build";
+        house2.innerHTML = "cant build";
+        house3.innerHTML = "cant build";
+        house4.innerHTML = "cant build";
+        hotel.innerHTML = "cant build";
+        mortgage.innerHTML = "MORTGAGE value" + eCompany1Obj.card[2] + "$";
+        housecost.innerHTML = "not available";
+        hotelcost.innerHTML = "not available";
         // ecompany1
 
     } else if (turn == 0 && carM == 13 || turn == 1 && shoeM == 13 || turn == 2 && hatM == 13 || turn == 3 && dogM == 13) {
@@ -1346,7 +2642,7 @@ function showCard() {
         house3.innerHTML = whiteHallObj.card[3] + "$";
         house4.innerHTML = whiteHallObj.card[4] + "$";
         hotel.innerHTML = whiteHallObj.card[5] + "$";
-        mortgage.innerHTML = whiteHallObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + whiteHallObj.card[6] + "$";
         housecost.innerHTML = whiteHallObj.card[7] + "$";
         hotelcost.innerHTML = whiteHallObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + whiteHallObj.price + "$";
@@ -1360,7 +2656,7 @@ function showCard() {
         house3.innerHTML = northLimberObj.card[3] + "$";
         house4.innerHTML = northLimberObj.card[4] + "$";
         hotel.innerHTML = northLimberObj.card[5] + "$";
-        mortgage.innerHTML = northLimberObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + northLimberObj.card[6] + "$";
         housecost.innerHTML = northLimberObj.card[7] + "$";
         hotelcost.innerHTML = northLimberObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + northLimberObj.price + "$";
@@ -1375,7 +2671,7 @@ function showCard() {
         house3.innerHTML = "can't build";
         house4.innerHTML = "can't build";
         hotel.innerHTML = "can't build";
-        mortgage.innerHTML = st2Obj.card[4] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + st2Obj.card[4] + "$";
         housecost.innerHTML = ",,";
         hotelcost.innerHTML = ",,";
         buyText.innerHTML = "Buy for " + st2Obj.price + "$";
@@ -1390,7 +2686,7 @@ function showCard() {
         house3.innerHTML = bowStreetObj.card[3] + "$";
         house4.innerHTML = bowStreetObj.card[4] + "$";
         hotel.innerHTML = bowStreetObj.card[5] + "$";
-        mortgage.innerHTML = bowStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + bowStreetObj.card[6] + "$";
         housecost.innerHTML = bowStreetObj.card[7] + "$";
         hotelcost.innerHTML = bowStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + bowStreetObj.price + "$";
@@ -1408,7 +2704,7 @@ function showCard() {
         house3.innerHTML = malborStreetObj.card[3] + "$";
         house4.innerHTML = malborStreetObj.card[4] + "$";
         hotel.innerHTML = malborStreetObj.card[5] + "$";
-        mortgage.innerHTML = malborStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + malborStreetObj.card[6] + "$";
         housecost.innerHTML = malborStreetObj.card[7] + "$";
         hotelcost.innerHTML = malborStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + malborStreetObj.price + "$";
@@ -1422,7 +2718,7 @@ function showCard() {
         house3.innerHTML = vineStreetObj.card[3] + "$";
         house4.innerHTML = vineStreetObj.card[4] + "$";
         hotel.innerHTML = vineStreetObj.card[5] + "$";
-        mortgage.innerHTML = vineStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + vineStreetObj.card[6] + "$";
         housecost.innerHTML = vineStreetObj.card[7] + "$";
         hotelcost.innerHTML = vineStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + vineStreetObj.price + "$";
@@ -1440,12 +2736,12 @@ function showCard() {
         house3.innerHTML = strandStreetObj.card[3] + "$";
         house4.innerHTML = strandStreetObj.card[4] + "$";
         hotel.innerHTML = strandStreetObj.card[5] + "$";
-        mortgage.innerHTML = strandStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + strandStreetObj.card[6] + "$";
         housecost.innerHTML = strandStreetObj.card[7] + "$";
         hotelcost.innerHTML = strandStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + strandStreetObj.price + "$";
     } else if (turn == 0 && carM == 22 || turn == 1 && shoeM == 22 || turn == 2 && hatM == 22 || turn == 3 && dogM == 22) {
-        cardVisible.style.display = "grid";
+        
             // chanse2
 
     } else if (turn == 0 && carM == 23 || turn == 1 && shoeM == 23 || turn == 2 && hatM == 23 || turn == 3 && dogM == 23) {
@@ -1458,7 +2754,7 @@ function showCard() {
         house3.innerHTML = fleetStreetObj.card[3] + "$";
         house4.innerHTML = fleetStreetObj.card[4] + "$";
         hotel.innerHTML = fleetStreetObj.card[5] + "$";
-        mortgage.innerHTML = fleetStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + fleetStreetObj.card[6] + "$";
         housecost.innerHTML = fleetStreetObj.card[7] + "$";
         hotelcost.innerHTML = fleetStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + fleetStreetObj.price + "$";
@@ -1472,7 +2768,7 @@ function showCard() {
         house3.innerHTML = trafSquareObj.card[3] + "$";
         house4.innerHTML = trafSquareObj.card[4] + "$";
         hotel.innerHTML = trafSquareObj.card[5] + "$";
-        mortgage.innerHTML = trafSquareObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + trafSquareObj.card[6] + "$";
         housecost.innerHTML = trafSquareObj.card[7] + "$";
         hotelcost.innerHTML = trafSquareObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + trafSquareObj.price + "$";
@@ -1487,7 +2783,7 @@ function showCard() {
         house3.innerHTML = "can't build";
         house4.innerHTML = "can't build";
         hotel.innerHTML = "can't build";
-        mortgage.innerHTML = st3Obj.card[4] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + st3Obj.card[4] + "$";
         housecost.innerHTML = ",,";
         hotelcost.innerHTML = ",,";
         buyText.innerHTML = "Buy for " + st3Obj.price + "$";
@@ -1502,7 +2798,7 @@ function showCard() {
         house3.innerHTML = LeicSquareObj.card[3] + "$";
         house4.innerHTML = LeicSquareObj.card[4] + "$";
         hotel.innerHTML = LeicSquareObj.card[5] + "$";
-        mortgage.innerHTML = LeicSquareObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + LeicSquareObj.card[6] + "$";
         housecost.innerHTML = LeicSquareObj.card[7] + "$";
         hotelcost.innerHTML = LeicSquareObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + LeicSquareObj.price + "$";
@@ -1516,12 +2812,24 @@ function showCard() {
         house3.innerHTML = CovStreetObj.card[3] + "$";
         house4.innerHTML = CovStreetObj.card[4] + "$";
         hotel.innerHTML = CovStreetObj.card[5] + "$";
-        mortgage.innerHTML = CovStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + CovStreetObj.card[6] + "$";
         housecost.innerHTML = CovStreetObj.card[7] + "$";
         hotelcost.innerHTML = CovStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + CovStreetObj.price + "$";
     } else if (turn == 0 && carM == 28 || turn == 1 && shoeM == 28 || turn == 2 && hatM == 28 || turn == 3 && dogM == 28) {
         cardVisible.style.display = "grid";
+        cardName.style.backgroundColor = "rgb(255, 255, 255)";
+        cardName.innerHTML = "Water Works";
+        buyText.innerHTML = "Buy for " + waterWorksObj.price + "$";
+        siteonly.innerHTML = "200$ or 400$";
+        house1.innerHTML = "cant build";
+        house2.innerHTML = "cant build";
+        house3.innerHTML = "cant build";
+        house4.innerHTML = "cant build";
+        hotel.innerHTML = "cant build";
+        mortgage.innerHTML = "MORTGAGE value" + waterWorksObj.card[2] + "$";
+        housecost.innerHTML = "not available";
+        hotelcost.innerHTML = "not available";
             // waterworks
 
     } else if (turn == 0 && carM == 29 || turn == 1 && shoeM == 29 || turn == 2 && hatM == 29 || turn == 3 && dogM == 29) {
@@ -1534,7 +2842,7 @@ function showCard() {
         house3.innerHTML = PiccStreetObj.card[3] + "$";
         house4.innerHTML = PiccStreetObj.card[4] + "$";
         hotel.innerHTML = PiccStreetObj.card[5] + "$";
-        mortgage.innerHTML = PiccStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + PiccStreetObj.card[6] + "$";
         housecost.innerHTML = PiccStreetObj.card[7] + "$";
         hotelcost.innerHTML = PiccStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + PiccStreetObj.price + "$";
@@ -1552,7 +2860,7 @@ function showCard() {
         house3.innerHTML = regentStreetObj.card[3] + "$";
         house4.innerHTML = regentStreetObj.card[4] + "$";
         hotel.innerHTML = regentStreetObj.card[5] + "$";
-        mortgage.innerHTML = regentStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + regentStreetObj.card[6] + "$";
         housecost.innerHTML = regentStreetObj.card[7] + "$";
         hotelcost.innerHTML = regentStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + regentStreetObj.price + "$";
@@ -1566,7 +2874,7 @@ function showCard() {
         house3.innerHTML = oxfordStreetObj.card[3] + "$";
         house4.innerHTML = oxfordStreetObj.card[4] + "$";
         hotel.innerHTML = oxfordStreetObj.card[5] + "$";
-        mortgage.innerHTML = oxfordStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + oxfordStreetObj.card[6] + "$";
         housecost.innerHTML = oxfordStreetObj.card[7] + "$";
         hotelcost.innerHTML = oxfordStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + oxfordStreetObj.price + "$";
@@ -1584,7 +2892,7 @@ function showCard() {
         house3.innerHTML = bondStreetObj.card[3] + "$";
         house4.innerHTML = bondStreetObj.card[4] + "$";
         hotel.innerHTML = bondStreetObj.card[5] + "$";
-        mortgage.innerHTML = bondStreetObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + bondStreetObj.card[6] + "$";
         housecost.innerHTML = bondStreetObj.card[7] + "$";
         hotelcost.innerHTML = bondStreetObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + bondStreetObj.price + "$";
@@ -1599,13 +2907,13 @@ function showCard() {
         house3.innerHTML = "can't build";
         house4.innerHTML = "can't build";
         hotel.innerHTML = "can't build";
-        mortgage.innerHTML = st4Obj.card[4] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + st4Obj.card[4] + "$";
         housecost.innerHTML = ",,";
         hotelcost.innerHTML = ",,";
         buyText.innerHTML = "Buy for " + st4Obj.price + "$";
 
     } else if (turn == 0 && carM == 36 || turn == 1 && shoeM == 36 || turn == 2 && hatM == 36 || turn == 3 && dogM == 36) {
-        cardVisible.style.display = "grid";
+        
             // chanse3
 
     } else if (turn == 0 && carM == 37 || turn == 1 && shoeM == 37 || turn == 2 && hatM == 37 || turn == 3 && dogM == 37) {
@@ -1618,12 +2926,18 @@ function showCard() {
         house3.innerHTML = parkLaneObj.card[3] + "$";
         house4.innerHTML = parkLaneObj.card[4] + "$";
         hotel.innerHTML = parkLaneObj.card[5] + "$";
-        mortgage.innerHTML = parkLaneObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + parkLaneObj.card[6] + "$";
         housecost.innerHTML = parkLaneObj.card[7] + "$";
         hotelcost.innerHTML = parkLaneObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + parkLaneObj.price + "$";
     } else if (turn == 0 && carM == 38 || turn == 1 && shoeM == 38 || turn == 2 && hatM == 38 || turn == 3 && dogM == 38) {
-        cardVisible.style.display = "grid";
+        payVisible.style.display = "grid";
+        payName.innerHTML = "Super Tax";
+        payName.style.backgroundColor = "rgb(66, 179, 244)";
+        paySiteOnly.innerHTML = "revision";
+        payHouse.innerHTML = "revision";
+        payHotel.innerHTML = "revision";
+        payText.innerHTML = "Pay " + "400" + "$";
             // supertax
 
     } else if (turn == 0 && carM == 39 || turn == 1 && shoeM == 39 || turn == 2 && hatM == 39 || turn == 3 && dogM == 39) {
@@ -1636,21 +2950,22 @@ function showCard() {
         house3.innerHTML = mayFairObj.card[3] + "$";
         house4.innerHTML = mayFairObj.card[4] + "$";
         hotel.innerHTML = mayFairObj.card[5] + "$";
-        mortgage.innerHTML = mayFairObj.card[6] + "$";
+        mortgage.innerHTML = "MORTGAGE value" + mayFairObj.card[6] + "$";
         housecost.innerHTML = mayFairObj.card[7] + "$";
         hotelcost.innerHTML = mayFairObj.card[8] + "$";
         buyText.innerHTML = "Buy for " + mayFairObj.price + "$";
     }
 }
 
-    // Show pay Card
+    // Button functionality when PAY-Card is shown
+let payVisible = document.getElementById('payOptions'),
+    payName = document.getElementById('payName'),
+    paySiteOnly = document.getElementById('paySiteOnly'),
+    payHouse = document.getElementById('payHouse'),
+    payHotel = document.getElementById('payHotel'),
+    payText = document.getElementById('payText');
+
 function showPay() {
-    let payVisible = document.getElementById('payOptions'),
-        payName = document.getElementById('payName'),
-        paySiteOnly = document.getElementById('paySiteOnly'),
-        payHouse = document.getElementById('payHouse'),
-        payHotel = document.getElementById('payHotel'),
-        payText = document.getElementById('payText');
 
     if (turn == 0 && carM == 1 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 1 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
@@ -1665,14 +2980,15 @@ function showPay() {
         payHouse.innerHTML = oldKentObj.card[1] + "$";
         payHotel.innerHTML = oldKentObj.card[5] + "$";
         payText.innerHTML = "Pay " + (oldKentObj.card[0]) + "$";
+        
     } else if (turn == 0 && carM == 2 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 2 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 2 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 2 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
             // comchest1
-        payVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // payVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
         
     } else if (turn == 0 && carM == 3 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 3 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
@@ -1692,24 +3008,111 @@ function showPay() {
         turn == 2 && hatM == 4 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 4 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // incometax1
         
     } else if (turn == 0 && carM == 5 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 5 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 5 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 5 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
+        
+            // ST 1
+        if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
 
-        // ST 1
-        payVisible.style.display = "grid";
-        cardVisible.style.display = "none";
-        payName.innerHTML = st1Obj.name;
-        payName.style.backgroundColor = "rgb(148, 148, 148)";
-        paySiteOnly.innerHTML = st1Obj.card[0] + "$";
-        payHouse.innerHTML = st1Obj.card[1] + "$";
-        payHotel.innerHTML = st1Obj.card[5] + "$";
-        payText.innerHTML = "Pay " + st1Obj.card[0] + "$";
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st1Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st1Obj.card[3] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + st1Obj.card[3] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st1Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st1Obj.card[2] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + st1Obj.card[2] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog") {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st1Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st1Obj.card[1] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + st1Obj.card[1] + "$";
+
+        } else {
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st1Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st1Obj.card[0] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + st1Obj.card[0] + "$";
+        }
 
     } else if (turn == 0 && carM == 6 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 6 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
@@ -1730,8 +3133,8 @@ function showPay() {
         turn == 2 && hatM == 7 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 7 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // chanse1
         
     } else if (turn == 0 && carM == 8 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -1760,15 +3163,15 @@ function showPay() {
         paySiteOnly.innerHTML = pentonRoadObj.card[0] + "$";
         payHouse.innerHTML = pentonRoadObj.card[1] + "$";
         payHotel.innerHTML = pentonRoadObj.card[5] + "$";
-        payText.innerHTML = "Pay " + (pentonRoadObj.card[1]) + "$";
+        payText.innerHTML = "Pay " + (pentonRoadObj.card[0]) + "$";
 
     } else if (turn == 0 && carM == 10 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 10 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 10 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 10 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // jail
 
     } else if (turn == 0 && carM == 11 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -1790,8 +3193,32 @@ function showPay() {
         turn == 2 && hatM == 12 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 12 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        if (field[12].innerHTML == "Car" && field[28].innerHTML == "Car" ||
+            field[12].innerHTML == "Shoe" && field[28].innerHTML == "Shoe" ||
+            field[12].innerHTML == "Hat" && field[28].innerHTML == "Hat" ||
+            field[12].innerHTML == "Dog" && field[28].innerHTML == "Dog") {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = eCompany1Obj.name;
+            payName.style.backgroundColor = "rgb(255, 255, 255)";
+            paySiteOnly.innerHTML = eCompany1Obj.card[1] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + (eCompany1Obj.card[1]) + "$";
+        } else {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = eCompany1Obj.name;
+            payName.style.backgroundColor = "rgb(255, 255, 255)";
+            paySiteOnly.innerHTML = eCompany1Obj.card[0] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + (eCompany1Obj.card[0]) + "$";
+        }
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
         // ecompany1
 
     } else if (turn == 0 && carM == 13 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -1812,7 +3239,7 @@ function showPay() {
         turn == 1 && shoeM == 14 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 14 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 14 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
-
+            
         payVisible.style.display = "grid";
         cardVisible.style.display = "none";
         payName.innerHTML = northLimberObj.name;
@@ -1827,14 +3254,102 @@ function showPay() {
         turn == 2 && hatM == 15 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 15 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
         // st2
-        payVisible.style.display = "grid";
-        cardVisible.style.display = "none";
-        payName.innerHTML = st2Obj.name;
-        payName.style.backgroundColor = "rgb(148, 148, 148)";
-        paySiteOnly.innerHTML = st2Obj.card[0] + "$";
-        payHouse.innerHTML = st2Obj.card[1] + "$";
-        payHotel.innerHTML = st2Obj.card[5] + "$";
-        payText.innerHTML = "Pay " + (st2Obj.card[0]) + "$";
+
+        if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st2Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st2Obj.card[3] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + st2Obj.card[3] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st2Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st2Obj.card[2] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st2Obj.card[2] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog") {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st2Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st2Obj.card[1] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st2Obj.card[1] + "$";
+
+        } else {
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st2Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st2Obj.card[0] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st2Obj.card[0] + "$";
+        }
 
     } else if (turn == 0 && carM == 16 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 16 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
@@ -1855,8 +3370,8 @@ function showPay() {
         turn == 2 && hatM == 17 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 17 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // comchest2
 
     } else if (turn == 0 && carM == 18 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -1892,8 +3407,8 @@ function showPay() {
         turn == 2 && hatM == 20 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 20 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // parking
 
     } else if (turn == 0 && carM == 21 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -1915,8 +3430,8 @@ function showPay() {
         turn == 2 && hatM == 22 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 22 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
             
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // chanse2
 
     } else if (turn == 0 && carM == 23 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -1951,15 +3466,104 @@ function showPay() {
         turn == 1 && shoeM == 25 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 25 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 25 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
-        // st3
-        payVisible.style.display = "grid";
-        cardVisible.style.display = "none";
-        payName.innerHTML = st3Obj.name;
-        payName.style.backgroundColor = "rgb(148, 148, 148)";
-        paySiteOnly.innerHTML = st3Obj.card[0] + "$";
-        payHouse.innerHTML = st3Obj.card[1] + "$";
-        payHotel.innerHTML = st3Obj.card[5] + "$";
-        payText.innerHTML = "Pay " + (st3Obj.card[0]) + "$";
+            
+            // st3
+
+        if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st3Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st3Obj.card[3] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + st3Obj.card[3] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st3Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st3Obj.card[2] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st3Obj.card[2] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog") {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st3Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st3Obj.card[1] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st3Obj.card[1] + "$";
+
+        } else {
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st3Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st3Obj.card[0] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st3Obj.card[0] + "$";
+        }
 
     } else if (turn == 0 && carM == 26 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 26 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
@@ -1993,7 +3597,33 @@ function showPay() {
         turn == 1 && shoeM == 28 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 28 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 28 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
-        cardVisible.style.display = "grid";
+            
+        if (field[12].innerHTML == "Car" && field[28].innerHTML == "Car" ||
+            field[12].innerHTML == "Shoe" && field[28].innerHTML == "Shoe" ||
+            field[12].innerHTML == "Hat" && field[28].innerHTML == "Hat" ||
+            field[12].innerHTML == "Dog" && field[28].innerHTML == "Dog") {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = waterWorksObj.name;
+            payName.style.backgroundColor = "rgb(255, 255, 255)";
+            paySiteOnly.innerHTML = waterWorksObj.card[1] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + (waterWorksObj.card[1]) + "$";
+        } else {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = waterWorksObj.name;
+            payName.style.backgroundColor = "rgb(255, 255, 255)";
+            paySiteOnly.innerHTML = waterWorksObj.card[0] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + (waterWorksObj.card[0]) + "$";
+        }
+
+        // cardVisible.style.display = "grid";
             // waterworks
 
     } else if (turn == 0 && carM == 29 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -2015,8 +3645,8 @@ function showPay() {
         turn == 2 && hatM == 30 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 30 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // gotojail
 
     } else if (turn == 0 && carM == 31 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -2052,8 +3682,8 @@ function showPay() {
         turn == 2 && hatM == 33 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 33 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // comchest3
 
     } else if (turn == 0 && carM == 34 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -2074,23 +3704,111 @@ function showPay() {
         turn == 1 && shoeM == 35 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 35 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 35 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
-        // st4
-        payVisible.style.display = "grid";
-        cardVisible.style.display = "none";
-        payName.innerHTML = st4Obj.name;
-        payName.style.backgroundColor = "rgb(148, 148, 148)";
-        paySiteOnly.innerHTML = st4Obj.card[0] + "$";
-        payHouse.innerHTML = st4Obj.card[1] + "$";
-        payHotel.innerHTML = st4Obj.card[5] + "$";
-        payText.innerHTML = "Pay " + (st4Obj.card[0]) + "$";
+            
+            // st4
+        if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st4Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st4Obj.card[3] + "$";
+            payHouse.innerHTML = "not available";
+            payHotel.innerHTML = "not available";
+            payText.innerHTML = "Pay " + st4Obj.card[3] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[25].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" && field[35].innerHTML == "Car"||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe"||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat"||
+
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog"){
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st4Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st4Obj.card[2] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st4Obj.card[2] + "$";
+        } else if (
+            field[5].innerHTML == "Car" && field[15].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[5].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[25].innerHTML == "Car" ||
+            field[15].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[5].innerHTML == "Car" ||
+            field[25].innerHTML == "Car" && field[35].innerHTML == "Car" ||
+
+            field[5].innerHTML == "Shoe" && field[15].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[5].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[25].innerHTML == "Shoe" ||
+            field[15].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[5].innerHTML == "Shoe" ||
+            field[25].innerHTML == "Shoe" && field[35].innerHTML == "Shoe" ||
+
+            field[5].innerHTML == "Hat" && field[15].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[5].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[25].innerHTML == "Hat" ||
+            field[15].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[5].innerHTML == "Hat" ||
+            field[25].innerHTML == "Hat" && field[35].innerHTML == "Hat" ||
+        
+            field[5].innerHTML == "Dog" && field[15].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[5].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[25].innerHTML == "Dog" ||
+            field[15].innerHTML == "Dog" && field[35].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[5].innerHTML == "Dog" ||
+            field[25].innerHTML == "Dog" && field[35].innerHTML == "Dog") {
+
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st4Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st4Obj.card[1] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st4Obj.card[1] + "$";
+
+        } else {
+            payVisible.style.display = "grid";
+            cardVisible.style.display = "none";
+            payName.innerHTML = st4Obj.name;
+            payName.style.backgroundColor = "rgb(148, 148, 148)";
+            paySiteOnly.innerHTML = st4Obj.card[0] + "$";
+            payHouse.innerHTML = " not available";
+            payHotel.innerHTML = " not available";
+            payText.innerHTML = "Pay " + st4Obj.card[0] + "$";
+        }
 
     } else if (turn == 0 && carM == 36 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
         turn == 1 && shoeM == 36 && (field[shoeM].innerHTML == "Car" || field[shoeM].innerHTML == "Hat" || field[shoeM].innerHTML == "Dog") ||
         turn == 2 && hatM == 36 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 36 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // chanse3
 
     } else if (turn == 0 && carM == 37 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -2112,8 +3830,8 @@ function showPay() {
         turn == 2 && hatM == 38 && (field[hatM].innerHTML == "Car" || field[hatM].innerHTML == "Shoe" || field[hatM].innerHTML == "Dog") ||
         turn == 3 && dogM == 38 && (field[dogM].innerHTML == "Car" || field[dogM].innerHTML == "Shoe" || field[dogM].innerHTML == "Hat")) {
 
-        cardVisible.style.display = "grid";
-        cardVisible.style.display = "none";
+        // cardVisible.style.display = "grid";
+        // cardVisible.style.display = "none";
             // supertax
 
     } else if (turn == 0 && carM == 39 && (field[carM].innerHTML == "Shoe" || field[carM].innerHTML == "Hat" || field[carM].innerHTML == "Dog") ||
@@ -4665,6 +6383,5 @@ function goToSquare() {
                 }
                 
                 console.log(dogM);
-            
         }
 }
