@@ -12,6 +12,7 @@ roll.addEventListener('click', function() {
     setTimeout(function(){ showCh(); }, 3200);
     setTimeout(function(){ showCom(); }, 3200);
     setTimeout(function(){ jpsShow(); }, 3200);
+    roll.style.display = "none";
 }, false);
 
 function rollDice1(j) {
@@ -76,6 +77,7 @@ function showCh() {
 
     // Chanse Button Functionality
 chButton.addEventListener('click', function(){
+    roll.style.display = "inline-block";
     if (turn == 0) {
         chOptions.style.display = "none";
         chCardsEvents();
@@ -651,6 +653,7 @@ function showCom() {
 
     // COMUNITY BUTTON FUNCTIONALITY
 comButton.addEventListener('click', function(){
+    roll.style.display = "inline-block";
     if (turn == 0) {
         comOptions.style.display = "none";
         comCardsEvents();
@@ -1131,6 +1134,7 @@ AddEventPl(dog, 6, 7, 'bottomRight', 'dogBallance', dogObj.cash);
     // Pass Button Functionality
 function AddEventPass(turner, current, next) {
     pass.addEventListener('click', function() {
+        roll.style.display = "inline-block";
         if (turn == turner) {
             cardVisible.style.display = "none";
             setTimeout(function(){ getTurn(); }, 200);
@@ -1154,6 +1158,7 @@ AddEventPass(3, "Dog", "Car");
 
     // Buy Button Functionality
 buy.addEventListener('click', function(){
+    roll.style.display = "inline-block";
     if (turn == 0 && field[carM].innerHTML == "Not owned") {
         carStreets.innerHTML++;
         field[carM].innerHTML = carObj.name;
@@ -1237,3 +1242,4 @@ function tec() {
         console.log(diceNumber2[5]);
     }
 }
+

@@ -26,6 +26,7 @@ let oldKent = document.getElementById('oldKentH'),
         price: "60",
         card: ["2" ,"10" ,"30" ,"90" ,
         "160" ,"250" ,"30" ,"50" ,"50" ],
+        color: "linear-gradient(#b98e66, #7a4e25)",
         cords: [
             // car //
             "1103px",
@@ -66,6 +67,7 @@ let whiteRoad = document.getElementById('whiteRoadH'),
         price: "80",
         card: ["4" ,"20" ,"60" ,"180" ,
         "320" ,"450" ,"30" ,"50" ,"50" ],
+        color: "linear-gradient(#b98e66, #7a4e25)",
         cords: [
             // car //
             "868px",
@@ -128,6 +130,7 @@ let theAngel = document.getElementById('theAngelH'),
         price: "100",
         card: ["6" ,"30" ,"90" ,"270" ,
         "400" ,"550" ,"50" ,"50" ,"50" ],
+        color: "linear-gradient(#75d6f3, #44bce0)",
         cords: [
             // car //
             "500px",
@@ -168,6 +171,7 @@ let eustonRoad = document.getElementById('eustonRoadH'),
         price: "110",
         card: ["8" ,"30" ,"90" ,"270" ,
         "400" ,"550" ,"50" ,"50" ,"50" ],
+        color: "linear-gradient(#75d6f3, #44bce0)",
         cords: [
             // car //
             "250px",
@@ -190,6 +194,7 @@ let pentonRoad = document.getElementById('pentonRoadH'),
         price: "120",
         card: ["10" ,"40" ,"100" ,"300" ,
         "450" ,"600" ,"60" ,"50" ,"50" ],
+        color: "linear-gradient(#75d6f3, #44bce0)",
         cords: [
             // car //
             "120px",
@@ -230,6 +235,7 @@ let palMal = document.getElementById('palMalH'),
         price: "140",
         card: ["12" ,"50" ,"150" ,"450" ,
         "630" ,"750" ,"70" ,"100" ,"100" ],
+        color: "linear-gradient(#df86d7, #e044d3)",
         cords: [
             // car //
             "6px",
@@ -271,6 +277,7 @@ let whiteHall = document.getElementById('whiteHallH'),
         price: "150",
         card: ["14" ,"50" ,"150" ,"450" ,
         "630" ,"750" ,"70" ,"100" ,"100" ],
+        color: "linear-gradient(#df86d7, #e044d3)",
         cords: [
             // car //
             "6px",
@@ -292,6 +299,7 @@ let northLimber = document.getElementById('northLimberH'),
         price: "160",
         card: ["16" ,"60" ,"180" ,"500" ,
         "700" ,"900" ,"80" ,"100" ,"100" ],
+        color: "linear-gradient(#df86d7, #e044d3)",
         cords: [
             // car //
             "6px",
@@ -335,6 +343,7 @@ let bowStreet = document.getElementById('bowStreetH'),
         price: "180",
         card: ["18" ,"70" ,"200" ,"550" ,
         "700" ,"900" ,"90" ,"100" ,"100" ],
+        color: "linear-gradient(#e4bc73, #cc8707)",
         cords: [
             // car //
             "6px",
@@ -375,6 +384,7 @@ let malborStreet = document.getElementById('malborStreetH'),
         price: "190",
         card: ["20" ,"75" ,"210" ,"580" ,
         "750" ,"950" ,"100" ,"100" ,"100" ],
+        color: "linear-gradient(#e4bc73, #cc8707)",
         cords: [
             // car //
             "6px",
@@ -397,6 +407,7 @@ let vineStreet = document.getElementById('vineStreetH'),
         price: "200",
         card: ["22" ,"80" ,"220" ,"600" ,
         "800" ,"1000" ,"100" ,"100" ,"100" ],
+        color: "linear-gradient(#e4bc73, #cc8707)",
         cords: [
             // car //
             "6px",
@@ -437,6 +448,7 @@ let strandStreet = document.getElementById('strandStreetH'),
         price: "220",
         card: ["24" ,"90" ,"250" ,"700" ,
         "880" ,"1000" ,"110" ,"150" ,"150" ],
+        color: "linear-gradient(#f76262, #c00101)",
         cords: [
             // car //
             "120px",
@@ -477,6 +489,7 @@ let fleetStreet = document.getElementById('fleetStreetH'),
         price: "230",
         card: ["26" ,"95" ,"280" ,"730" ,
         "900" ,"1050" ,"110" ,"150" ,"150" ],
+        color: "linear-gradient(#f76262, #c00101)",
         cords: [
             // car //
             "377px",
@@ -499,6 +512,7 @@ let trafSquare = document.getElementById('trafSquareH'),
         price: "240",
         card: ["28" ,"100" ,"300" ,"750" ,
         "930" ,"1100" ,"120" ,"150" ,"150" ],
+        color: "linear-gradient(#f76262, #c00101)",
         cords: [
             // car //
             "500px",
@@ -542,6 +556,7 @@ let LeicSquare = document.getElementById('LeicSquareH'),
         price: "260",
         card: ["30" ,"110" ,"330" ,"800" ,
         "980" ,"1100" ,"130" ,"150" ,"150" ],
+        color: "linear-gradient(#dddf70, #bcbe29)",
         cords: [
             // car //
             "740px",
@@ -564,6 +579,7 @@ let CovStreet = document.getElementById('CovStreetH'),
         price: "270",
         card: ["32" ,"115" ,"340" ,"830" ,
         "1000" ,"1150" ,"130" ,"150" ,"150" ],
+        color: "linear-gradient(#dddf70, #bcbe29)",
         cords: [
             // car //
             "868px",
@@ -606,6 +622,7 @@ let PiccStreet = document.getElementById('PiccStreetH'),
         price: "280",
         card: ["34" ,"120" ,"360" ,"850" ,
         "1030" ,"1200" ,"140" ,"150" ,"150" ],
+        color: "linear-gradient(#dddf70, #bcbe29)",
         cords: [
             // car //
             "1103px",
@@ -646,6 +663,7 @@ let regentStreet = document.getElementById('regentStreetH'),
         price: "300",
         card: ["36" ,"130" ,"390" ,"900" ,
         "1100" ,"1300" ,"150" ,"200" ,"200" ],
+        color: "linear-gradient(#94e4b3, #22b95c)",
         cords: [
             // car //
             "1223px",
@@ -668,6 +686,7 @@ let oxfordStreet = document.getElementById('oxfordStreetH'),
         price: "310",
         card: ["38" ,"140" ,"410" ,"950" ,
         "1150" ,"1350" ,"150" ,"200" ,"200" ],
+        color: "linear-gradient(#94e4b3, #22b95c)",
         cords: [
             // car //
             "1223px",
@@ -708,6 +727,7 @@ let bondStreet = document.getElementById('bondStreetH'),
         price: "320",
         card: ["40" ,"150" ,"450" ,"1000" ,
         "1200" ,"1400" ,"160" ,"200" ,"200" ],
+        color: "linear-gradient(#94e4b3, #22b95c)",
         cords: [
             // car //
             "1223px",
@@ -769,6 +789,7 @@ let parkLane = document.getElementById('parkLaneH'),
         price: "350",
         card: ["44" ,"180" ,"500" ,"1100" ,
         "1300" ,"1500" ,"180" ,"200" ,"200" ],
+        color: "linear-gradient(#9f93b6, #7d63ad)",
         cords: [
             // car //
             "1223px",
@@ -810,6 +831,7 @@ let mayFair = document.getElementById('mayFairH'),
         price: "400",
         card: ["50" ,"200" ,"600" ,"1400" ,
         "1700" ,"2000" ,"200" ,"200" ,"200" ],
+        color: "linear-gradient(#9f93b6, #7d63ad)",
         cords: [
             // car //
             "1223px",

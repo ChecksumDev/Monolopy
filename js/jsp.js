@@ -91,6 +91,7 @@ function jpsShow() {
     // jails parking and start button functionality
 
 jpsButton.addEventListener('click', function() {
+    roll.style.display = "inline-block";
     if (turn == 0) {
         jpsOptions.style.display = "none";
         turn++;

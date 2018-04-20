@@ -120,6 +120,18 @@ const fieldObj = [
     goToJailObj, regentStreetObj, oxfordStreetObj, comChest3Obj, bondStreetObj,
     st4Obj, chanse3Obj, parkLaneObj, superTaxObj, mayFairObj];
 
+const buildObj = [
+    strandStreetObj, fleetStreetObj, trafSquareObj, LeicSquareObj, CovStreetObj,
+    PiccStreetObj, vineStreetObj, regentStreetObj, malborStreetObj, oxfordStreetObj,
+    bowStreetObj, bondStreetObj, northLimberObj, whiteHallObj, parkLaneObj,
+    palMalObj, mayFairObj, pentonRoadObj, eustonRoadObj, theAngelObj, whiteRoadObj, oldKentObj];
+
+const buildField = [
+    'strandStreet', 'fleetStreet', 'trafSquare', 'LeicSquare', 'CovStreet',
+    'PiccStreet', 'vineStreet', 'regentStreet', 'malborStreet', 'oxfordStreet',
+    'bowStreet', 'bondStreet', 'northLimber', 'whiteHall', 'parkLane',
+    'palMal', 'mayFair', 'pentonRoad', 'eustonRoad', 'theAngel', 'whiteRoad', 'oldKent'];
+
 let carM = 0,
     shoeM = 0,
     hatM = 0,

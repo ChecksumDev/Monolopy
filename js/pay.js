@@ -1,6 +1,7 @@
 
     // PAY BUTTON FUNCTIONALITY
 pay.addEventListener('click', function(){
+    roll.style.display = "inline-block";
     let payVisible = document.getElementById('payOptions');
     
     if (turn == 0) {
